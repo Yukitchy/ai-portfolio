@@ -33,6 +33,24 @@ const flows=real=>{
     const n=its.length*k,t=f.firstChild;if(n>6)t.style.animationDuration=parseFloat(getComputedStyle(t).animationDuration)*n/6+"s";
   }
 };
+// 流れを指・マウスで横に流せる：CSSアニメはそのまま、触っている間だけ一時停止して currentTime を指の移動量ぶん動かし、離したらその位置から再生。
+// 縦スワイプは touch-action:pan-y でブラウザのスクロールに任せる（横と判定した時だけ動かす）。動かした後のクリックは握りつぶす
+for(const f of document.querySelectorAll(".top .flow")){
+  let s=null,moved=false;
+  f.addEventListener("pointerdown",e=>{
+    const t=f.firstChild,a=t&&t.getAnimations()[0];if(!a||e.button)return;
+    s={x:e.clientX,y:e.clientY,id:e.pointerId,a,c0:a.currentTime,k:a.effect.getTiming().duration/(t.scrollWidth/2),on:false};moved=false;
+  });
+  f.addEventListener("pointermove",e=>{
+    if(!s||e.pointerId!==s.id)return;const dx=e.clientX-s.x,dy=e.clientY-s.y;
+    if(!s.on){if(Math.abs(dx)<6||Math.abs(dx)<Math.abs(dy))return;s.on=moved=true;s.a.pause();try{f.setPointerCapture(s.id)}catch{}f.classList.add("drag")}
+    const D=s.a.effect.getTiming().duration;s.a.currentTime=((s.c0-dx*s.k)%D+D)%D;
+  });
+  const end=e=>{if(!s||e.pointerId!==s.id)return;if(s.on){s.a.play();f.classList.remove("drag")}s=null};
+  f.addEventListener("pointerup",end);f.addEventListener("pointercancel",end);
+  f.addEventListener("click",e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false}},true);
+  f.addEventListener("dragstart",e=>e.preventDefault());
+}
 $("catRow").innerHTML=CATS.map(([v,l])=>`<button class="chip" data-cat="${v}" aria-pressed="${v===""}">${l||v}</button>`).join("");
 $("catRow").addEventListener("click",e=>{
   const b=e.target.closest(".chip");if(!b)return;
