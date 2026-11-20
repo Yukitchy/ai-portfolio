@@ -19,21 +19,21 @@ for v in [] if top else [f"v{i}" for i in range(1,11)]:
   Image.open(png).convert("RGB").crop((0,0,w,844)).save(f"{out}/{v}.jpg",quality=86)
 os.remove("_frame.html")
 print("shots",out)
-# 本採用トップのOGP（黒地＋白太字＋紫の短い下線＋トップ実画面「すべて」「ロゴ」を2枚）。旧 og.png（全面紫）は使わない
+# 本採用トップのOGP og-final.png（黒地＋上段に白太字＋紫の短い下線／下段にトップ実画面4枚を横一列）。旧 og.png/og-top.png/og-board2.png は書かない（プレビューキャッシュ回避で新しい名前）
 if top and w==390:
   from PIL import ImageDraw,ImageFont
   og=Image.new("RGB",(1200,630),(20,18,23));d=ImageDraw.Draw(og)
   F="/System/Library/Fonts/ヒラギノ角ゴシック W{}.ttc"
-  d.text((60,200),"AIポートフォリオ",font=ImageFont.truetype(F.format(8),64),fill="white")
-  d.rectangle((62,296,62+72,296+6),fill=(103,69,183))
-  d.text((62,330),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.truetype(F.format(4),30),fill=(220,214,232))
-  d.text((62,380),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),24),fill=(170,164,182))
-  cw=250
-  for i,c in enumerate(["all","ロゴ"]):
-    sh=Image.open(f"shots/top-390-{c}.jpg").resize((cw,cw*844//390),Image.LANCZOS).crop((0,0,cw,630-60))
-    m=Image.new("L",sh.size,0);ImageDraw.Draw(m).rounded_rectangle((0,0,cw-1,sh.height+20),14,fill=255)
-    og.paste(sh,(640+i*(cw+30),60),m)
-  og.save("og-top.png",optimize=True);print("og-top.png")
+  d.text((60,46),"AIポートフォリオ",font=ImageFont.truetype(F.format(8),60),fill="white")
+  d.rectangle((62,134,62+72,134+6),fill=(103,69,183))
+  d.text((1140,60),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.truetype(F.format(4),28),fill=(220,214,232),anchor="ra")
+  d.text((1140,104),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),22),fill=(170,164,182),anchor="ra")
+  cw,gap,y=255,20,180
+  for i,c in enumerate(["all","ロゴ","ページ","アプリ"]):
+    sh=Image.open(f"shots/top-390-{c}.jpg").resize((cw,cw*844//390),Image.LANCZOS).crop((0,0,cw,630-y))
+    m=Image.new("L",sh.size,0);ImageDraw.Draw(m).rounded_rectangle((0,0,cw-1,sh.height+20),12,fill=255)
+    og.paste(sh,(60+i*(cw+gap),y),m)
+  og.save("og-final.png",optimize=True);print("og-final.png")
 # ボードのOGP（黒地＋白太字見出し＋紫の短い下線＋v6〜v10の実画面を横一列）。og.png は上書きしない（iPhoneのキャッシュ回避で新しい名前）
 if w==390 and not top:
   from PIL import ImageDraw,ImageFont
