@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIポートフォリオ v3｜AIで作ったロゴ・ページ・アプリ</title>
+<meta name="description" content="AIで設計・書き出ししたロゴ・ページ・アプリUIの実績集（試作v3：密度最大。最小サムネで10作品がほぼ1画面に入る）。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AIポートフォリオ v3｜AIで作ったロゴ・ページ・アプリ">
+<meta property="og:description" content="ChatGPT・Claudeなどを使い分けて作ったデザイン実績。作品ごとに使用AIを記載。">
+<meta property="og:url" content="https://yukitchy.github.io/ai-portfolio/v3.html">
+<meta property="og:image" content="https://yukitchy.github.io/ai-portfolio/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="common.css">
+<style>
+header{height:44px}
+.who{display:flex;align-items:center;gap:8px;padding:3px 10px;font-size:12px;color:var(--sub);white-space:nowrap;overflow:hidden}
+.who .note{font-size:11px;padding:0 4px;margin-left:auto}
+@media(max-width:359px){.who .note{display:none}}
+h2{padding:3px 10px;font-size:13px}
+.filters{padding:5px 10px}.chip{padding:1px 10px}
+.card{display:flex;gap:8px;padding:5px 10px;border-bottom:1px solid var(--line);align-items:center}
+.card .tl{flex:0 0 52px;width:52px}
+.card .th{border-radius:2px;border:1px solid var(--line)}
+.card .b{min-width:0;flex:1}
+.card .t{line-height:1.35}
+.card .tags{margin-top:1px}
+.scope,.ai{font-size:11px;padding:0 4px;line-height:1.45}
+.card .ph{padding:2px}.card .ph span{display:none}.card .ph small{font-size:0;right:2px;bottom:2px;padding:0 3px}.card .ph small::after{content:"仮";font-size:10px}</style>
+</head>
+<body class="v3">
+<div class="wrap">
+<header><a class="hd" href="./v3.html"><img src="assets/icon.png" alt="" width="28" height="28"><span class="site">AIポートフォリオ</span></a><a class="cta" href="#contact">仕事の相談</a></header>
+<p class="who"><span>AIで作ったロゴ・ページ・アプリ</span><span class="note">試作版：作品データはサンプルです</span></p>
+<section class="works"><h2>作品<small><span id="count">–</span>件</small></h2><div class="filters"><div class="row" id="catRow" aria-label="種類で絞り込む"></div></div><ul class="list" id="list"></ul>
+<p id="empty">この種類の作品はまだありません。</p></section>
+<section id="profile" class="prof"><h2>プロフィール</h2><p class="pn" id="pName"></p><p class="pr" id="pRole"></p><p class="pb" id="pBio"></p></section>
+<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><a class="btn" id="pContact" href="#contact">仕事の相談をする</a><p class="cn" id="pNote"></p></section>
+<footer>AIポートフォリオ 試作 v3 ／ 作品データはサンプルです ／ <a href="./">5案の見比べに戻る</a></footer>
+</div>
+<script>window.T={card:it=>`<li class="card">${link(it,thumb(it),"tl")}<div class="b">${link(it,esc(it.title),"t")}${tags(it)}</div></li>`};</script>
+<script src="app.js"></script>
+</body>
+</html>

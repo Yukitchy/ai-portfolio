@@ -1,0 +1,50 @@
+<!doctype html><meta charset="utf-8"><title>selftest</title><body><pre id="out">running</pre>
+<script>
+// 自己検査：ボード＋v1〜v5 それぞれで 320/390幅のはみ出し・見出し1行・丸ゴシック、v1〜v5で絞り込み・0件空表示・タグ・リンク・ロゴ/OG/favicon を確認
+const out=[],ok=(c,m)=>out.push((c?"PASS ":"FAIL ")+m);
+const load=(p,w)=>new Promise(r=>{const f=document.createElement("iframe");f.style.cssText=`width:${w}px;height:800px;border:0`;f.src=p;f.onload=()=>setTimeout(()=>r(f.contentWindow),1200);document.body.append(f)});
+const B="https://yukitchy.github.io/ai-portfolio/";
+(async()=>{
+ for(const v of ["index","v1","v2","v3","v4","v5"]){
+  for(const w of [320,390]){
+    const win=await load(`${v}.html`,w),d=win.document;
+    const over=[...d.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>w+0.5&&!e.closest(".row")).map(e=>e.className||e.tagName).slice(0,3);
+    ok(d.documentElement.scrollWidth<=w&&!over.length,`${v} ${w}px 横はみ出しなし (scrollWidth=${d.documentElement.scrollWidth}${over.length?" 犯人:"+over:""})`);
+    const h=[...d.querySelectorAll("h1,h2,h3")].filter(x=>x.offsetParent);
+    const bad=h.filter(x=>x.scrollWidth>x.clientWidth+1||(cs=>(x.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom))/parseFloat(cs.lineHeight)>(x.querySelector(".site")?2.6:1.5))(getComputedStyle(x)));
+    ok(!bad.length,`${v} ${w}px 見出し${h.length}本すべて1行${bad.length?" NG:"+bad.map(x=>x.textContent):""}`);
+    ok(!/maru|rounded|丸/i.test([...d.querySelectorAll("*")].map(e=>getComputedStyle(e).fontFamily).join()),`${v} ${w}px 丸ゴシック不使用`);
+    if(w!==390)continue;
+    const self=v==="index"?B:`${B}${v}.html`;
+    ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+"og.png"&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
+    const logo=d.querySelector("header img");ok(logo&&logo.complete&&logo.naturalWidth===256&&/assets\/icon\.png$/.test(logo.src),`${v} ヘッダーロゴ＝確定アイコン ${logo&&logo.src.split("/").pop()}`);
+    if(v==="index"){
+      const links=[...d.querySelectorAll(".grid a")].map(a=>a.getAttribute("href"));ok(links.join()==="v1.html,v2.html,v3.html,v4.html,v5.html",`index 5案リンク ${links}`);
+      const sh=[...d.querySelectorAll(".sh img")];ok(sh.length===5&&sh.every(i=>i.complete&&i.naturalWidth===390&&i.naturalHeight===844),`index スクショ5枚 390×844`);
+      continue;
+    }
+    ok(/AIポートフォリオ/.test(d.querySelector("header").textContent),`${v} ヘッダーにサイト名`);
+    const hh=d.querySelector("header").offsetHeight;ok(hh<=50,`${v} 薄いヘッダー ${hh}px`);
+    ok(d.querySelector('header a.cta[href="#contact"]'),`${v} ヘッダーに相談導線`);
+    const ts=[...d.querySelectorAll("#list .card .t")].filter(x=>!x.closest(".first"));ok(ts.every(x=>x.getClientRects().length===1&&x.offsetHeight<=24),`${v} 作品タイトル1行`);
+    if(v==="v3"){const c=[...d.querySelectorAll("#list .card")];ok(c[9].getBoundingClientRect().top<844,`v3 10作品目が1画面(844)内 top=${Math.round(c[9].getBoundingClientRect().top)}`);}
+    const n=()=>d.querySelectorAll("#list .card").length,click=s=>d.querySelector(s).click();
+    ok(n()===10,`${v} すべて → ${n()}件`);
+    ok(d.querySelectorAll("#list .scope").length===12&&d.querySelectorAll("#list .ai").length===12,`${v} 担当タグ${d.querySelectorAll("#list .scope").length}・使用AIタグ${d.querySelectorAll("#list .ai").length}`);
+    const sc=getComputedStyle(d.querySelector(".scope")),ai=getComputedStyle(d.querySelector(".ai"));ok((sc.backgroundColor!==ai.backgroundColor||sc.borderTopStyle!==ai.borderTopStyle)&&ai.borderTopStyle==="solid"&&getComputedStyle(d.querySelector(".ai"),"::before").content.includes("AI"),`${v} 使用AIタグは担当タグと別の見た目`);
+    ok(d.querySelectorAll("#list img.th").length===6&&d.querySelectorAll("#list .ph").length===4&&[...d.querySelectorAll("#list .ph")].every(p=>/仮サムネ/.test(p.textContent)),`${v} 実スクショ6・仮サムネ4（仮表示あり）`);
+    const hrefs=[...d.querySelectorAll("#list a")].map(a=>a.href);ok(hrefs.includes("https://yukitchy.github.io/tadayomi/")&&hrefs.includes("https://www.animesenseijp.com/akihabara-tour/")&&new Set(hrefs).size===6,`${v} 作品リンク ${new Set(hrefs).size}件`);
+    for(const[c,k]of[["ロゴ",3],["ページ",5],["アプリ",4]]){click(`[data-cat="${c}"]`);ok(n()===k&&[...d.querySelectorAll("#list .card")].every(x=>[...x.querySelectorAll(".scope")].some(s=>s.textContent===c)),`${v} ${c} → ${n()}件`);}
+    ok(d.querySelector('[data-cat="アプリ"]').getAttribute("aria-pressed")==="true"&&d.querySelector('[data-cat=""]').getAttribute("aria-pressed")==="false",`${v} 押したチップだけ選択状態`);
+    win.APP.items=win.APP.items.filter(i=>!i.scope.includes("アプリ"));win.APP.render();
+    ok(n()===0&&d.querySelector("#empty").style.display==="block",`${v} アプリ0件のとき空表示`);
+    click('[data-cat=""]');ok(n()===6&&d.querySelector("#empty").style.display==="none",`${v} すべてに戻すと空表示が消える`);
+    ok(d.querySelector("#pName").textContent==="市原佑樹（Anime Sensei）"&&d.querySelector("#pContact").getAttribute("href")==="#contact"&&d.querySelector("#contact"),`${v} プロフィール名(data.json)と問い合わせ導線`);
+    ok(d.querySelector('a[href="./"]'),`${v} ボードへ戻るリンク`);
+  }
+  document.querySelectorAll("iframe").forEach(f=>f.remove());
+ }
+ document.getElementById("out").textContent=out.join("\n");
+ document.title="done";
+})();
+</script>

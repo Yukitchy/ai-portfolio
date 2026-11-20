@@ -1,0 +1,151 @@
+{
+ "sample": true,
+ "profile": {
+  "name": "市原佑樹（Anime Sensei）",
+  "role": "AIで作るデザイン：ロゴ・ページ・アプリUI",
+  "bio": "ChatGPTやClaudeを使い分けて、ロゴの形出しからページ・アプリ画面の実装まで一人で仕上げます。ここに載せたのは、実際に公開して使っているものです。",
+  "contact": "#contact",
+  "contactLabel": "仕事の相談をする",
+  "contactNote": "問い合わせ先は準備中です（仮）"
+ },
+ "items": [
+  {
+   "id": 1,
+   "title": "Anime Sensei Tours ロゴ＆マスコット",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "秋葉原アニメツアーのロゴと案内役マスコット。",
+   "url": "",
+   "thumb": "",
+   "short": "Anime Sensei"
+  },
+  {
+   "id": 2,
+   "title": "アキバツアーLP",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "海外ゲスト向けの秋葉原ツアー紹介と予約導線。",
+   "url": "https://www.animesenseijp.com/akihabara-tour/",
+   "thumb": "thumbs/akiba.jpg"
+  },
+  {
+   "id": 3,
+   "title": "経理くん ロゴ＋LP",
+   "scope": [
+    "ロゴ",
+    "ページ"
+   ],
+   "ai": [
+    "Claude",
+    "ChatGPT"
+   ],
+   "desc": "フリーランスの請求書と収支をまとめるサービスのLP。",
+   "url": "https://yukitchy.github.io/money-setup-lp/",
+   "thumb": "thumbs/keiri.jpg"
+  },
+  {
+   "id": 4,
+   "title": "タダヨミ ロゴ＋サイト",
+   "scope": [
+    "ロゴ",
+    "ページ"
+   ],
+   "ai": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "desc": "いま無料の漫画を終了が近い順に並べるまとめサイト。",
+   "url": "https://yukitchy.github.io/tadayomi/",
+   "thumb": "thumbs/tadayomi.jpg"
+  },
+  {
+   "id": 5,
+   "title": "だんどりー",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "段取りを組むためのアプリのUI。",
+   "url": "",
+   "thumb": "",
+   "short": "だんどりー"
+  },
+  {
+   "id": 6,
+   "title": "ゲスト向けコースページ群",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "ツアーゲストごとに作るコース選択ページ。",
+   "url": "",
+   "thumb": "",
+   "short": "コースページ"
+  },
+  {
+   "id": 7,
+   "title": "ゆりっぺ東京ツアーサイト",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "金沢在住のガイドが東京を案内するツアーの紹介サイト。",
+   "url": "https://yukitchy.github.io/yuri-tokyo-tours/",
+   "thumb": "thumbs/yuri.jpg"
+  },
+  {
+   "id": 8,
+   "title": "レシート仕分けアプリ",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "レシートを撮って経費を仕分けるスマホ用アプリ。",
+   "url": "https://yukitchy.github.io/receipt-sorter/",
+   "thumb": "thumbs/receipt.jpg"
+  },
+  {
+   "id": 9,
+   "title": "遊び台帳 Anime Ledger",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "やりたいこと・やったことを記録する台帳アプリ。",
+   "url": "https://yukitchy.github.io/anime-ledger/",
+   "thumb": "thumbs/ledger.jpg"
+  },
+  {
+   "id": 10,
+   "title": "SOTA'S ENGLISH GYM",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "英語の練習メニューをこなすトレーニングアプリ。",
+   "url": "",
+   "thumb": "",
+   "short": "SOTA'S GYM"
+  }
+ ]
+}
