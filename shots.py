@@ -6,15 +6,36 @@ CH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 w=int(sys.argv[1]) if len(sys.argv)>1 else 390
 out="shots" if w==390 else f"/tmp/aip{w}"
 os.makedirs(out,exist_ok=True)
-open("_frame.html","w").write('<body style="margin:0"><iframe id=f style="border:0;height:844px"></iframe><script>const[s,w]=location.search.slice(1).split("&");f.style.width=w+"px";f.src=s</script>')
-for v in [f"v{i}" for i in range(1,11)]:
+# 3つ目の引数＝読み込み後に押す絞り込みチップ（例 ロゴ）
+open("_frame.html","w").write('<body style="margin:0"><iframe id=f style="border:0;height:844px"></iframe><script>const[s,w,c]=location.search.slice(1).split("&");f.style.width=w+"px";f.src=s;if(c)f.onload=()=>setTimeout(()=>f.contentDocument.querySelector(`[data-cat="${decodeURIComponent(c)}"]`).click(),1200)</script>')
+top="top" in sys.argv  # python3 shots.py 390 top ＝ 本採用トップ（index.html）の絞り込み4状態だけ撮る
+for c in ["","ロゴ","ページ","アプリ"] if top else []:
+  png=f"/tmp/aip_top_{w}.png";name=f"top-{w}-{c or 'all'}.jpg"
+  subprocess.run([CH,"--headless=new","--hide-scrollbars","--disable-gpu","--window-size=800,844","--virtual-time-budget=4000",f"--screenshot={png}",f"http://localhost:8765/_frame.html?index.html&{w}&{c}"],capture_output=True)
+  Image.open(png).convert("RGB").crop((0,0,w,844)).save(f"shots/{name}",quality=86);print(name)
+for v in [] if top else [f"v{i}" for i in range(1,11)]:
   png=f"/tmp/aip_{v}_{w}.png"
   subprocess.run([CH,"--headless=new","--hide-scrollbars","--disable-gpu","--window-size=800,844","--virtual-time-budget=4000",f"--screenshot={png}",f"http://localhost:8765/_frame.html?{v}.html&{w}"],capture_output=True)
   Image.open(png).convert("RGB").crop((0,0,w,844)).save(f"{out}/{v}.jpg",quality=86)
 os.remove("_frame.html")
 print("shots",out)
+# 本採用トップのOGP（黒地＋白太字＋紫の短い下線＋トップ実画面「すべて」「ロゴ」を2枚）。旧 og.png（全面紫）は使わない
+if top and w==390:
+  from PIL import ImageDraw,ImageFont
+  og=Image.new("RGB",(1200,630),(20,18,23));d=ImageDraw.Draw(og)
+  F="/System/Library/Fonts/ヒラギノ角ゴシック W{}.ttc"
+  d.text((60,200),"AIポートフォリオ",font=ImageFont.truetype(F.format(8),64),fill="white")
+  d.rectangle((62,296,62+72,296+6),fill=(103,69,183))
+  d.text((62,330),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.truetype(F.format(4),30),fill=(220,214,232))
+  d.text((62,380),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),24),fill=(170,164,182))
+  cw=250
+  for i,c in enumerate(["all","ロゴ"]):
+    sh=Image.open(f"shots/top-390-{c}.jpg").resize((cw,cw*844//390),Image.LANCZOS).crop((0,0,cw,630-60))
+    m=Image.new("L",sh.size,0);ImageDraw.Draw(m).rounded_rectangle((0,0,cw-1,sh.height+20),14,fill=255)
+    og.paste(sh,(640+i*(cw+30),60),m)
+  og.save("og-top.png",optimize=True);print("og-top.png")
 # ボードのOGP（黒地＋白太字見出し＋紫の短い下線＋v6〜v10の実画面を横一列）。og.png は上書きしない（iPhoneのキャッシュ回避で新しい名前）
-if w==390:
+if w==390 and not top:
   from PIL import ImageDraw,ImageFont
   og=Image.new("RGB",(1200,630),(20,18,23));d=ImageDraw.Draw(og)
   d.text((60,52),"AIポートフォリオ 追加5案の見比べ",font=ImageFont.truetype("/System/Library/Fonts/ヒラギノ角ゴシック W8.ttc",58),fill="white")

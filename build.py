@@ -28,7 +28,7 @@ FILTERS='<div class="filters"><div class="row" id="catRow" aria-label="種類で
 LIST='<ul class="list" id="list"></ul>\n<p id="empty">この種類の作品はまだありません。</p>'
 PROFILE='<section id="profile" class="prof"><h2>プロフィール</h2><p class="pn" id="pName"></p><p class="pr" id="pRole"></p><p class="pb" id="pBio"></p></section>'
 CONTACT='<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><a class="btn" id="pContact" href="#contact">仕事の相談をする</a><p class="cn" id="pNote"></p></section>'
-FOOT='<footer>AIポートフォリオ 試作 {v} ／ 作品データはサンプルです ／ <a href="./">見比べボードに戻る</a></footer>'
+FOOT='<footer>AIポートフォリオ 試作 {v} ／ 作品データはサンプルです ／ <a href="board.html">見比べボードに戻る</a></footer>'
 TAIL='''
 <script>{js}</script>
 <script src="app.js"></script>

@@ -5,7 +5,9 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const scopeTags=it=>it.scope.map(s=>`<span class="scope">${esc(s)}</span>`).join("");
 const aiTags=it=>it.ai.map(a=>`<span class="ai">${esc(a)}</span>`).join("");
 const tags=it=>`<div class="tags">${scopeTags(it)}${aiTags(it)}</div>`;
-const thumb=it=>it.thumb?`<img class="th" src="${esc(it.thumb)}" alt="${esc(it.title)}の画面" loading="lazy" width="800" height="500">`:`<div class="th ph"><span>${esc(it.short||it.title)}</span><small>仮サムネ</small></div>`;
+// サムネは絞り込みに合わせる：data.json の thumbs[カテゴリ]（ロゴ＝ロゴ画像）→ なければ代表 thumb → なければ仮サムネ
+const src=it=>(APP.cat&&it.thumbs&&it.thumbs[APP.cat])||it.thumb;
+const thumb=it=>src(it)?`<img class="th" src="${esc(src(it))}" alt="${esc(it.title)}の${APP.cat==="ロゴ"?"ロゴ":"画面"}" loading="lazy" width="800" height="500">`:`<div class="th ph"><span>${esc(it.short||it.title)}</span><small>仮サムネ</small></div>`;
 const link=(it,inner,cls="")=>it.url?`<a class="${cls}" href="${esc(it.url)}" target="_blank" rel="noopener">${inner}</a>`:`<span class="${cls}">${inner}</span>`;
 const $=id=>document.getElementById(id);
 const APP=window.APP={items:[],cat:""};
@@ -14,6 +16,17 @@ APP.render=()=>{
   $("list").innerHTML=list.map(T.card).join("");
   $("empty").style.display=list.length?"none":"block";
   if($("count"))$("count").textContent=list.length;
+  flows(list.filter(src));
+};
+// ヒーローの流れ：絞り込み中の作品のうち実画像のあるものだけ（仮サムネは流さない）。幅を埋める回数だけ並べ、それを2周ぶん入れて半分ずらしでループ。.rev は逆順・逆方向
+const flows=real=>{
+  for(const f of document.querySelectorAll(".flow")){
+    const its=f.classList.contains("rev")?[...real].reverse():real;
+    const one=its.map(it=>`<span class="fi">${thumb(it).replace(' loading="lazy"',"")}</span>`).join("");
+    f.innerHTML=`<div class="tr">${one}</div>`;
+    const k=Math.max(1,Math.ceil(Math.max(f.clientWidth,760)/(f.firstChild.scrollWidth||1)));
+    f.firstChild.innerHTML=one.repeat(k*2);
+  }
 };
 $("catRow").innerHTML=CATS.map(([v,l])=>`<button class="chip" data-cat="${v}" aria-pressed="${v===""}">${l||v}</button>`).join("");
 $("catRow").addEventListener("click",e=>{
@@ -26,13 +39,5 @@ fetch("data.json").then(r=>r.json()).then(d=>{
   const p=d.profile;
   for(const[k,v]of[["pName",p.name],["pRole",p.role],["pBio",p.bio],["pNote",p.contactNote]])if($(k))$(k).textContent=v;
   if($("pContact")){$("pContact").href=p.contact;$("pContact").textContent=p.contactLabel}
-  // ヒーローの流れ：実スクショのある作品だけ（仮サムネは流さない）。幅を埋める回数だけ並べ、それを2周ぶん入れて半分ずらしでループ。.rev は逆順・逆方向
-  for(const f of document.querySelectorAll(".flow")){
-    const real=d.items.filter(it=>it.thumb),its=f.classList.contains("rev")?real.reverse():real;
-    const one=its.map(it=>`<span class="fi">${thumb(it).replace(' loading="lazy"',"")}</span>`).join("");
-    f.innerHTML=`<div class="tr">${one}</div>`;
-    const k=Math.max(1,Math.ceil(Math.max(f.clientWidth,760)/f.firstChild.scrollWidth));
-    f.firstChild.innerHTML=one.repeat(k*2);
-  }
   APP.items=d.items;APP.render();
 });

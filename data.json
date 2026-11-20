@@ -21,7 +21,10 @@
    "desc": "秋葉原アニメツアーのロゴと案内役マスコット。",
    "url": "https://www.animesenseijp.com/akihabara-tour/",
    "thumb": "",
-   "short": "Anime Sensei"
+   "short": "Anime Sensei",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-anime.webp"
+   }
   },
   {
    "id": 2,
@@ -34,7 +37,10 @@
    ],
    "desc": "海外ゲスト向けの秋葉原ツアー紹介と予約導線。",
    "url": "https://www.animesenseijp.com/akihabara-tour/",
-   "thumb": "thumbs/akiba.jpg"
+   "thumb": "thumbs/akiba.jpg",
+   "thumbs": {
+    "ページ": "thumbs/akiba.jpg"
+   }
   },
   {
    "id": 3,
@@ -49,7 +55,11 @@
    ],
    "desc": "フリーランスの請求書と収支をまとめるサービスのLP。",
    "url": "https://yukitchy.github.io/money-setup-lp/",
-   "thumb": "thumbs/keiri.jpg"
+   "thumb": "thumbs/keiri.jpg",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-keiri.webp",
+    "ページ": "thumbs/keiri.jpg"
+   }
   },
   {
    "id": 4,
@@ -64,7 +74,11 @@
    ],
    "desc": "いま無料の漫画を終了が近い順に並べるまとめサイト。",
    "url": "https://yukitchy.github.io/tadayomi/",
-   "thumb": "thumbs/tadayomi.jpg"
+   "thumb": "thumbs/tadayomi.jpg",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-tadayomi.webp",
+    "ページ": "thumbs/tadayomi.jpg"
+   }
   },
   {
    "id": 5,
@@ -78,7 +92,10 @@
    "desc": "段取りを組むためのアプリのUI。",
    "url": "",
    "thumb": "",
-   "short": "だんどりー"
+   "short": "だんどりー",
+   "thumbs": {
+    "アプリ": ""
+   }
   },
   {
    "id": 6,
@@ -92,7 +109,10 @@
    "desc": "ツアーゲストごとに作るコース選択ページ。",
    "url": "https://yukitchy.github.io/course-picker",
    "thumb": "",
-   "short": "コースページ"
+   "short": "コースページ",
+   "thumbs": {
+    "ページ": ""
+   }
   },
   {
    "id": 7,
@@ -105,7 +125,10 @@
    ],
    "desc": "金沢在住のガイドが東京を案内するツアーの紹介サイト。",
    "url": "https://yukitchy.github.io/yuri-tokyo-tours/",
-   "thumb": "thumbs/yuri.jpg"
+   "thumb": "thumbs/yuri.jpg",
+   "thumbs": {
+    "ページ": "thumbs/yuri.jpg"
+   }
   },
   {
    "id": 8,
@@ -118,7 +141,10 @@
    ],
    "desc": "レシートを撮って経費を仕分けるスマホ用アプリ。",
    "url": "https://yukitchy.github.io/receipt-sorter/",
-   "thumb": "thumbs/receipt.jpg"
+   "thumb": "thumbs/receipt.jpg",
+   "thumbs": {
+    "アプリ": "thumbs/receipt.jpg"
+   }
   },
   {
    "id": 9,
@@ -131,7 +157,10 @@
    ],
    "desc": "やりたいこと・やったことを記録する台帳アプリ。",
    "url": "https://yukitchy.github.io/anime-ledger/",
-   "thumb": "thumbs/ledger.jpg"
+   "thumb": "thumbs/ledger.jpg",
+   "thumbs": {
+    "アプリ": "thumbs/ledger.jpg"
+   }
   },
   {
    "id": 10,
@@ -145,7 +174,10 @@
    "desc": "英語の練習メニューをこなすトレーニングアプリ。",
    "url": "https://yukitchy.github.io/sota-english-gym/",
    "thumb": "",
-   "short": "SOTA'S GYM"
+   "short": "SOTA'S GYM",
+   "thumbs": {
+    "アプリ": ""
+   }
   }
  ]
 }

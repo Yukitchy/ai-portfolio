@@ -31,3 +31,19 @@ d.text((562,330),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.t
 d.text((562,382),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),26),fill=(214,202,244))
 og.save("og.png",optimize=True)
 print("box",box,"vio",vio)
+# 「ロゴ」絞り込み用サムネ 800x500（16:10）。正本 assets/logos/ を切り抜き・縮小・配置だけ。地色は各ロゴの地に合わせる（紫は使わない）
+from PIL import ImageChops
+def trim(p,bg,cut=0):  # 地色との差が出る範囲で切り抜く（cut=下端の余計な線を落とす行数）
+    im=Image.open(f"assets/logos/{p}").convert("RGB");im=im.crop((0,0,im.width,im.height-cut))
+    d=ImageChops.difference(im,Image.new("RGB",im.size,bg)).convert("L").point(lambda v:255 if v>14 else 0)
+    return im.crop(d.getbbox())
+def fit(im,w,h):im=im.copy();im.thumbnail((w,h),Image.LANCZOS);return im
+def logo_thumb(out,bg,parts):  # parts=[(画像,中心x,中心y)]
+    c=Image.new("RGB",(800,500),bg)
+    for im,cx,cy in parts:c.paste(im,(cx-im.width//2,cy-im.height//2))
+    c.save(f"thumbs/{out}",quality=90)
+W=(255,255,255)
+typo=Image.eval(trim("anime-logo-red.webp",(248,248,248)),lambda v:255 if v>=243 else v)  # 地f8を白に寄せる
+logo_thumb("logo-anime.webp",W,[(fit(typo,400,200),262,250),(fit(trim("mascot-sd78.webp",W),280,410),615,250)])
+logo_thumb("logo-keiri.webp",W,[(fit(trim("keiri-kun-logo-final-aligned.webp",W),640,240),400,250)])
+logo_thumb("logo-tadayomi.webp",(246,246,246),[(fit(trim("tadayomi-logo-flat1.png",(246,246,246),cut=7),560,400),400,250)])
