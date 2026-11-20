@@ -19,7 +19,7 @@
     "ChatGPT"
    ],
    "desc": "秋葉原アニメツアーのロゴと案内役マスコット。",
-   "url": "",
+   "url": "https://www.animesenseijp.com/akihabara-tour/",
    "thumb": "",
    "short": "Anime Sensei"
   },
@@ -90,7 +90,7 @@
     "Claude"
    ],
    "desc": "ツアーゲストごとに作るコース選択ページ。",
-   "url": "",
+   "url": "https://yukitchy.github.io/course-picker",
    "thumb": "",
    "short": "コースページ"
   },
@@ -143,7 +143,7 @@
     "Claude"
    ],
    "desc": "英語の練習メニューをこなすトレーニングアプリ。",
-   "url": "",
+   "url": "https://yukitchy.github.io/sota-english-gym/",
    "thumb": "",
    "short": "SOTA'S GYM"
   }

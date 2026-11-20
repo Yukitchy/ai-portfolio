@@ -33,7 +33,10 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     ok(d.querySelectorAll("#list .scope").length===12&&d.querySelectorAll("#list .ai").length===12,`${v} 担当タグ${d.querySelectorAll("#list .scope").length}・使用AIタグ${d.querySelectorAll("#list .ai").length}`);
     const sc=getComputedStyle(d.querySelector(".scope")),ai=getComputedStyle(d.querySelector(".ai"));ok((sc.backgroundColor!==ai.backgroundColor||sc.borderTopStyle!==ai.borderTopStyle)&&ai.borderTopStyle==="solid"&&getComputedStyle(d.querySelector(".ai"),"::before").content.includes("AI"),`${v} 使用AIタグは担当タグと別の見た目`);
     ok(d.querySelectorAll("#list img.th").length===6&&d.querySelectorAll("#list .ph").length===4&&[...d.querySelectorAll("#list .ph")].every(p=>/仮サムネ/.test(p.textContent)),`${v} 実スクショ6・仮サムネ4（仮表示あり）`);
-    const hrefs=[...d.querySelectorAll("#list a")].map(a=>a.href);ok(hrefs.includes("https://yukitchy.github.io/tadayomi/")&&hrefs.includes("https://www.animesenseijp.com/akihabara-tour/")&&new Set(hrefs).size===6,`${v} 作品リンク ${new Set(hrefs).size}件`);
+    const cards=[...d.querySelectorAll("#list .card")],its=win.APP.items;
+    ok(cards.every((c,i)=>{const a=c.querySelectorAll("a");return its[i].url?(a.length===1&&a[0].getAttribute("href")===its[i].url&&a[0].target==="_blank"&&a[0].rel==="noopener"):a.length===0}),`${v} 各カードのリンク＝data.jsonのurl（なしは0本・_blank/noopener）`);
+    ok(its.filter(i=>i.url).length===9&&!its.find(i=>i.id===5).url,`${v} URLあり9作品・だんどりーはリンクなし`);
+    ok(cards.every((c,i)=>{c.scrollIntoView({block:"center"});const th=c.querySelector(".th").getBoundingClientRect(),hit=d.elementFromPoint(th.left+th.width/2,th.top+th.height/2),a=hit&&hit.closest("a");return its[i].url?a&&a.getAttribute("href")===its[i].url:!a}),`${v} サムネ部分を押してもその作品へ飛ぶ`);win.scrollTo(0,0);
     for(const[c,k]of[["ロゴ",3],["ページ",5],["アプリ",4]]){click(`[data-cat="${c}"]`);ok(n()===k&&[...d.querySelectorAll("#list .card")].every(x=>[...x.querySelectorAll(".scope")].some(s=>s.textContent===c)),`${v} ${c} → ${n()}件`);}
     ok(d.querySelector('[data-cat="アプリ"]').getAttribute("aria-pressed")==="true"&&d.querySelector('[data-cat=""]').getAttribute("aria-pressed")==="false",`${v} 押したチップだけ選択状態`);
     win.APP.items=win.APP.items.filter(i=>!i.scope.includes("アプリ"));win.APP.render();

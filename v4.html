@@ -41,7 +41,7 @@
 <section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><a class="btn" id="pContact" href="#contact">仕事の相談をする</a><p class="cn" id="pNote"></p></section>
 <footer>AIポートフォリオ 試作 v4 ／ 作品データはサンプルです ／ <a href="./">5案の見比べに戻る</a></footer>
 </div>
-<script>window.T={card:(it,i)=>`<li class="card${i===0?" first":""}">${link(it,thumb(it),"tl")}<div class="b">${link(it,esc(it.title),"t")}<p class="d">${esc(it.desc)}</p>${tags(it)}</div></li>`};</script>
+<script>window.T={card:(it,i)=>`<li class="card${i===0?" first":""}"><span class="tl">${thumb(it)}</span><div class="b">${link(it,esc(it.title),"t")}<p class="d">${esc(it.desc)}</p>${tags(it)}</div></li>`};</script>
 <script src="app.js"></script>
 </body>
 </html>
