@@ -26,5 +26,13 @@ fetch("data.json").then(r=>r.json()).then(d=>{
   const p=d.profile;
   for(const[k,v]of[["pName",p.name],["pRole",p.role],["pBio",p.bio],["pNote",p.contactNote]])if($(k))$(k).textContent=v;
   if($("pContact")){$("pContact").href=p.contact;$("pContact").textContent=p.contactLabel}
+  // ヒーローの流れ：実スクショのある作品だけ（仮サムネは流さない）。幅を埋める回数だけ並べ、それを2周ぶん入れて半分ずらしでループ。.rev は逆順・逆方向
+  for(const f of document.querySelectorAll(".flow")){
+    const real=d.items.filter(it=>it.thumb),its=f.classList.contains("rev")?real.reverse():real;
+    const one=its.map(it=>`<span class="fi">${thumb(it).replace(' loading="lazy"',"")}</span>`).join("");
+    f.innerHTML=`<div class="tr">${one}</div>`;
+    const k=Math.max(1,Math.ceil(Math.max(f.clientWidth,760)/f.firstChild.scrollWidth));
+    f.firstChild.innerHTML=one.repeat(k*2);
+  }
   APP.items=d.items;APP.render();
 });

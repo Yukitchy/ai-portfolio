@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AIポートフォリオ 試作｜5案の見比べ</title>
-<meta name="description" content="AIで作ったデザイン実績を見せるポートフォリオサイトの試作。見た目の異なる5案を見比べるボード。">
+<title>AIポートフォリオ 試作｜追加5案の見比べ</title>
+<meta name="description" content="AIで作ったデザイン実績を見せるポートフォリオサイトの試作。v1を土台に、作品サムネが流れるヒーローを足した追加5案（v6〜v10）と第1段階の5案を見比べるボード。">
 <meta property="og:type" content="website">
-<meta property="og:title" content="AIポートフォリオ 試作｜5案の見比べ">
-<meta property="og:description" content="AIで作ったロゴ・ページ・アプリの実績集。デザイン5案を並べて比べる。">
+<meta property="og:title" content="AIポートフォリオ 試作｜追加5案の見比べ">
+<meta property="og:description" content="AIで作ったロゴ・ページ・アプリの実績集。v1を磨いた追加5案を並べて比べる。">
 <meta property="og:url" content="https://yukitchy.github.io/ai-portfolio/">
-<meta property="og:image" content="https://yukitchy.github.io/ai-portfolio/og.png">
+<meta property="og:image" content="https://yukitchy.github.io/ai-portfolio/og-board2.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -31,6 +31,8 @@ h1 .site{font-size:15px;display:block;margin-bottom:2px}
 .v h2 span{font-size:12px;font-weight:800;color:var(--vio-d);background:var(--vio-l);border-radius:3px;padding:0 6px}
 .v p{font-size:13px;color:var(--sub);margin-top:2px}
 .v .go{margin-top:auto;padding-top:8px;font-size:13px;font-weight:700;color:var(--vio-d)}
+.sec{font-size:15px;font-weight:800;color:var(--ink);background:none;padding:8px 0 0;border-top:1px solid var(--line);margin-top:8px}
+.sec:first-of-type{border:0;margin:0}
 .spec{background:var(--vio-l);border-radius:12px;padding:18px 20px;margin-bottom:24px;font-size:13px;color:var(--sub)}
 .spec h3{font-size:14px;color:var(--ink);margin-bottom:6px}
 .spec ul{padding-left:1.2em}
@@ -39,7 +41,16 @@ footer{padding:8px 0 48px;font-size:12px;color:var(--sub)}
 </head>
 <body>
 <div class="wrap">
-<header><img src="assets/icon.png" alt="AIポートフォリオ" width="64" height="64"><div><h1><span class="site">AIポートフォリオ</span>5案の見比べ</h1><p class="lead">同じ作品データ・同じ絞り込みで、見た目だけ5通り。</p><span class="note">試作版：作品データはサンプルです</span></div></header>
+<header><img src="assets/icon.png" alt="AIポートフォリオ" width="64" height="64"><div><h1><span class="site">AIポートフォリオ</span>追加5案の見比べ</h1><p class="lead">土台はv1コンパクト・リストで確定。ヒーローに作品サムネが流れる追加5案（v6〜v10）。</p><span class="note">試作版：作品データはサンプルです</span></div></header>
+<h2 class="sec">追加5案：v1＋流れるヒーロー</h2>
+<ul class="grid">
+<li class="v"><a href="v6.html"><div class="sh"><img src="shots/v6.jpg" alt="v6のスマホ表示" width="390" height="844"></div><h2><span>v6</span>全面ヒーロー</h2><p>ヒーロー全面に大きなサムネが1段流れ、暗幕の上にロゴ・タイトルを重ねる</p><span class="go">開く →</span></a></li>
+<li class="v"><a href="v7.html"><div class="sh"><img src="shots/v7.jpg" alt="v7のスマホ表示" width="390" height="844"></div><h2><span>v7</span>細い帯</h2><p>ヘッダー直下に小さなサムネの帯が1段だけ流れる。リストまでの距離が最短</p><span class="go">開く →</span></a></li>
+<li class="v"><a href="v8.html"><div class="sh"><img src="shots/v8.jpg" alt="v8のスマホ表示" width="390" height="844"></div><h2><span>v8</span>2段逆方向</h2><p>薄紫の地に2段。上は左へ、下は右へ、逆向きにすれ違う</p><span class="go">開く →</span></a></li>
+<li class="v"><a href="v9.html"><div class="sh"><img src="shots/v9.jpg" alt="v9のスマホ表示" width="390" height="844"></div><h2><span>v9</span>文字組</h2><p>白く沈めた白黒の流れの上に「ロゴ・ページ・アプリ」を大きく置く</p><span class="go">開く →</span></a></li>
+<li class="v"><a href="v10.html"><div class="sh"><img src="shots/v10.jpg" alt="v10のスマホ表示" width="390" height="844"></div><h2><span>v10</span>リストを磨く</h2><p>流れは小さく遅く控えめ。行の余白・区切り線・見出しを整えたリスト</p><span class="go">開く →</span></a></li>
+</ul>
+<h2 class="sec">第1段階の5案</h2>
 <ul class="grid">
 <li class="v"><a href="v1.html"><div class="sh"><img src="shots/v1.jpg" alt="v1のスマホ表示" width="390" height="844"></div><h2><span>v1</span>コンパクト・リスト</h2><p>タダヨミv3の文法そのまま。小サムネ＋1行タイトル＋一言＋タグ2種の行リスト（基準案）</p><span class="go">開く →</span></a></li>
 <li class="v"><a href="v2.html"><div class="sh"><img src="shots/v2.jpg" alt="v2のスマホ表示" width="390" height="844"></div><h2><span>v2</span>コンパクト＋グリッド</h2><p>サムネを少し大きめにした2列。行リストとグリッドの中間で、密度は落としすぎない</p><span class="go">開く →</span></a></li>
@@ -47,11 +58,12 @@ footer{padding:8px 0 48px;font-size:12px;color:var(--sub)}
 <li class="v"><a href="v4.html"><div class="sh"><img src="shots/v4.jpg" alt="v4のスマホ表示" width="390" height="844"></div><h2><span>v4</span>コンパクト特集</h2><p>先頭の1作品だけ大きく「注目」として扱い、残りはコンパクトリスト</p><span class="go">開く →</span></a></li>
 <li class="v"><a href="v5.html"><div class="sh"><img src="shots/v5.jpg" alt="v5のスマホ表示" width="390" height="844"></div><h2><span>v5</span>コンパクト・ミニマル</h2><p>罫線と文字で見せる。番号＋作品名の行で、サムネは右端に小さく</p><span class="go">開く →</span></a></li>
 </ul>
-<div class="spec"><h3>5案共通</h3><ul>
+<div class="spec"><h3>全案共通</h3><ul>
 <li>土台はタダヨミ v3（コンパクト型）：48px級の薄いヘッダー・1行タイトル・小サムネの行</li>
 <li>ヘッダーは確定ロゴ（アプリアイコン型・正本画像をそのまま縮小）＋サイト名「AIポートフォリオ」＋相談ボタン</li>
 <li>作品カード：サムネ＋タイトル＋担当範囲タグ（紫の塗り）＋使用AIタグ（黒の細枠・AIマーク付き）</li>
 <li>すべて／ロゴ／ページ／アプリのチップで絞り込み。プロフィール欄と問い合わせ導線つき</li>
+<li>v6〜v10：ヒーローの流れは実スクショのある作品だけ（仮サムネは流さない）。1周90〜140秒のゆっくりした横流れ、動きを減らす設定の端末では止まる</li>
 <li>データは data.json に分離。プロフィール名は data.json の profile.name 1か所で差し替え。配色は紫＋白＋黒</li>
 </ul></div>
 <footer>AIポートフォリオ 試作 第1段階 ／ 「仮サムネ」表示の作品は実画面の差し替え待ち</footer>

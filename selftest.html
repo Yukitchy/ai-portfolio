@@ -5,10 +5,10 @@ const out=[],ok=(c,m)=>out.push((c?"PASS ":"FAIL ")+m);
 const load=(p,w)=>new Promise(r=>{const f=document.createElement("iframe");f.style.cssText=`width:${w}px;height:800px;border:0`;f.src=p;f.onload=()=>setTimeout(()=>r(f.contentWindow),1200);document.body.append(f)});
 const B="https://yukitchy.github.io/ai-portfolio/";
 (async()=>{
- for(const v of ["index","v1","v2","v3","v4","v5"]){
+ for(const v of ["index",...Array.from({length:10},(_,i)=>"v"+(i+1))]){
   for(const w of [320,390]){
     const win=await load(`${v}.html`,w),d=win.document;
-    const over=[...d.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>w+0.5&&!e.closest(".row")).map(e=>e.className||e.tagName).slice(0,3);
+    const over=[...d.querySelectorAll("body *")].filter(e=>e.getBoundingClientRect().right>w+0.5&&!e.closest(".row,.flow")).map(e=>e.className||e.tagName).slice(0,3);
     ok(d.documentElement.scrollWidth<=w&&!over.length,`${v} ${w}px 横はみ出しなし (scrollWidth=${d.documentElement.scrollWidth}${over.length?" 犯人:"+over:""})`);
     const h=[...d.querySelectorAll("h1,h2,h3")].filter(x=>x.offsetParent);
     const bad=h.filter(x=>x.scrollWidth>x.clientWidth+1||(cs=>(x.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom))/parseFloat(cs.lineHeight)>(x.querySelector(".site")?2.6:1.5))(getComputedStyle(x)));
@@ -16,17 +16,21 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     ok(!/maru|rounded|丸/i.test([...d.querySelectorAll("*")].map(e=>getComputedStyle(e).fontFamily).join()),`${v} ${w}px 丸ゴシック不使用`);
     if(w!==390)continue;
     const self=v==="index"?B:`${B}${v}.html`;
-    ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+"og.png"&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
+    ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+(v==="index"?"og-board2.png":"og.png")&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
     const logo=d.querySelector("header img");ok(logo&&logo.complete&&logo.naturalWidth===256&&/assets\/icon\.png$/.test(logo.src),`${v} ヘッダーロゴ＝確定アイコン ${logo&&logo.src.split("/").pop()}`);
     if(v==="index"){
-      const links=[...d.querySelectorAll(".grid a")].map(a=>a.getAttribute("href"));ok(links.join()==="v1.html,v2.html,v3.html,v4.html,v5.html",`index 5案リンク ${links}`);
-      const sh=[...d.querySelectorAll(".sh img")];ok(sh.length===5&&sh.every(i=>i.complete&&i.naturalWidth===390&&i.naturalHeight===844),`index スクショ5枚 390×844`);
+      const links=[...d.querySelectorAll(".grid a")].map(a=>a.getAttribute("href"));ok(links.join()==="v6.html,v7.html,v8.html,v9.html,v10.html,v1.html,v2.html,v3.html,v4.html,v5.html",`index 10案リンク ${links}`);
+      const sh=[...d.querySelectorAll(".sh img")];ok(sh.length===10&&sh.every(i=>i.complete&&i.naturalWidth===390&&i.naturalHeight===844),`index スクショ10枚 390×844`);
       continue;
     }
     ok(/AIポートフォリオ/.test(d.querySelector("header").textContent),`${v} ヘッダーにサイト名`);
     const hh=d.querySelector("header").offsetHeight;ok(hh<=50,`${v} 薄いヘッダー ${hh}px`);
     ok(d.querySelector('header a.cta[href="#contact"]'),`${v} ヘッダーに相談導線`);
     const ts=[...d.querySelectorAll("#list .card .t")].filter(x=>!x.closest(".first"));ok(ts.every(x=>x.getClientRects().length===1&&x.offsetHeight<=24),`${v} 作品タイトル1行`);
+    if(+v.slice(1)>=6){const fl=[...d.querySelectorAll(".flow")],ims=fl.flatMap(f=>[...f.querySelectorAll("img")]);
+      ok(fl.length&&fl.every(f=>{const r=f.getBoundingClientRect(),t=f.querySelector(".tr");return r.left>=0&&r.right<=w+0.5&&getComputedStyle(f).overflowX==="hidden"&&t.scrollWidth>=2*w&&parseFloat(getComputedStyle(t).animationDuration)>=90&&getComputedStyle(t).animationTimingFunction==="linear"}),`${v} 流れ${fl.length}段：枠内に収まり・幅を埋め・1周90秒以上の等速`);
+      ok(ims.length&&ims.every(i=>/^thumbs\//.test(i.getAttribute("src"))&&i.complete&&i.naturalWidth>0)&&!fl.some(f=>f.querySelector(".ph")),`${v} 流れは実スクショ${new Set(ims.map(i=>i.getAttribute("src"))).size}種のみ（仮サムネなし）`);
+      ok([...d.styleSheets].some(ss=>[...ss.cssRules].some(r=>r.media&&/prefers-reduced-motion/.test(r.media.mediaText))),`${v} prefers-reduced-motionで停止`);}
     if(v==="v3"){const c=[...d.querySelectorAll("#list .card")];ok(c[9].getBoundingClientRect().top<844,`v3 10作品目が1画面(844)内 top=${Math.round(c[9].getBoundingClientRect().top)}`);}
     const n=()=>d.querySelectorAll("#list .card").length,click=s=>d.querySelector(s).click();
     ok(n()===10,`${v} すべて → ${n()}件`);
