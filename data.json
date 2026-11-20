@@ -178,6 +178,516 @@
    "thumbs": {
     "アプリ": ""
    }
+  },
+  {
+   "id": 11,
+   "title": "Dokkai Dojo",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "JLPT読解ドリル。N5〜N1対応で、全ての選択肢に解説が付く。",
+   "url": "https://yukitchy.github.io/dokkai-dojo/",
+   "thumb": "thumbs/dokkai-dojo.jpg",
+   "short": "Dokkai Dojo",
+   "thumbs": {
+    "ページ": "thumbs/dokkai-dojo.jpg"
+   }
+  },
+  {
+   "id": 12,
+   "title": "Kanji Dojo",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "部首から熟語まで、9段階を順に進む漢字の反復学習サイト。",
+   "url": "https://yukitchy.github.io/kanji-dojo/",
+   "thumb": "thumbs/kanji-dojo.jpg",
+   "short": "Kanji Dojo",
+   "thumbs": {
+    "ページ": "thumbs/kanji-dojo.jpg"
+   }
+  },
+  {
+   "id": 13,
+   "title": "Japan: First Quest",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "RPG風の初来日ガイド。自作ドット絵とチェックリストで渡航前を案内する。",
+   "url": "https://home.yuukipodcast.com/first-quest.html",
+   "thumb": "thumbs/first-quest.jpg",
+   "short": "First Quest",
+   "thumbs": {
+    "ページ": "thumbs/first-quest.jpg"
+   }
+  },
+  {
+   "id": 14,
+   "title": "北斗の拳で日本語",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "北斗の拳のセリフで日本語を学ぶ教材。発音練習までできる。",
+   "url": "https://yukitchy.github.io/hokuto-nihongo/",
+   "thumb": "thumbs/hokuto-nihongo.jpg",
+   "short": "北斗日本語",
+   "thumbs": {
+    "ページ": "thumbs/hokuto-nihongo.jpg"
+   }
+  },
+  {
+   "id": 15,
+   "title": "AI相棒設定診断",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "質問に答えると、自分に合うAIの相棒設定タイプが分かる診断サイト。",
+   "url": "https://yukitchy.github.io/ai-party-shindan/",
+   "thumb": "thumbs/ai-party-shindan.jpg",
+   "short": "AI相棒診断",
+   "thumbs": {
+    "ページ": "thumbs/ai-party-shindan.jpg"
+   }
+  },
+  {
+   "id": 16,
+   "title": "EAT MAP 東京グルメガイド",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "東京のエリア別に、英語で選べるグルメガイド。",
+   "url": "https://yukitchy.github.io/where-to-eat/",
+   "thumb": "thumbs/where-to-eat.jpg",
+   "short": "EAT MAP",
+   "thumbs": {
+    "ページ": "thumbs/where-to-eat.jpg"
+   }
+  },
+  {
+   "id": 17,
+   "title": "OshiGuide 推し聖地ガイド名鑑",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "好きな作品から現地ガイドを探せる、アニメ聖地の名鑑サイト。",
+   "url": "https://yukitchy.github.io/oshi-guide/",
+   "thumb": "thumbs/oshi-guide.jpg",
+   "short": "OshiGuide",
+   "thumbs": {
+    "ページ": "thumbs/oshi-guide.jpg"
+   }
+  },
+  {
+   "id": 18,
+   "title": "パトリック式ルートページ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "地図が予定のスクロールに合わせて動く、ゲスト専用の1日ルートページ。",
+   "url": "https://yukitchy.github.io/patrick-tokyo-day/",
+   "thumb": "thumbs/patrick-tokyo-day.jpg",
+   "short": "パトリック式",
+   "thumbs": {
+    "ページ": "thumbs/patrick-tokyo-day.jpg"
+   }
+  },
+  {
+   "id": 19,
+   "title": "ZOZOマリンスタジアム座席ガイド",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "座席番号を入れると、その席からの見え方が分かるガイド。",
+   "url": "https://yukitchy.github.io/zozo-seat-guide/",
+   "thumb": "thumbs/zozo-seat-guide.jpg",
+   "short": "ZOZO座席ガイド",
+   "thumbs": {
+    "ページ": "thumbs/zozo-seat-guide.jpg"
+   }
+  },
+  {
+   "id": 20,
+   "title": "KAPITAL全店舗マップ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "日本にあるKAPITAL全15店舗を、1枚の地図に集めたマップ。",
+   "url": "https://yukitchy.github.io/kapital-map/",
+   "thumb": "thumbs/kapital-map.jpg",
+   "short": "KAPITALマップ",
+   "thumbs": {
+    "ページ": "thumbs/kapital-map.jpg"
+   }
+  },
+  {
+   "id": 21,
+   "title": "秋葉原アニメデー（ユリア式）",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "写真コラージュで魅せる、ゲスト向け1日ページの形式「ユリア式」の見本。",
+   "url": "https://yukitchy.github.io/akiba-anime-day-kids/",
+   "thumb": "thumbs/akiba-anime-day-kids.jpg",
+   "short": "ユリア式",
+   "thumbs": {
+    "ページ": "thumbs/akiba-anime-day-kids.jpg"
+   }
+  },
+  {
+   "id": 22,
+   "title": "神楽坂・池袋ファンデー",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "ゲスト向け1日案内ページの標準形。写真タイルと地図で、回る順が分かる。",
+   "url": "https://yukitchy.github.io/kagurazaka-ikebukuro-dec10/",
+   "thumb": "thumbs/kagurazaka-ikebukuro-dec10.jpg",
+   "short": "神楽坂・池袋",
+   "thumbs": {
+    "ページ": "thumbs/kagurazaka-ikebukuro-dec10.jpg"
+   }
+  },
+  {
+   "id": 23,
+   "title": "秋葉原イブニングウォーク",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "夜の秋葉原を歩く、3ルートから選べる提案ページ。",
+   "url": "https://yukitchy.github.io/akiba-evening-walk/",
+   "thumb": "thumbs/akiba-evening-walk.jpg",
+   "short": "夜アキバ",
+   "thumbs": {
+    "ページ": "thumbs/akiba-evening-walk.jpg"
+   }
+  },
+  {
+   "id": 24,
+   "title": "大阪ガイド",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "大阪の観光と食べ歩きを1ページにまとめた、ゲスト向けガイド。",
+   "url": "https://yukitchy.github.io/osaka-guide-shaun/",
+   "thumb": "thumbs/osaka-guide-shaun.jpg",
+   "short": "大阪ガイド",
+   "thumbs": {
+    "ページ": "thumbs/osaka-guide-shaun.jpg"
+   }
+  },
+  {
+   "id": 25,
+   "title": "日本橋〜銀座 そば散策",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "日本橋から銀座へ、そばと甘味と散策を巡る提案ページ。",
+   "url": "https://yukitchy.github.io/nihonbashi-ginza-soba/",
+   "thumb": "thumbs/nihonbashi-ginza-soba.jpg",
+   "short": "そば散策",
+   "thumbs": {
+    "ページ": "thumbs/nihonbashi-ginza-soba.jpg"
+   }
+  },
+  {
+   "id": 26,
+   "title": "Podcast番組表",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "配信中の7番組を、試聴プレイヤー付きで並べた番組表サイト。",
+   "url": "https://program.yuukipodcast.com",
+   "thumb": "thumbs/podcast-program.jpg",
+   "short": "番組表",
+   "thumbs": {
+    "ページ": "thumbs/podcast-program.jpg"
+   }
+  },
+  {
+   "id": 27,
+   "title": "体験ラジオ診断サイト",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "全128回の中から、聞く人の状況に合う回を診断して案内するサイト。",
+   "url": "https://taiken.yuukipodcast.com",
+   "thumb": "thumbs/taiken-shindan.jpg",
+   "short": "体験ラジオ診断",
+   "thumbs": {
+    "ページ": "thumbs/taiken-shindan.jpg"
+   }
+  },
+  {
+   "id": 28,
+   "title": "個人ホームページ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "日英トップとPodcast7番組のカードを載せた、名刺代わりのサイト。",
+   "url": "https://home.yuukipodcast.com",
+   "thumb": "thumbs/home-yuukipodcast.jpg",
+   "short": "ホームページ",
+   "thumbs": {
+    "ページ": "thumbs/home-yuukipodcast.jpg"
+   }
+  },
+  {
+   "id": 29,
+   "title": "おおば歯科HPリメイク実験",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "実在の歯科サイト同等のホームページと予約システムを、どこまで作れるかの実験デモ。",
+   "url": "https://yukitchy.github.io/ooba-dental-demo/",
+   "thumb": "thumbs/ooba-dental-demo.jpg",
+   "short": "歯科HP実験",
+   "thumbs": {
+    "ページ": "thumbs/ooba-dental-demo.jpg"
+   }
+  },
+  {
+   "id": 30,
+   "title": "PHP脆弱性あんしん対策",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "PHPの重大な脆弱性が出た日に、自分のやることを3分で決められる解説ページ。",
+   "url": "https://yukitchy.github.io/php-anshin/",
+   "thumb": "thumbs/php-anshin.jpg",
+   "short": "PHPあんしん",
+   "thumbs": {
+    "ページ": "thumbs/php-anshin.jpg"
+   }
+  },
+  {
+   "id": 31,
+   "title": "近所ホットライン",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "民泊の苦情を記録に変える仕組みの、プロトタイプLP。",
+   "url": "https://yukitchy.github.io/minpaku-hotline/",
+   "thumb": "thumbs/minpaku-hotline.jpg",
+   "short": "近所ホットライン",
+   "thumbs": {
+    "ページ": "thumbs/minpaku-hotline.jpg"
+   }
+  },
+  {
+   "id": 32,
+   "title": "京都民泊規制 事実整理ページ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "京都市の民泊規制の素案を、一次資料だけで事実整理したページ。",
+   "url": "https://yukitchy.github.io/kyoto-minpaku/",
+   "thumb": "thumbs/kyoto-minpaku.jpg",
+   "short": "京都民泊規制",
+   "thumbs": {
+    "ページ": "thumbs/kyoto-minpaku.jpg"
+   }
+  },
+  {
+   "id": 33,
+   "title": "三行褒め日記",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "その日あった小さな良いことを、三行だけ書き残す日記サイト。",
+   "url": "https://yukitchy.github.io/home-nikki/",
+   "thumb": "thumbs/home-nikki.jpg",
+   "short": "三行褒め日記",
+   "thumbs": {
+    "ページ": "thumbs/home-nikki.jpg"
+   }
+  },
+  {
+   "id": 34,
+   "title": "Akihabara Tour Guide プロフィール",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "秋葉原ツアーガイドの実績と、各サービスの評価を英語でまとめた自己紹介ページ。",
+   "url": "https://yukitchy.github.io/yuuki-guide-profile/",
+   "thumb": "thumbs/yuuki-guide-profile.jpg",
+   "short": "ガイド紹介",
+   "thumbs": {
+    "ページ": "thumbs/yuuki-guide-profile.jpg"
+   }
+  },
+  {
+   "id": 35,
+   "title": "Yomeru 街の漢字フラッシュカード",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "実際に街で見かける看板の漢字を覚える、英語圏向けフラッシュカード。",
+   "url": "https://yukitchy.github.io/yomeru/",
+   "thumb": "thumbs/yomeru.jpg",
+   "short": "Yomeru",
+   "thumbs": {
+    "ページ": "thumbs/yomeru.jpg"
+   }
+  },
+  {
+   "id": 36,
+   "title": "Bento Lab",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "自作の便利ツールを、月額の定期便で届けるサービスのLP。",
+   "url": "https://yukitchy.github.io/bento-lab/",
+   "thumb": "thumbs/bento-lab.jpg",
+   "short": "Bento Lab",
+   "thumbs": {
+    "ページ": "thumbs/bento-lab.jpg"
+   }
+  },
+  {
+   "id": 37,
+   "title": "ナギ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "気分の落ち込みを受け止める、メンタルが辛い時期向けのセルフケアアプリ。",
+   "url": "https://yukitchy.github.io/nagi/lp.html",
+   "thumb": "thumbs/nagi.jpg",
+   "short": "ナギ",
+   "thumbs": {
+    "ページ": "thumbs/nagi.jpg"
+   }
+  },
+  {
+   "id": 38,
+   "title": "申請のミカタ",
+   "scope": [
+    "ページ"
+   ],
+   "ai": [],
+   "desc": "生活保護の申請前に、必要な持ち物をチェックできるプロトタイプの提案LP。",
+   "url": "https://yukitchy.github.io/shinsei-no-mikata/",
+   "thumb": "thumbs/shinsei-no-mikata.jpg",
+   "short": "申請のミカタ",
+   "thumbs": {
+    "ページ": "thumbs/shinsei-no-mikata.jpg"
+   }
+  },
+  {
+   "id": 39,
+   "title": "Wi-Fi速さくらべ",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "いま繋いでいるWi-Fiの速さを測って、場所ごとに並べて比べるツール。",
+   "url": "https://yukitchy.github.io/wifi-hayasa/",
+   "thumb": "thumbs/wifi-hayasa.jpg",
+   "short": "Wi-Fi速さ",
+   "thumbs": {
+    "アプリ": "thumbs/wifi-hayasa.jpg"
+   }
+  },
+  {
+   "id": 40,
+   "title": "いまいる？",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "「いま家守いる？」を1クリックで確認できるミニアプリ。",
+   "url": "https://yukitchy.github.io/imairu/",
+   "thumb": "thumbs/imairu.jpg",
+   "short": "いまいる？",
+   "thumbs": {
+    "アプリ": "thumbs/imairu.jpg"
+   }
+  },
+  {
+   "id": 41,
+   "title": "hideご飯会コンシェルジュ",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "予約の検知から当日の案内、レビュー依頼までを回す、ご飯会の仕組み。",
+   "url": "https://yukitchy.github.io/hides-table/",
+   "thumb": "thumbs/hides-table.jpg",
+   "short": "ご飯会コンシェルジュ",
+   "thumbs": {
+    "アプリ": "thumbs/hides-table.jpg"
+   }
+  },
+  {
+   "id": 42,
+   "title": "面接ルーム",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "声で答える圧迫面接の練習と、ESの下書き作りができるトレーニングアプリ。",
+   "url": "https://yukitchy.github.io/mensetsu-room/",
+   "thumb": "thumbs/mensetsu-room.jpg",
+   "short": "面接ルーム",
+   "thumbs": {
+    "アプリ": "thumbs/mensetsu-room.jpg"
+   }
+  },
+  {
+   "id": 43,
+   "title": "Drip Zine",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "豆の量を入れると注ぐタイミングを声で案内する、コーヒーのドリップタイマー。",
+   "url": "https://yukitchy.github.io/drip-zine/",
+   "thumb": "thumbs/drip-zine.jpg",
+   "short": "Drip Zine",
+   "thumbs": {
+    "アプリ": "thumbs/drip-zine.jpg"
+   }
+  },
+  {
+   "id": 44,
+   "title": "やっとくボード",
+   "scope": [
+    "アプリ"
+   ],
+   "ai": [],
+   "desc": "AI社員ごとに「判断待ち」を並べ、下準備の済んだ分から決めていくボードの見本。",
+   "url": "https://yukitchy.github.io/yattoku-board/",
+   "thumb": "thumbs/yattoku-board.jpg",
+   "short": "やっとくボード",
+   "thumbs": {
+    "アプリ": "thumbs/yattoku-board.jpg"
+   }
   }
  ]
 }
