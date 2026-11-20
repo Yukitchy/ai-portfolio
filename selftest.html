@@ -35,7 +35,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     if(v==="v3"){const c=[...d.querySelectorAll("#list .card")];ok(c[9].getBoundingClientRect().top<844,`v3 10作品目が1画面(844)内 top=${Math.round(c[9].getBoundingClientRect().top)}`);}
     // 期待値は data.json から数える（件数を手で書かない）
     const n=()=>d.querySelectorAll("#list .card").length,click=s=>d.querySelector(s).click(),ALL=win.APP.items,withAI=ALL.filter(i=>i.ai.length),cnt=c=>ALL.filter(i=>i.scope.includes(c)).length;
-    ok(ALL.length===44&&n()===ALL.length&&d.querySelector("#count").textContent==="44",`${v} すべて → ${n()}件（件数表示 ${d.querySelector("#count")&&d.querySelector("#count").textContent}）`);
+    ok(ALL.length===65&&n()===ALL.length&&d.querySelector("#count").textContent==="65"&&cnt("ロゴ")===22&&cnt("ページ")===33&&cnt("アプリ")===10,`${v} すべて → ${n()}件（件数表示 ${d.querySelector("#count")&&d.querySelector("#count").textContent}）`);
     const sN=ALL.reduce((a,i)=>a+i.scope.length,0),aN=withAI.reduce((a,i)=>a+i.ai.length,0);
     ok(d.querySelectorAll("#list .scope").length===sN&&d.querySelectorAll("#list .ai").length===aN,`${v} 担当タグ${d.querySelectorAll("#list .scope").length}/${sN}・使用AIタグ${d.querySelectorAll("#list .ai").length}/${aN}`);
     ok([...d.querySelectorAll("#list .card")].every((c,i)=>{const t=c.querySelector(".tags");return t&&t.querySelectorAll(".scope").length===ALL[i].scope.length&&t.querySelectorAll(".ai").length===ALL[i].ai.length})&&![...d.querySelectorAll("#list .scope,#list .ai")].some(x=>!x.textContent.trim()),`${v} 全${ALL.length}件にカテゴリタグ・AI不明${ALL.length-withAI.length}件はAIタグなし・空チップなし`);
@@ -43,7 +43,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     ok(d.querySelectorAll("#list img.th").length===ALL.filter(i=>i.thumb).length&&d.querySelectorAll("#list .ph").length===ALL.filter(i=>!i.thumb).length&&[...d.querySelectorAll("#list .ph")].every(p=>/仮サムネ/.test(p.textContent)),`${v} 実スクショ${d.querySelectorAll("#list img.th").length}・仮サムネ${d.querySelectorAll("#list .ph").length}（仮表示あり）`);
     const cards=[...d.querySelectorAll("#list .card")],its=win.APP.items;
     ok(cards.every((c,i)=>{const a=c.querySelectorAll("a");return its[i].url?(a.length===1&&a[0].getAttribute("href")===its[i].url&&a[0].target==="_blank"&&a[0].rel==="noopener"):a.length===0}),`${v} 各カードのリンク＝data.jsonのurl（なしは0本・_blank/noopener）`);
-    ok(its.filter(i=>i.url).length===43&&!its.find(i=>i.id===5).url,`${v} URLあり43作品・だんどりーはリンクなし`);
+    ok(its.filter(i=>i.url).length===59&&!its.find(i=>i.id===5).url,`${v} URLあり59作品・だんどりーはリンクなし`);
     ok(cards.every((c,i)=>{c.scrollIntoView({block:"center"});const th=c.querySelector(".th").getBoundingClientRect(),hit=d.elementFromPoint(th.left+th.width/2,th.top+th.height/2),a=hit&&hit.closest("a");return its[i].url?a&&a.getAttribute("href")===its[i].url:!a}),`${v} サムネ部分を押してもその作品へ飛ぶ`);win.scrollTo(0,0);
     for(const[c,k]of[["ロゴ",cnt("ロゴ")],["ページ",cnt("ページ")],["アプリ",cnt("アプリ")]]){click(`[data-cat="${c}"]`);{const want=ALL.filter(i=>i.scope.includes(c));ok(n()===k&&[...d.querySelectorAll("#list .card")].every((x,j)=>x.querySelector(".t").textContent===want[j].title),`${v} ${c} → ${n()}件（並びもdata.jsonどおり）`);}}
     ok(d.querySelector('[data-cat="アプリ"]').getAttribute("aria-pressed")==="true"&&d.querySelector('[data-cat=""]').getAttribute("aria-pressed")==="false",`${v} 押したチップだけ選択状態`);
@@ -52,17 +52,17 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     click('[data-cat=""]');ok(n()===ALL.length-cnt("アプリ")&&d.querySelector("#empty").style.display==="none",`${v} すべてに戻すと空表示が消える`);
     ok(d.querySelector("#pName").textContent==="市原佑樹（Anime Sensei）"&&d.querySelector("#pContact").getAttribute("href")==="#contact"&&d.querySelector("#contact"),`${v} プロフィール名(data.json)と問い合わせ導線`);
     if(!top)ok(d.querySelector('a[href="board.html"]'),`${v} ボードへ戻るリンク`);
-    if(top){win.APP.items=(await (await win.fetch("data.json")).json()).items;
+    if(top){win.APP.items=(await (await win.fetch("data.json")).json()).items;const F0=win.APP.items;
       const fsrc=()=>[...new Set([...d.querySelectorAll(".flow img")].map(i=>i.getAttribute("src")))].sort().join(),lsrc=()=>[...d.querySelectorAll("#list .card")].map(c=>{const i=c.querySelector("img.th");return i?i.getAttribute("src"):"ph"}).join();
-      const LG="thumbs/logo-anime.webp,thumbs/logo-keiri.webp,thumbs/logo-tadayomi.webp";
+      const LG=F0.filter(i=>i.scope.includes("ロゴ")).map(i=>i.thumbs["ロゴ"]).join(),LGS=LG.split(",").sort().join();
       click('[data-cat="ロゴ"]');await new Promise(r=>setTimeout(r,600));
-      ok(lsrc()===LG&&[...d.querySelectorAll("#list img.th")].every(i=>i.complete&&i.naturalWidth===800),`index ロゴ → リスト3件ともロゴ画像 ${lsrc()}`);
-      ok(fsrc()===LG&&!d.querySelector(".flow .ph"),`index ロゴ → 流れもロゴ画像だけ ${fsrc()}`);
+      ok(LG.split(",").length===22&&lsrc()===LG&&[...d.querySelectorAll("#list img.th")].every(i=>i.complete&&i.naturalWidth===800),`index ロゴ → リスト${lsrc().split(",").length}件ともロゴ画像`);
+      ok(fsrc()===LGS&&!d.querySelector(".flow .ph"),`index ロゴ → 流れもロゴ画像だけ ${fsrc().split(",").length}種`);
       const F=win.APP.items,exp=c=>F.filter(i=>!c||i.scope.includes(c)).map(i=>(c&&i.thumbs&&i.thumbs[c])||i.thumb||"ph"),ex=c=>exp(c).join(),ef=c=>[...new Set(exp(c).filter(x=>x!=="ph"))].sort().join();
       click('[data-cat="ページ"]');ok(lsrc()===ex("ページ")&&fsrc()===ef("ページ")&&!d.querySelector(".flow .ph"),`index ページ → サイトのスクショ${exp("ページ").length}件・流れ${fsrc().split(",").length}種（仮サムネなし）`);
       click('[data-cat="アプリ"]');ok(lsrc()===ex("アプリ")&&fsrc()===ef("アプリ")&&!d.querySelector(".flow .ph"),`index アプリ → アプリ画面${exp("アプリ").length}件・流れは実画像${fsrc().split(",").length}種のみ`);
       click('[data-cat=""]');ok(fsrc()===ef("")&&!fsrc().includes("logo-"),`index すべて → 流れは代表スクショ${fsrc().split(",").length}種`);
-      const t=d.querySelector(".flow .tr"),px=t.scrollWidth/2/parseFloat(getComputedStyle(t).animationDuration);ok(px<=12,`index 44件でも流れる速さは据え置き ${px.toFixed(1)}px/秒`);}
+      const t=d.querySelector(".flow .tr"),px=t.scrollWidth/2/parseFloat(getComputedStyle(t).animationDuration);ok(px<=12,`index 65件でも流れる速さは据え置き ${px.toFixed(1)}px/秒`);}
   }
   document.querySelectorAll("iframe").forEach(f=>f.remove());
  }

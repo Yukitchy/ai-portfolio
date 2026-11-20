@@ -44,39 +44,65 @@
   },
   {
    "id": 3,
-   "title": "経理くん ロゴ＋LP",
+   "title": "経理くん ロゴ",
    "scope": [
-    "ロゴ",
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "フリーランスの請求書と収支をまとめるサービス『経理くん』のロゴ。",
+   "url": "https://yukitchy.github.io/money-setup-lp/",
+   "thumb": "",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-keiri.webp"
+   }
+  },
+  {
+   "id": 64,
+   "title": "経理くん LP",
+   "scope": [
     "ページ"
    ],
    "ai": [
-    "Claude",
-    "ChatGPT"
+    "Claude"
    ],
    "desc": "フリーランスの請求書と収支をまとめるサービスのLP。",
    "url": "https://yukitchy.github.io/money-setup-lp/",
    "thumb": "thumbs/keiri.jpg",
    "thumbs": {
-    "ロゴ": "thumbs/logo-keiri.webp",
     "ページ": "thumbs/keiri.jpg"
    }
   },
   {
    "id": 4,
-   "title": "タダヨミ ロゴ＋サイト",
+   "title": "タダヨミ ロゴ",
    "scope": [
-    "ロゴ",
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "いま無料の漫画を終了が近い順に並べるサイト『タダヨミ』のロゴ。",
+   "url": "https://yukitchy.github.io/tadayomi/",
+   "thumb": "",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-tadayomi.webp"
+   }
+  },
+  {
+   "id": 65,
+   "title": "タダヨミ",
+   "scope": [
     "ページ"
    ],
    "ai": [
-    "ChatGPT",
     "Claude"
    ],
    "desc": "いま無料の漫画を終了が近い順に並べるまとめサイト。",
    "url": "https://yukitchy.github.io/tadayomi/",
    "thumb": "thumbs/tadayomi.jpg",
    "thumbs": {
-    "ロゴ": "thumbs/logo-tadayomi.webp",
     "ページ": "thumbs/tadayomi.jpg"
    }
   },
@@ -687,6 +713,305 @@
    "short": "やっとくボード",
    "thumbs": {
     "アプリ": "thumbs/yattoku-board.jpg"
+   }
+  },
+  {
+   "id": 45,
+   "title": "素人AIラジオ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "AI初心者の2人が活用法を試すポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/033vD4s7A4CTOiR4A6Gjws",
+   "thumb": "",
+   "short": "素人AIラジオ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-shirouto-ai.webp"
+   }
+  },
+  {
+   "id": 46,
+   "title": "ゼロからの体験ツアーガイドラジオ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "ヨシとユウキの体験ツアーガイド番組のカバーアート。",
+   "url": "https://open.spotify.com/show/3sv0rNffYqHgYtkdEWUQdx",
+   "thumb": "",
+   "short": "体験ツアーラジオ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-tourguide.webp"
+   }
+  },
+  {
+   "id": 47,
+   "title": "みんらじ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "ゼロからの民泊ガイドラジオ（みんらじ）のカバーアート。",
+   "url": "https://open.spotify.com/show/1vSXCagPPaTKUwG6UGxrV3",
+   "thumb": "",
+   "short": "みんらじ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-minradi.webp"
+   }
+  },
+  {
+   "id": 48,
+   "title": "アキバなう カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "ササキチとユウキが秋葉原の今を伝えるポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/4AT5BQfMbvyCo5iHAttPL8",
+   "thumb": "",
+   "short": "アキバなう",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-akibanow.webp"
+   }
+  },
+  {
+   "id": 49,
+   "title": "メンタルよわよわラジオ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "メンタルと仕事の悩みを語るポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/6b1HahU3ytKTSmOnZI9qsD",
+   "thumb": "",
+   "short": "メンタルよわよわ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-mental-yowayowa.webp"
+   }
+  },
+  {
+   "id": 50,
+   "title": "イレギュラーコーヒー カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "つよぽんとユウキのコーヒー情報ポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/64em2Li4rP3SAfH9rgRswd",
+   "thumb": "",
+   "short": "イレギュラーコーヒー",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-irregular-coffee.webp"
+   }
+  },
+  {
+   "id": 51,
+   "title": "厚木トーク カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "厚木のしゃべり場ポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/758R6VVe9ql1D9YcKrXYfm",
+   "thumb": "",
+   "short": "厚木トーク",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-atsugi.webp"
+   }
+  },
+  {
+   "id": 52,
+   "title": "オタクのざつだん カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "JLPT N1向け日本語ポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/44LPCvK6Y21DtZqSNueLAa",
+   "thumb": "",
+   "short": "オタクのざつだん",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-otaku-zatsudan.webp"
+   }
+  },
+  {
+   "id": 53,
+   "title": "偏愛Channel カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "シンゴとユウキが推しへの偏愛を語るポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/2M2lOQ0UoTUDzuzffVq8q5",
+   "thumb": "",
+   "short": "偏愛Channel",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-henkoi.webp"
+   }
+  },
+  {
+   "id": 54,
+   "title": "愛の猫パンチ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "ユウイチとユウキのマーケ物申し系ポッドキャストのカバーアート。",
+   "url": "https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc",
+   "thumb": "",
+   "short": "愛の猫パンチ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-nekopunch.webp"
+   }
+  },
+  {
+   "id": 55,
+   "title": "北坂戸ラジオ カバーイラスト",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "北坂戸ラジオ（タイトル未定）のカバーアート案。",
+   "url": "",
+   "thumb": "",
+   "short": "北坂戸ラジオ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-cover-kitasakado.webp"
+   }
+  },
+  {
+   "id": 56,
+   "title": "だんどりー ロゴ",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "ツアー段取りアプリ「だんどりー」の決定版ロゴ。段家マスコットと並ぶ横組み。",
+   "url": "",
+   "thumb": "",
+   "short": "だんどりー",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-dandori.webp"
+   }
+  },
+  {
+   "id": 57,
+   "title": "だんどりー マスコット「段家」",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "だんどりーのマスコット家族「段家」4人の集合イラスト。",
+   "url": "",
+   "thumb": "",
+   "short": "段家",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-dandori-mascot.webp"
+   }
+  },
+  {
+   "id": 58,
+   "title": "そばマップ ロゴ",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "そば屋マップのバッジロゴ。地図ピンにそばの丼を組み合わせたマーク。",
+   "url": "",
+   "thumb": "",
+   "short": "そばマップ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-sobamap.webp"
+   }
+  },
+  {
+   "id": 59,
+   "title": "写真日記 ロゴ",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "1日の写真と移動の記録から毎晩日記を生成する自作ツール「写真日記」の現行ロゴ。",
+   "url": "",
+   "thumb": "",
+   "short": "写真日記",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-nikki.webp"
+   }
+  },
+  {
+   "id": 60,
+   "title": "Anime Ledger ロゴ",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [],
+   "desc": "遊び台帳 Anime Ledger のロゴマーク。",
+   "url": "https://yukitchy.github.io/anime-ledger/",
+   "thumb": "",
+   "short": "Anime Ledger",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-ledger.webp"
+   }
+  },
+  {
+   "id": 61,
+   "title": "AIポートフォリオ ロゴ",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "ChatGPT"
+   ],
+   "desc": "このポートフォリオサイト自身のアプリアイコン型ロゴ。紫の角丸四角に白抜き「Ai」。",
+   "url": "https://yukitchy.github.io/ai-portfolio/",
+   "thumb": "",
+   "short": "AIポートフォリオ",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-ai-portfolio.webp"
+   }
+  },
+  {
+   "id": 62,
+   "title": "ユウキPodcast文庫 ワードマーク",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "ポッドキャスト読み物サイト「ユウキPodcast文庫」のワードマーク。",
+   "url": "https://bunko.yuukipodcast.com/",
+   "thumb": "",
+   "short": "Podcast文庫",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-bunko.webp"
+   }
+  },
+  {
+   "id": 63,
+   "title": "Podcast番組表 ワードマーク",
+   "scope": [
+    "ロゴ"
+   ],
+   "ai": [
+    "Claude"
+   ],
+   "desc": "配信中番組を並べた「ユウキのPodcast番組表」のワードマーク。",
+   "url": "https://program.yuukipodcast.com",
+   "thumb": "",
+   "short": "Podcast番組表",
+   "thumbs": {
+    "ロゴ": "thumbs/logo-program.webp"
    }
   }
  ]
