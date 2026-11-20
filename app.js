@@ -8,7 +8,9 @@ const aiTags=it=>it.ai.map(a=>`<span class="ai">${esc(a)}</span>`).join("");
 const tags=it=>`<div class="tags">${scopeTags(it)}${it.ai&&it.ai.length?aiTags(it):""}</div>`;
 // サムネは絞り込みに合わせる：data.json の thumbs[カテゴリ]（ロゴ＝ロゴ画像）→ なければ代表 thumb → なければ仮サムネ
 const src=it=>(APP.cat&&it.thumbs&&it.thumbs[APP.cat])||it.thumb;
-const thumb=it=>src(it)?`<img class="th" src="${esc(src(it))}" alt="${esc(it.title)}の${APP.cat==="ロゴ"?"ロゴ":"画面"}" loading="lazy" width="800" height="500">`:`<div class="th ph"><span>${esc(it.short||it.title)}</span><small>仮サムネ</small></div>`;
+// リスト用：すべて表示で thumb が空でもカテゴリ別サムネ（ロゴ絵）があればそれを出す。流れは src のまま（すべて表示の流れにロゴを混ぜない）
+const lsrc=it=>src(it)||Object.values(it.thumbs||{}).find(Boolean);
+const thumb=(it,s=lsrc(it))=>s?`<img class="th" src="${esc(s)}" alt="${esc(it.title)}の${APP.cat==="ロゴ"?"ロゴ":"画面"}" loading="lazy" width="800" height="500">`:`<div class="th ph"><span>${esc(it.short||it.title)}</span><small>仮サムネ</small></div>`;
 const link=(it,inner,cls="")=>it.url?`<a class="${cls}" href="${esc(it.url)}" target="_blank" rel="noopener">${inner}</a>`:`<span class="${cls}">${inner}</span>`;
 const $=id=>document.getElementById(id);
 const APP=window.APP={items:[],cat:""};
@@ -23,7 +25,7 @@ APP.render=()=>{
 const flows=real=>{
   for(const f of document.querySelectorAll(".flow")){
     const its=f.classList.contains("rev")?[...real].reverse():real;
-    const one=its.map(it=>`<span class="fi">${thumb(it).replace(' loading="lazy"',"")}</span>`).join("");
+    const one=its.map(it=>`<span class="fi">${thumb(it,src(it)).replace(' loading="lazy"',"")}</span>`).join("");
     f.innerHTML=`<div class="tr">${one}</div>`;
     const k=Math.max(1,Math.ceil(Math.max(f.clientWidth,760)/(f.firstChild.scrollWidth||1)));
     f.firstChild.innerHTML=one.repeat(k*2);
