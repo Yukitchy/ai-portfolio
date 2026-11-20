@@ -4,8 +4,8 @@ const CATS=[["","すべて"],["ロゴ"],["ページ"],["アプリ"]];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const scopeTags=it=>it.scope.map(s=>`<span class="scope">${esc(s)}</span>`).join("");
 const aiTags=it=>it.ai.map(a=>`<span class="ai">${esc(a)}</span>`).join("");
-// 使用AIが不明（ai空）の作品はタグ欄ごと出さない（空の枠・でっちあげタグを作らない）
-const tags=it=>it.ai&&it.ai.length?`<div class="tags">${scopeTags(it)}${aiTags(it)}</div>`:"";
+// カテゴリタグは全作品に出す。使用AIが不明（ai空）の作品はAIタグだけ出さない（空チップ・でっちあげタグを作らない）
+const tags=it=>`<div class="tags">${scopeTags(it)}${it.ai&&it.ai.length?aiTags(it):""}</div>`;
 // サムネは絞り込みに合わせる：data.json の thumbs[カテゴリ]（ロゴ＝ロゴ画像）→ なければ代表 thumb → なければ仮サムネ
 const src=it=>(APP.cat&&it.thumbs&&it.thumbs[APP.cat])||it.thumb;
 const thumb=it=>src(it)?`<img class="th" src="${esc(src(it))}" alt="${esc(it.title)}の${APP.cat==="ロゴ"?"ロゴ":"画面"}" loading="lazy" width="800" height="500">`:`<div class="th ph"><span>${esc(it.short||it.title)}</span><small>仮サムネ</small></div>`;

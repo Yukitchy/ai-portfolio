@@ -36,9 +36,9 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     // 期待値は data.json から数える（件数を手で書かない）
     const n=()=>d.querySelectorAll("#list .card").length,click=s=>d.querySelector(s).click(),ALL=win.APP.items,withAI=ALL.filter(i=>i.ai.length),cnt=c=>ALL.filter(i=>i.scope.includes(c)).length;
     ok(ALL.length===44&&n()===ALL.length&&d.querySelector("#count").textContent==="44",`${v} すべて → ${n()}件（件数表示 ${d.querySelector("#count")&&d.querySelector("#count").textContent}）`);
-    const sN=withAI.reduce((a,i)=>a+i.scope.length,0),aN=withAI.reduce((a,i)=>a+i.ai.length,0);
+    const sN=ALL.reduce((a,i)=>a+i.scope.length,0),aN=withAI.reduce((a,i)=>a+i.ai.length,0);
     ok(d.querySelectorAll("#list .scope").length===sN&&d.querySelectorAll("#list .ai").length===aN,`${v} 担当タグ${d.querySelectorAll("#list .scope").length}/${sN}・使用AIタグ${d.querySelectorAll("#list .ai").length}/${aN}`);
-    ok([...d.querySelectorAll("#list .card")].every((c,i)=>ALL[i].ai.length?c.querySelector(".tags"):!c.querySelector(".tags"))&&![...d.querySelectorAll("#list .tags")].some(t=>!t.children.length),`${v} AI不明${ALL.length-withAI.length}件はタグ欄なし・空のタグ枠なし`);
+    ok([...d.querySelectorAll("#list .card")].every((c,i)=>{const t=c.querySelector(".tags");return t&&t.querySelectorAll(".scope").length===ALL[i].scope.length&&t.querySelectorAll(".ai").length===ALL[i].ai.length})&&![...d.querySelectorAll("#list .scope,#list .ai")].some(x=>!x.textContent.trim()),`${v} 全${ALL.length}件にカテゴリタグ・AI不明${ALL.length-withAI.length}件はAIタグなし・空チップなし`);
     const sc=getComputedStyle(d.querySelector(".scope")),ai=getComputedStyle(d.querySelector(".ai"));ok((sc.backgroundColor!==ai.backgroundColor||sc.borderTopStyle!==ai.borderTopStyle)&&ai.borderTopStyle==="solid"&&getComputedStyle(d.querySelector(".ai"),"::before").content.includes("AI"),`${v} 使用AIタグは担当タグと別の見た目`);
     ok(d.querySelectorAll("#list img.th").length===ALL.filter(i=>i.thumb).length&&d.querySelectorAll("#list .ph").length===ALL.filter(i=>!i.thumb).length&&[...d.querySelectorAll("#list .ph")].every(p=>/仮サムネ/.test(p.textContent)),`${v} 実スクショ${d.querySelectorAll("#list img.th").length}・仮サムネ${d.querySelectorAll("#list .ph").length}（仮表示あり）`);
     const cards=[...d.querySelectorAll("#list .card")],its=win.APP.items;
