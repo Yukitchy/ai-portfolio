@@ -23,12 +23,12 @@
 </head>
 <body class="v1">
 <div class="wrap">
-<header><a class="hd" href="./v1.html"><img src="assets/icon.png" alt="" width="32" height="32"><span class="site">AIポートフォリオ</span></a><a class="cta" href="#contact">仕事の相談</a></header>
+<header><a class="hd" href="./v1.html"><img src="assets/icon.png" alt="" width="32" height="32"><span class="site">AIポートフォリオ</span></a><button type="button" class="cta" aria-haspopup="dialog">仕事の相談</button></header>
 <p class="proto"><span class="note">試作版：作品データはサンプルです</span></p>
 <section class="works"><h2>作品<small><span id="count">–</span>件</small></h2><div class="filters"><div class="row" id="catRow" aria-label="種類で絞り込む"></div></div><ul class="list" id="list"></ul>
 <p id="empty">この種類の作品はまだありません。</p></section>
 <section id="profile" class="prof"><h2>プロフィール</h2><p class="pn" id="pName"></p><p class="pr" id="pRole"></p><p class="pb" id="pBio"></p></section>
-<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><a class="btn" id="pContact" href="#contact">仕事の相談をする</a><p class="cn" id="pNote"></p></section>
+<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><button type="button" class="btn" id="pContact" aria-haspopup="dialog">仕事の相談をする</button><p class="cn" id="pNote"></p></section>
 <footer>AIポートフォリオ 試作 v1 ／ 作品データはサンプルです ／ <a href="board.html">見比べボードに戻る</a></footer>
 </div>
 <script>window.T={card:(it,i)=>`<li class="card${i===0?" first":""}"><span class="tl">${thumb(it)}</span><div class="b">${link(it,esc(it.title),"t")}<p class="d">${esc(it.desc)}</p>${tags(it)}</div></li>`};</script>

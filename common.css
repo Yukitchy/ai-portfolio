@@ -11,6 +11,7 @@ header{display:flex;align-items:center;gap:8px;height:48px;padding:0 10px;border
 .hd{display:flex;align-items:center;gap:8px;text-decoration:none;min-width:0}
 .hd img{flex:none}
 .site{font-size:clamp(15px,4.6vw,18px);font-weight:300;letter-spacing:.1em;color:var(--vio);white-space:nowrap}
+.cta,.btn{font:inherit;border:0;cursor:pointer}
 .cta{margin-left:auto;flex:none;font-size:12px;font-weight:700;color:#fff;background:var(--vio);text-decoration:none;border-radius:999px;padding:3px 11px;white-space:nowrap}
 .note{display:inline-block;font-size:11px;color:var(--sub);border:1px solid var(--line);border-radius:4px;padding:0 5px;background:#fff}
 .proto{text-align:right;padding:4px 10px 0}
@@ -57,3 +58,17 @@ footer{padding:14px 10px 30px;font-size:12px;color:var(--sub);border-top:1px sol
 .flow .fi{flex:none;display:block;width:var(--w,120px)}
 @keyframes flow{to{transform:translate3d(-50%,0,0)}}
 @media(prefers-reduced-motion:reduce){.flow .tr{animation:none}}
+/* 仕事の相談モーダル：dialog本体は余白0＝枠の外をタップすると target が dialog になり閉じる。中身は .mb */
+.cdlg{margin:auto;border:0;padding:0;width:min(360px,calc(100vw - 24px));max-width:none;border-radius:10px;background:#fff;color:var(--ink);box-shadow:0 12px 40px rgba(20,18,23,.28)}
+.cdlg::backdrop{background:rgba(20,18,23,.55)}
+.cdlg .mb{position:relative;padding:18px 16px 16px}
+.cdlg .x{position:absolute;top:6px;right:6px;width:36px;height:36px;border:0;background:none;font:inherit;font-size:22px;line-height:1;color:var(--sub);cursor:pointer;border-radius:999px}
+.cdlg .x:hover{background:var(--vio-l);color:var(--vio-d)}
+.cdlg .mt{font-size:16px;font-weight:800;color:var(--vio-d);padding-right:36px}
+.cdlg .ms{font-size:13px;color:var(--sub);margin:4px 0 14px}
+.cdlg .mo{display:block;text-decoration:none;font-weight:700;font-size:14px;text-align:center;border-radius:8px;padding:10px 12px;line-height:1.4}
+.cdlg .mo+.mo{margin-top:8px}
+.cdlg .mo small{display:block;font-size:12px;font-weight:400;margin-top:1px;overflow-wrap:anywhere}
+.cdlg .mail{background:var(--vio);color:#fff}.cdlg .mail small{color:rgba(255,255,255,.86)}
+.cdlg .form{border:1px solid var(--vio);color:var(--vio-d)}.cdlg .form small{color:var(--sub)}
+.cdlg .mail:hover{background:var(--vio-d)}.cdlg .form:hover{background:var(--vio-l)}

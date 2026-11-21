@@ -4,6 +4,15 @@
 const out=[],ok=(c,m)=>out.push((c?"PASS ":"FAIL ")+m);
 const load=(p,w)=>new Promise(r=>{const f=document.createElement("iframe");f.style.cssText=`width:${w}px;height:800px;border:0`;f.src=p;f.onload=()=>setTimeout(()=>r(f.contentWindow),1200);document.body.append(f)});
 const B="https://yukitchy.github.io/ai-portfolio/";
+// 仕事の相談モーダル：ヘッダー/プロフィールの両ボタンで開く・×/背景で閉じる・本文タップでは閉じない・はみ出しなし・リンク先（ESCはdialog標準。合成キーでは発火しないためライブのCDP実測で確認）
+const MAILTO="mailto:hello@animesenseijp.com?subject="+encodeURIComponent("仕事の相談")+"&body="+encodeURIComponent("お名前：\r\n相談の種類：ロゴ・ページ・アプリ画面・その他\r\n相談内容：\r\n"),FORM="https://docs.google.com/forms/d/e/1FAIpQLScUAsRq5ExFKlfU7qa3hRLjSBkEPVIRfvZ89BDcUkBsQ1rokQ/viewform";
+const modal=(d,win,L,w)=>{const g=d.getElementById("cdlg"),r=[];if(!g)return ok(0,`${L} モーダルあり`);
+  for(const s of ["header .cta","#pContact"]){d.querySelector(s).click();const b=g.querySelector(".mb").getBoundingClientRect();r.push(g.open&&b.left>=0&&b.right<=w+0.5&&d.documentElement.scrollWidth<=w);
+    g.querySelector(".ms").click();r.push(g.open);g.querySelector(".x").click();r.push(!g.open);
+    d.querySelector(s).click();g.dispatchEvent(new win.MouseEvent("click",{bubbles:true}));r.push(!g.open);}
+  ok(r.every(Boolean),`${L} 相談モーダル：ヘッダー/プロフィール両方で開く・枠内・本文タップで閉じない・×と背景で閉じる [${r.map(x=>x?1:0).join("")}]`);
+  const m=g.querySelector("a.mail"),f=g.querySelector("a.form");
+  ok(m.getAttribute("href")===MAILTO&&decodeURIComponent(m.href.split("body=")[1]).includes("相談の種類：ロゴ・ページ・アプリ画面・その他")&&f.getAttribute("href")===FORM&&f.target==="_blank"&&f.rel==="noopener",`${L} メール=mailto(宛先・件名・本文テンプレ)・フォーム=Googleフォーム/_blank/noopener`);};
 (async()=>{
  for(const v of ["board","index",...Array.from({length:10},(_,i)=>"v"+(i+1))]){
   for(const w of [320,390]){
@@ -16,6 +25,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     ok(!/maru|rounded|丸/i.test([...d.querySelectorAll("*")].map(e=>getComputedStyle(e).fontFamily).join()),`${v} ${w}px 丸ゴシック不使用`);
     if(v==="index"){const h=d.querySelector(".wh>h2").getBoundingClientRect(),cs=[...d.querySelectorAll("#catRow .chip")].map(c=>c.getBoundingClientRect()),r=d.querySelector("#catRow");
       ok(cs.length===4&&cs.every(c=>c.left>=h.right&&c.right<=w-0.5&&Math.abs((c.top+c.bottom)/2-(h.top+h.bottom)/2)<3)&&r.scrollWidth<=r.clientWidth&&d.querySelector(".wh").offsetHeight<=40,`index ${w}px チップ4つが「作品 N件」と同じ1行・件数の右・行内スクロールなし（行高${d.querySelector(".wh").offsetHeight}px）`);}
+    if(v!=="board"&&(v==="index"||w===390))modal(d,win,`${v} ${w}px`,w);
     if(w!==390)continue;
     const self=v==="index"?B:`${B}${v}.html`,top=v==="index";
     ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+({board:"og-board2.png",index:"og-final.png"}[v]||"og.png")&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
@@ -27,7 +37,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     }
     ok(/AIポートフォリオ/.test(d.querySelector("header").textContent),`${v} ヘッダーにサイト名`);
     const hh=d.querySelector("header").offsetHeight;ok(hh<=50,`${v} 薄いヘッダー ${hh}px`);
-    ok(d.querySelector('header a.cta[href="#contact"]'),`${v} ヘッダーに相談導線`);
+    ok(d.querySelector('header button.cta')&&!d.querySelector('a[href="#contact"]'),`${v} ヘッダーに相談導線（自己リンク#contactなし）`);
     const ts=[...d.querySelectorAll("#list .card .t")].filter(x=>!x.closest(".first"));ok(ts.every(x=>x.getClientRects().length===1&&x.offsetHeight<=24),`${v} 作品タイトル1行`);
     if(top){const o=[...d.querySelectorAll("header,.works>.wh,.duo,#list")].map(e=>e.getBoundingClientRect().top);ok(o.length===4&&o.every((t,i)=>!i||t>o[i-1]),`index 並び＝ヘッダー→作品見出し＋絞り込み→流れ→リスト`);ok(!/試作|サンプル/.test(d.body.textContent),`index 試作・サンプル表記なし`);}
     if(top||+v.slice(1)>=6){const fl=[...d.querySelectorAll(".flow")],ims=fl.flatMap(f=>[...f.querySelectorAll("img")]);
@@ -56,7 +66,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     win.APP.items=win.APP.items.filter(i=>!i.scope.includes("アプリ"));win.APP.render();
     ok(n()===0&&d.querySelector("#empty").style.display==="block",`${v} アプリ0件のとき空表示`);
     click('[data-cat=""]');ok(n()===ALL.length-cnt("アプリ")&&d.querySelector("#empty").style.display==="none",`${v} すべてに戻すと空表示が消える`);
-    ok(d.querySelector("#pName").textContent==="市原佑樹（Anime Sensei）"&&d.querySelector("#pContact").getAttribute("href")==="#contact"&&d.querySelector("#contact"),`${v} プロフィール名(data.json)と問い合わせ導線`);
+    ok(d.querySelector("#pName").textContent==="市原佑樹（Anime Sensei）"&&d.querySelector("#pContact").tagName==="BUTTON"&&d.querySelector("#pNote").textContent==="メールまたはフォームで相談できます",`${v} プロフィール名(data.json)と問い合わせ導線・案内文`);
     if(!top)ok(d.querySelector('a[href="board.html"]'),`${v} ボードへ戻るリンク`);
     if(top){win.APP.items=(await (await win.fetch("data.json")).json()).items;const F0=win.APP.items;
       const fsrc=()=>[...new Set([...d.querySelectorAll(".flow img")].map(i=>i.getAttribute("src")))].sort().join(),lsrc=()=>[...d.querySelectorAll("#list .card")].map(c=>{const i=c.querySelector("img.th");return i?i.getAttribute("src"):"ph"}).join();

@@ -22,12 +22,12 @@ HEAD='''<!doctype html>
 </head>
 <body class="{v}">
 '''
-LOGO='<a class="hd" href="./{v}.html"><img src="assets/icon.png" alt="" width="{s}" height="{s}"><span class="site">AIポートフォリオ</span></a><a class="cta" href="#contact">仕事の相談</a>'
+LOGO='<a class="hd" href="./{v}.html"><img src="assets/icon.png" alt="" width="{s}" height="{s}"><span class="site">AIポートフォリオ</span></a><button type="button" class="cta" aria-haspopup="dialog">仕事の相談</button>'
 NOTE='<span class="note">試作版：作品データはサンプルです</span>'
 FILTERS='<div class="filters"><div class="row" id="catRow" aria-label="種類で絞り込む"></div></div>'
 LIST='<ul class="list" id="list"></ul>\n<p id="empty">この種類の作品はまだありません。</p>'
 PROFILE='<section id="profile" class="prof"><h2>プロフィール</h2><p class="pn" id="pName"></p><p class="pr" id="pRole"></p><p class="pb" id="pBio"></p></section>'
-CONTACT='<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><a class="btn" id="pContact" href="#contact">仕事の相談をする</a><p class="cn" id="pNote"></p></section>'
+CONTACT='<section id="contact" class="ct"><h2>お問い合わせ</h2><p class="cl">ロゴ1点から、ページ・アプリ画面まで相談できます。</p><button type="button" class="btn" id="pContact" aria-haspopup="dialog">仕事の相談をする</button><p class="cn" id="pNote"></p></section>'
 FOOT='<footer>AIポートフォリオ 試作 {v} ／ 作品データはサンプルです ／ <a href="board.html">見比べボードに戻る</a></footer>'
 TAIL='''
 <script>{js}</script>

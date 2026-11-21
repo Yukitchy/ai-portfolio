@@ -61,6 +61,13 @@ $("catRow").addEventListener("click",e=>{
 fetch("data.json").then(r=>r.json()).then(d=>{
   const p=d.profile;
   for(const[k,v]of[["pName",p.name],["pRole",p.role],["pBio",p.bio],["pNote",p.contactNote]])if($(k))$(k).textContent=v;
-  if($("pContact")){$("pContact").href=p.contact;$("pContact").textContent=p.contactLabel}
+  if($("pContact"))$("pContact").textContent=p.contactLabel;
   APP.items=d.items;APP.render();
 });
+// 仕事の相談：ヘッダー .cta とプロフィール #pContact の両方でモーダルを開く。×・背景タップ・ESC（dialog標準）で閉じる。本文タップでは閉じない
+const MAIL="hello@animesenseijp.com",FORM="https://docs.google.com/forms/d/e/1FAIpQLScUAsRq5ExFKlfU7qa3hRLjSBkEPVIRfvZ89BDcUkBsQ1rokQ/viewform";
+const mailto=`mailto:${MAIL}?subject=${encodeURIComponent("仕事の相談")}&body=${encodeURIComponent(["お名前：","相談の種類：ロゴ・ページ・アプリ画面・その他","相談内容：",""].join("\r\n"))}`;
+document.body.insertAdjacentHTML("beforeend",`<dialog id="cdlg" class="cdlg" aria-labelledby="cdlgT"><div class="mb"><button type="button" class="x" aria-label="閉じる">×</button><p class="mt" id="cdlgT">仕事の相談</p><p class="ms">ロゴ1点から、ページ・アプリ画面まで。<br>相談しやすい方法を選んでください。</p><a class="mo mail" href="${esc(mailto)}">メールで相談する<small>${MAIL}</small></a><a class="mo form" href="${FORM}" target="_blank" rel="noopener">フォームで相談する<small>Googleフォームが新しいタブで開きます</small></a></div></dialog>`);
+const dlg=$("cdlg");
+for(const b of document.querySelectorAll("header .cta,#pContact"))b.addEventListener("click",()=>dlg.showModal());
+dlg.addEventListener("click",e=>{if(e.target===dlg||e.target.closest(".x"))dlg.close()});
