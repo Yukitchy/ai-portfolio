@@ -19,7 +19,7 @@ for v in [] if top else [f"v{i}" for i in range(1,11)]:
   Image.open(png).convert("RGB").crop((0,0,w,844)).save(f"{out}/{v}.jpg",quality=86)
 os.remove("_frame.html")
 print("shots",out)
-# 本採用トップのOGP og-final.png（黒地＋上段に白太字＋紫の短い下線／下段にトップ実画面4枚を横一列）。旧 og.png/og-top.png/og-board2.png は書かない（プレビューキャッシュ回避で新しい名前）
+# 本採用トップのOGP og-final2.png（og-final.png は65件時代の旧版・キャッシュ回避で据え置き。黒地＋上段に白太字＋紫の短い下線／下段にトップ実画面4枚を横一列）。旧 og.png/og-top.png/og-board2.png は書かない（プレビューキャッシュ回避で新しい名前）
 if top and w==390:
   from PIL import ImageDraw,ImageFont
   og=Image.new("RGB",(1200,630),(20,18,23));d=ImageDraw.Draw(og)
@@ -33,7 +33,7 @@ if top and w==390:
     sh=Image.open(f"shots/top-390-{c}.jpg").resize((cw,cw*844//390),Image.LANCZOS).crop((0,0,cw,630-y))
     m=Image.new("L",sh.size,0);ImageDraw.Draw(m).rounded_rectangle((0,0,cw-1,sh.height+20),12,fill=255)
     og.paste(sh,(60+i*(cw+gap),y),m)
-  og.save("og-final.png",optimize=True);print("og-final.png")
+  og.save("og-final2.png",optimize=True);print("og-final2.png")
 # ボードのOGP（黒地＋白太字見出し＋紫の短い下線＋v6〜v10の実画面を横一列）。og.png は上書きしない（iPhoneのキャッシュ回避で新しい名前）
 if w==390 and not top:
   from PIL import ImageDraw,ImageFont

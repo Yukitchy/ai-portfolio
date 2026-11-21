@@ -28,7 +28,7 @@ const modal=(d,win,L,w)=>{const g=d.getElementById("cdlg"),r=[];if(!g)return ok(
     if(v!=="board"&&(v==="index"||w===390))modal(d,win,`${v} ${w}px`,w);
     if(w!==390)continue;
     const self=v==="index"?B:`${B}${v}.html`,top=v==="index";
-    ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+({board:"og-board2.png",index:"og-final.png"}[v]||"og.png")&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
+    ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+({board:"og-board2.png",index:"og-final2.png"}[v]||"og.png")&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
     const logo=d.querySelector("header img");ok(logo&&logo.complete&&logo.naturalWidth===256&&/assets\/icon\.png$/.test(logo.src),`${v} ヘッダーロゴ＝確定アイコン ${logo&&logo.src.split("/").pop()}`);
     if(v==="board"){
       const links=[...d.querySelectorAll(".grid a")].map(a=>a.getAttribute("href"));ok(links.join()==="v6.html,v7.html,v8.html,v9.html,v10.html,v1.html,v2.html,v3.html,v4.html,v5.html",`board 10案リンク ${links}`);
