@@ -5,7 +5,7 @@ const out=[],ok=(c,m)=>out.push((c?"PASS ":"FAIL ")+m);
 const load=(p,w)=>new Promise(r=>{const f=document.createElement("iframe");f.style.cssText=`width:${w}px;height:800px;border:0`;f.src=p;f.onload=()=>setTimeout(()=>r(f.contentWindow),1200);document.body.append(f)});
 const B="https://yukitchy.github.io/ai-portfolio/";
 // 仕事の相談モーダル：ヘッダー/プロフィールの両ボタンで開く・×/背景で閉じる・本文タップでは閉じない・はみ出しなし・リンク先（ESCはdialog標準。合成キーでは発火しないためライブのCDP実測で確認）
-const MAILTO="mailto:hello@animesenseijp.com?subject="+encodeURIComponent("【AIポートフォリオ】仕事の相談")+"&body="+encodeURIComponent("お名前：\r\n相談の種類：ロゴ・ページ・アプリ画面・その他\r\n相談内容：\r\n"),FORM="https://docs.google.com/forms/d/e/1FAIpQLScUAsRq5ExFKlfU7qa3hRLjSBkEPVIRfvZ89BDcUkBsQ1rokQ/viewform";
+const MAILTO="mailto:japantour@muse.ai?subject="+encodeURIComponent("【AIポートフォリオ】仕事の相談")+"&body="+encodeURIComponent("お名前：\r\n相談の種類：ロゴ・ページ・アプリ画面・その他\r\n相談内容：\r\n"),FORM="https://docs.google.com/forms/d/e/1FAIpQLScUAsRq5ExFKlfU7qa3hRLjSBkEPVIRfvZ89BDcUkBsQ1rokQ/viewform";
 const modal=(d,win,L,w)=>{const g=d.getElementById("cdlg"),r=[];if(!g)return ok(0,`${L} モーダルあり`);
   for(const s of ["header .cta","#pContact"]){d.querySelector(s).click();const b=g.querySelector(".mb").getBoundingClientRect();r.push(g.open&&b.left>=0&&b.right<=w+0.5&&d.documentElement.scrollWidth<=w);
     g.querySelector(".ms").click();r.push(g.open);g.querySelector(".x").click();r.push(!g.open);
