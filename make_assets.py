@@ -30,6 +30,12 @@ d.text((560,232),"AIポートフォリオ",font=ImageFont.truetype(F.format(7),6
 d.text((562,330),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.truetype(F.format(4),32),fill=(232,224,250))
 d.text((562,382),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),26),fill=(214,202,244))
 og.save("og.png",optimize=True)
+# og-main 1200x630：og.png と同じ構図で地だけ白（ロゴタイルは紫のまま・白縁なし）。index.html の og:image
+ow=Image.new("RGB",(1200,630),"white");dw=ImageDraw.Draw(ow);ow.paste(ic,(116,135),ic)
+dw.text((560,232),"AIポートフォリオ",font=ImageFont.truetype(F.format(7),64),fill=vio)
+dw.text((562,330),"AIで作ったロゴ・ページ・アプリ",font=ImageFont.truetype(F.format(4),32),fill=(51,51,56))
+dw.text((562,382),"作品ごとに使用AIを記載",font=ImageFont.truetype(F.format(4),26),fill=(96,96,104))
+ow.save("og-main.png",optimize=True)
 print("box",box,"vio",vio)
 # 「ロゴ」絞り込み用サムネ 800x500（16:10）。正本 assets/logos/ を切り抜き・縮小・配置だけ。地色は各ロゴの地に合わせる（紫は使わない）
 from PIL import ImageChops
