@@ -116,7 +116,7 @@
    ],
    "desc": "段取りを組むためのアプリのUI。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-5.jpg",
    "short": "だんどりー",
    "thumbs": {
     "アプリ": ""
@@ -133,7 +133,7 @@
    ],
    "desc": "ツアーゲストごとに作るコース選択ページ。",
    "url": "https://yukitchy.github.io/course-picker",
-   "thumb": "",
+   "thumb": "thumbs/app-6.jpg",
    "short": "コースページ",
    "thumbs": {
     "ページ": ""
@@ -198,7 +198,7 @@
    ],
    "desc": "英語の練習メニューをこなすトレーニングアプリ。",
    "url": "https://yukitchy.github.io/sota-english-gym/",
-   "thumb": "",
+   "thumb": "thumbs/app-10.jpg",
    "short": "SOTA'S GYM",
    "thumbs": {
     "アプリ": ""
@@ -1251,7 +1251,7 @@
    "ai": [],
    "desc": "サイトのrobots.txt・実クロール・sitemap・llms.txt・og:imageを一括診断し、生成AIに見つけてもらえる状態か判定するツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-81.jpg",
    "short": "AI/SEO健診",
    "thumbs": {
     "アプリ": ""
@@ -1268,7 +1268,7 @@
    ],
    "desc": "Claude Codeの利用量（残り%・リセット時刻・API換算コスト）をmacOSメニューバーに常時表示するアプリ。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-82.jpg",
    "short": "利用量バー",
    "thumbs": {
     "アプリ": ""
@@ -1285,7 +1285,7 @@
    ],
    "desc": "脈の止まったClaudeセッションをメニューバーに数字で出して、見てからワンボタンで終了できる常駐ツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-83.jpg",
    "short": "ゾンビ掃除係",
    "thumbs": {
     "アプリ": ""
@@ -1330,7 +1330,7 @@
    "ai": [],
    "desc": "1件=JSON1つから請求書・見積書のPDF、確定申告用の台帳CSV、ダッシュボードを作るツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-86.jpg",
    "short": "billing",
    "thumbs": {
     "アプリ": ""
@@ -1360,7 +1360,7 @@
    "ai": [],
    "desc": "預金ベースの総資産・収支・投資に回せる額を一目で見るダッシュボード。毎朝7:30に自動更新。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-88.jpg",
    "short": "マネーDB",
    "thumbs": {
     "アプリ": ""
@@ -1405,7 +1405,7 @@
    "ai": [],
    "desc": "出会った人の情報をRPGのステータス画面のように鑑定してデータベース化する人脈資産管理アプリ。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-91.jpg",
    "short": "ヒトログ",
    "thumbs": {
     "アプリ": ""
@@ -1495,7 +1495,7 @@
    "ai": [],
    "desc": "レッスン記録のMarkdownから、生徒ごとの読み物風HTMLと先生用の一覧ビューを自動ビルドするツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-97.jpg",
    "short": "レッスン文庫",
    "thumbs": {
     "アプリ": ""
@@ -1540,7 +1540,7 @@
    "ai": [],
    "desc": "Meet/Zoom中の「声が入らない・こもる・途切れる」をホットキー一発で診断する会議音声トラブルシューター。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-100.jpg",
    "short": "callfix",
    "thumbs": {
     "アプリ": ""
@@ -1570,7 +1570,7 @@
    "ai": [],
    "desc": "相手のことを9項目埋めると、その人に刺さる質問・見せ方・出力の置き場所・締めの一文が出る提案カルテ生成ツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-102.jpg",
    "short": "提案屋",
    "thumbs": {
     "アプリ": ""
@@ -1630,7 +1630,7 @@
    "ai": [],
    "desc": "日本株ETFのデータ取得・バックテスト・ペーパートレード・ダッシュボードの基盤システム。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-106.jpg",
    "short": "ETF自動売買",
    "thumbs": {
     "アプリ": ""
@@ -1660,7 +1660,7 @@
    "ai": [],
    "desc": "Google広告の2案のA/Bテストを、毎朝のCSVから日別のタイル・比較表・費用・グラフで見比べるボード。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-108.jpg",
    "short": "広告どっち？",
    "thumbs": {
     "アプリ": ""
@@ -1694,7 +1694,7 @@
    ],
    "desc": "自分の顔写真とヘアカタログの写真をGeminiで合成し、美容師に見せる試着シートを作るツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-110.jpg",
    "short": "似合う試着室",
    "thumbs": {
     "アプリ": ""
@@ -1709,7 +1709,7 @@
    "ai": [],
    "desc": "目的別コンディショニングを筋トレ・ストレッチ・食事でコンサルするWebアプリ。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-111.jpg",
    "short": "大人の体育",
    "thumbs": {
     "アプリ": ""
@@ -1726,7 +1726,7 @@
    ],
    "desc": "物件データを入力するだけで「Claudeに貼れば理想のインテリア提案がもらえるプロンプト」を自動生成するツール。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-112.jpg",
    "short": "部屋の理想図鑑",
    "thumbs": {
     "アプリ": ""
@@ -1839,7 +1839,7 @@
    "ai": [],
    "desc": "引いたカードの言葉で話を転がす会話ゲームのブラウザ版。収録やもくもく会のアイスブレイク用。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-119.jpg",
    "short": "カタルタ",
    "thumbs": {
     "アプリ": ""
@@ -1869,7 +1869,7 @@
    "ai": [],
    "desc": "議事録・レポート・提案書などの日本語文書を通すと、機械翻訳っぽい・AIっぽい言い回しを検出して自然な文章に直すスキル。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-121.jpg",
    "short": "natural-japanese",
    "thumbs": {
     "アプリ": ""
@@ -1884,7 +1884,7 @@
    "ai": [],
    "desc": "35プロジェクト横断の「判断待ち」をプル型で1画面に集約する承認箱。Podcast検聴GO・BOT異常・返信待ちを承認タイムラインで見せる。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-122.jpg",
    "short": "秘書室",
    "thumbs": {
     "アプリ": ""
@@ -1899,7 +1899,7 @@
    "ai": [],
    "desc": "今応募できる補助金・助成金を公募DBから拾い上げ、選んだら申請書の下書きまで作る秘書スキル。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-123.jpg",
    "short": "補助金ハンター",
    "thumbs": {
     "アプリ": ""
@@ -1914,7 +1914,7 @@
    "ai": [],
    "desc": "ゲストのフォーム回答と予約情報から、専用ツアー案と日英のしおりを一式作成するスキル。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-124.jpg",
    "short": "ツアーしおり生成",
    "thumbs": {
     "アプリ": ""
@@ -1929,7 +1929,7 @@
    "ai": [],
    "desc": "LINEで動くAI執事。アイデアを送ると提案から自動実装まで進み、稼働中プロジェクトへの修正依頼もLINEから自動判定して即着手する。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-125.jpg",
    "short": "せばすちゃん",
    "thumbs": {
     "アプリ": ""
@@ -1959,7 +1959,7 @@
    "ai": [],
    "desc": "italkiに予約リクエストが入ると、Gmail検知→カレンダー空き判定→通知→板書自動作成までつなぐコンシェルジュ自動化。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-127.jpg",
    "short": "italkiコンシェルジュ",
    "thumbs": {
     "アプリ": ""
@@ -1974,7 +1974,7 @@
    "ai": [],
    "desc": "GetYourGuideとViatorの予約メールを5分ごとに読んでカレンダーに入れ、他のツアーや遠征とぶつかる時だけ知らせる見張り役。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-128.jpg",
    "short": "予約かぶり番",
    "thumbs": {
     "アプリ": ""
@@ -1989,7 +1989,7 @@
    "ai": [],
    "desc": "ゲストのツアーレビューを毎朝8:30に取得し、返信文案を自動生成してGoogleシートで管理するBOT。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-129.jpg",
    "short": "レビュー返信BOT",
    "thumbs": {
     "アプリ": ""
@@ -2019,7 +2019,7 @@
    "ai": [],
    "desc": "7番組501エピソードの音声を全文字起こししてSQLite DBに蓄積。全文検索・RAG・記事化に使える基盤。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-131.jpg",
    "short": "文字起こしDB",
    "thumbs": {
     "アプリ": ""
@@ -2034,7 +2034,7 @@
    "ai": [],
    "desc": "SpotifyのPodcastコメントを週1収集し、返信案→承認→自動返信まで回すBOT。未承認のものには絶対に返信しない。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-132.jpg",
    "short": "お便り番台",
    "thumbs": {
     "アプリ": ""
@@ -2064,7 +2064,7 @@
    "ai": [],
    "desc": "Viatorの予約リクエストメールから、カレンダー空き判定・仮押さえ・最終確認・受理や代替提案までつなぐBOT。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-134.jpg",
    "short": "Viator受理BOT",
    "thumbs": {
     "アプリ": ""
@@ -2081,7 +2081,7 @@
    ],
    "desc": "Claudeの作業が判断・許可待ちで止まった瞬間、スマホにプッシュが飛び、アプリから返信するだけで作業が再開できる仕組み。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-135.jpg",
    "short": "判断待ち通知",
    "thumbs": {
     "アプリ": ""
@@ -2096,7 +2096,7 @@
    "ai": [],
    "desc": "1日の出来事を、パーソナル・デイリー・ラジオの音声要約として自動生成するシステム。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-136.jpg",
    "short": "日報ラジオ",
    "thumbs": {
     "アプリ": ""
@@ -2113,7 +2113,7 @@
    ],
    "desc": "Amazon EchoとClaude APIを繋いだ音声の聞き手。話しかけると質問で掘り下げてくれるブレスト相手。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-137.jpg",
    "short": "かべうち",
    "thumbs": {
     "アプリ": ""
@@ -2128,7 +2128,7 @@
    "ai": [],
    "desc": "毎週日曜20時に全プロジェクトを裁定し「出す1本・しまっちゃう1本・断り下書き」をLINEで届けるBOT。",
    "url": "",
-   "thumb": "",
+   "thumb": "thumbs/app-138.jpg",
    "short": "しまっちゃうよおじさん",
    "thumbs": {
     "アプリ": ""
