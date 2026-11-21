@@ -21,6 +21,13 @@
 .card .th{border-radius:3px;border:1px solid var(--line)}
 .card .b{min-width:0;flex:1}
 
+/* 「作品 N件」とチップを1行に：行ごと上に貼りつく。320pxでも1行に収まるよう左右余白は幅で縮める（横スクロールさせない） */
+.wh{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:6px;background:var(--vio-l);padding-right:10px;border-bottom:1px solid var(--line)}
+.wh h2{flex:none;padding-right:0}
+.wh .filters{position:static;flex:1;min-width:0;padding:4px 0;border:0;background:none;display:flex;justify-content:flex-end}
+.wh .row{overflow:visible;gap:clamp(4px,1.4vw,6px)}
+.wh .chip{padding:2px clamp(7px,2.6vw,11px)}
+
 .duo{background:var(--vio-l);padding:10px 0}
 .duo .flow{--w:248px;--g:8px;--dur:200s;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .duo .flow.drag{cursor:grabbing}.duo .flow img{-webkit-user-drag:none}
@@ -30,7 +37,7 @@
 <body class="top">
 <div class="wrap">
 <header><a class="hd" href="./"><img src="assets/icon.png" alt="" width="32" height="32"><span class="site">AIポートフォリオ</span></a><a class="cta" href="#contact">仕事の相談</a></header>
-<section class="works"><h2>作品<small><span id="count">–</span>件</small></h2><div class="filters"><div class="row" id="catRow" aria-label="種類で絞り込む"></div></div>
+<section class="works"><div class="wh"><h2>作品<small><span id="count">–</span>件</small></h2><div class="filters"><div class="row" id="catRow" aria-label="種類で絞り込む"></div></div></div>
 <div class="duo" aria-hidden="true"><div class="flow"></div></div><ul class="list" id="list"></ul>
 <p id="empty">この種類の作品はまだありません。</p></section>
 <section id="profile" class="prof"><h2>プロフィール</h2><p class="pn" id="pName"></p><p class="pr" id="pRole"></p><p class="pb" id="pBio"></p></section>

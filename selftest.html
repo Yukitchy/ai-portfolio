@@ -14,6 +14,8 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     const bad=h.filter(x=>x.scrollWidth>x.clientWidth+1||(cs=>(x.clientHeight-parseFloat(cs.paddingTop)-parseFloat(cs.paddingBottom))/parseFloat(cs.lineHeight)>(x.querySelector(".site")?2.6:1.5))(getComputedStyle(x)));
     ok(!bad.length,`${v} ${w}px 見出し${h.length}本すべて1行${bad.length?" NG:"+bad.map(x=>x.textContent):""}`);
     ok(!/maru|rounded|丸/i.test([...d.querySelectorAll("*")].map(e=>getComputedStyle(e).fontFamily).join()),`${v} ${w}px 丸ゴシック不使用`);
+    if(v==="index"){const h=d.querySelector(".wh>h2").getBoundingClientRect(),cs=[...d.querySelectorAll("#catRow .chip")].map(c=>c.getBoundingClientRect()),r=d.querySelector("#catRow");
+      ok(cs.length===4&&cs.every(c=>c.left>=h.right&&c.right<=w-0.5&&Math.abs((c.top+c.bottom)/2-(h.top+h.bottom)/2)<3)&&r.scrollWidth<=r.clientWidth&&d.querySelector(".wh").offsetHeight<=40,`index ${w}px チップ4つが「作品 N件」と同じ1行・件数の右・行内スクロールなし（行高${d.querySelector(".wh").offsetHeight}px）`);}
     if(w!==390)continue;
     const self=v==="index"?B:`${B}${v}.html`,top=v==="index";
     ok(d.querySelector('link[rel=icon]').href.endsWith("favicon.png")&&d.querySelector('link[rel=apple-touch-icon]').href.endsWith("assets/apple-touch-icon.png")&&d.querySelector('meta[property="og:image"]').content===B+({board:"og-board2.png",index:"og-final.png"}[v]||"og.png")&&d.querySelector('meta[property="og:url"]').content===self,`${v} favicon/apple-touch/og:image/og:url=${self}`);
@@ -27,7 +29,7 @@ const B="https://yukitchy.github.io/ai-portfolio/";
     const hh=d.querySelector("header").offsetHeight;ok(hh<=50,`${v} 薄いヘッダー ${hh}px`);
     ok(d.querySelector('header a.cta[href="#contact"]'),`${v} ヘッダーに相談導線`);
     const ts=[...d.querySelectorAll("#list .card .t")].filter(x=>!x.closest(".first"));ok(ts.every(x=>x.getClientRects().length===1&&x.offsetHeight<=24),`${v} 作品タイトル1行`);
-    if(top){const o=[...d.querySelectorAll("header,.works>h2,.filters,.duo,#list")].map(e=>e.getBoundingClientRect().top);ok(o.length===5&&o.every((t,i)=>!i||t>o[i-1]),`index 並び＝ヘッダー→作品見出し→絞り込み→流れ→リスト`);ok(!/試作|サンプル/.test(d.body.textContent),`index 試作・サンプル表記なし`);}
+    if(top){const o=[...d.querySelectorAll("header,.works>.wh,.duo,#list")].map(e=>e.getBoundingClientRect().top);ok(o.length===4&&o.every((t,i)=>!i||t>o[i-1]),`index 並び＝ヘッダー→作品見出し＋絞り込み→流れ→リスト`);ok(!/試作|サンプル/.test(d.body.textContent),`index 試作・サンプル表記なし`);}
     if(top||+v.slice(1)>=6){const fl=[...d.querySelectorAll(".flow")],ims=fl.flatMap(f=>[...f.querySelectorAll("img")]);
       ok(fl.length&&fl.every(f=>{const r=f.getBoundingClientRect(),t=f.querySelector(".tr");return r.left>=0&&r.right<=w+0.5&&getComputedStyle(f).overflowX==="hidden"&&t.scrollWidth>=2*w&&parseFloat(getComputedStyle(t).animationDuration)>=90&&getComputedStyle(t).animationTimingFunction==="linear"}),`${v} 流れ${fl.length}段：枠内に収まり・幅を埋め・1周90秒以上の等速`);if(top)ok(fl.length===1,`index 流れは1段`);if(top){const f=fl[0],a=f.querySelector(".tr").getAnimations()[0],P=(t,x,y)=>f.dispatchEvent(new win.PointerEvent(t,{bubbles:true,pointerId:7,pointerType:"touch",clientX:x,clientY:y,button:0})),k=a.effect.getTiming().duration/(f.querySelector(".tr").scrollWidth/2),c0=a.currentTime;
         P("pointerdown",100,100);P("pointermove",160,104);const D=a.effect.getTiming().duration,dd=((c0-a.currentTime)%D+D)%D/k,ps=a.playState;P("pointerup",160,104);const pr=a.playState;let cl=0;f.addEventListener("click",()=>cl++);f.querySelector("img").dispatchEvent(new win.MouseEvent("click",{bubbles:true}));
