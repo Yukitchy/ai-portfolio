@@ -1,2155 +1,2189 @@
 {
- "sample": true,
- "profile": {
-  "name": "市原佑樹（Anime Sensei）",
-  "role": "AIで作るデザイン：ロゴ・ページ・アプリUI",
-  "bio": "ChatGPTやClaudeを使い分けて、ロゴの形出しからページ・アプリ画面の実装まで一人で仕上げます。ここに載せたのは、実際に公開して使っているものです。",
-  "contactLabel": "仕事の相談をする",
-  "contactNote": "メールまたはフォームで相談できます"
- },
- "items": [
-  {
-   "id": 1,
-   "title": "Anime Sensei Tours ロゴ＆マスコット",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "秋葉原アニメツアーのロゴと案内役マスコット。",
-   "url": "https://www.animesenseijp.com/akihabara-tour/",
-   "thumb": "",
-   "short": "Anime Sensei",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-anime.webp"
-   }
-  },
-  {
-   "id": 2,
-   "title": "アキバツアーLP",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "海外ゲスト向けの秋葉原ツアー紹介と予約導線。",
-   "url": "https://www.animesenseijp.com/akihabara-tour/",
-   "thumb": "thumbs/akiba.jpg",
-   "thumbs": {
-    "ページ": "thumbs/akiba.jpg"
-   }
-  },
-  {
-   "id": 3,
-   "title": "経理くん ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "フリーランスの請求書と収支をまとめるサービス『経理くん』のロゴ。",
-   "url": "https://yukitchy.github.io/money-setup-lp/",
-   "thumb": "",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-keiri.webp"
-   }
-  },
-  {
-   "id": 64,
-   "title": "経理くん LP",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "フリーランスの請求書と収支をまとめるサービスのLP。",
-   "url": "https://yukitchy.github.io/money-setup-lp/",
-   "thumb": "thumbs/keiri.jpg",
-   "thumbs": {
-    "ページ": "thumbs/keiri.jpg"
-   }
-  },
-  {
-   "id": 4,
-   "title": "タダヨミ ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "いま無料の漫画を終了が近い順に並べるサイト『タダヨミ』のロゴ。",
-   "url": "https://yukitchy.github.io/tadayomi/",
-   "thumb": "",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-tadayomi.webp"
-   }
-  },
-  {
-   "id": 65,
-   "title": "タダヨミ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "いま無料の漫画を終了が近い順に並べるまとめサイト。",
-   "url": "https://yukitchy.github.io/tadayomi/",
-   "thumb": "thumbs/tadayomi.jpg",
-   "thumbs": {
-    "ページ": "thumbs/tadayomi.jpg"
-   }
-  },
-  {
-   "id": 5,
-   "title": "だんどりー",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "段取りを組むためのアプリのUI。",
-   "url": "",
-   "thumb": "thumbs/app-5.jpg",
-   "short": "だんどりー",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 6,
-   "title": "ゲスト向けコースページ群",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "ツアーゲストごとに作るコース選択ページ。",
-   "url": "https://yukitchy.github.io/course-picker",
-   "thumb": "thumbs/app-6.jpg",
-   "short": "コースページ",
-   "thumbs": {
-    "ページ": ""
-   }
-  },
-  {
-   "id": 7,
-   "title": "ゆりっぺ東京ツアーサイト",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "金沢在住のガイドが東京を案内するツアーの紹介サイト。",
-   "url": "https://yukitchy.github.io/yuri-tokyo-tours/",
-   "thumb": "thumbs/yuri.jpg",
-   "thumbs": {
-    "ページ": "thumbs/yuri.jpg"
-   }
-  },
-  {
-   "id": 8,
-   "title": "レシート仕分けアプリ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "レシートを撮って経費を仕分けるスマホ用アプリ。",
-   "url": "https://yukitchy.github.io/receipt-sorter/",
-   "thumb": "thumbs/receipt.jpg",
-   "thumbs": {
-    "アプリ": "thumbs/receipt.jpg"
-   }
-  },
-  {
-   "id": 9,
-   "title": "遊び台帳 Anime Ledger",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "やりたいこと・やったことを記録する台帳アプリ。",
-   "url": "https://yukitchy.github.io/anime-ledger/",
-   "thumb": "thumbs/ledger.jpg",
-   "thumbs": {
-    "アプリ": "thumbs/ledger.jpg"
-   }
-  },
-  {
-   "id": 10,
-   "title": "SOTA'S ENGLISH GYM",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "英語の練習メニューをこなすトレーニングアプリ。",
-   "url": "https://yukitchy.github.io/sota-english-gym/",
-   "thumb": "thumbs/app-10.jpg",
-   "short": "SOTA'S GYM",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 11,
-   "title": "Dokkai Dojo",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "JLPT読解ドリル。N5〜N1対応で、全ての選択肢に解説が付く。",
-   "url": "https://yukitchy.github.io/dokkai-dojo/",
-   "thumb": "thumbs/dokkai-dojo.jpg",
-   "short": "Dokkai Dojo",
-   "thumbs": {
-    "ページ": "thumbs/dokkai-dojo.jpg"
-   }
-  },
-  {
-   "id": 12,
-   "title": "Kanji Dojo",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "部首から熟語まで、9段階を順に進む漢字の反復学習サイト。",
-   "url": "https://yukitchy.github.io/kanji-dojo/",
-   "thumb": "thumbs/kanji-dojo.jpg",
-   "short": "Kanji Dojo",
-   "thumbs": {
-    "ページ": "thumbs/kanji-dojo.jpg"
-   }
-  },
-  {
-   "id": 13,
-   "title": "Japan: First Quest",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "RPG風の初来日ガイド。自作ドット絵とチェックリストで渡航前を案内する。",
-   "url": "https://home.yuukipodcast.com/first-quest.html",
-   "thumb": "thumbs/first-quest.jpg",
-   "short": "First Quest",
-   "thumbs": {
-    "ページ": "thumbs/first-quest.jpg"
-   }
-  },
-  {
-   "id": 14,
-   "title": "北斗の拳で日本語",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "北斗の拳のセリフで日本語を学ぶ教材。発音練習までできる。",
-   "url": "https://yukitchy.github.io/hokuto-nihongo/",
-   "thumb": "thumbs/hokuto-nihongo.jpg",
-   "short": "北斗日本語",
-   "thumbs": {
-    "ページ": "thumbs/hokuto-nihongo.jpg"
-   }
-  },
-  {
-   "id": 15,
-   "title": "AI相棒設定診断",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "質問に答えると、自分に合うAIの相棒設定タイプが分かる診断サイト。",
-   "url": "https://yukitchy.github.io/ai-party-shindan/",
-   "thumb": "thumbs/ai-party-shindan.jpg",
-   "short": "AI相棒診断",
-   "thumbs": {
-    "ページ": "thumbs/ai-party-shindan.jpg"
-   }
-  },
-  {
-   "id": 16,
-   "title": "EAT MAP 東京グルメガイド",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "東京のエリア別に、英語で選べるグルメガイド。",
-   "url": "https://yukitchy.github.io/where-to-eat/",
-   "thumb": "thumbs/where-to-eat.jpg",
-   "short": "EAT MAP",
-   "thumbs": {
-    "ページ": "thumbs/where-to-eat.jpg"
-   }
-  },
-  {
-   "id": 17,
-   "title": "OshiGuide 推し聖地ガイド名鑑",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "好きな作品から現地ガイドを探せる、アニメ聖地の名鑑サイト。",
-   "url": "https://yukitchy.github.io/oshi-guide/",
-   "thumb": "thumbs/oshi-guide.jpg",
-   "short": "OshiGuide",
-   "thumbs": {
-    "ページ": "thumbs/oshi-guide.jpg"
-   }
-  },
-  {
-   "id": 18,
-   "title": "パトリック式ルートページ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "地図が予定のスクロールに合わせて動く、ゲスト専用の1日ルートページ。",
-   "url": "https://yukitchy.github.io/patrick-tokyo-day/",
-   "thumb": "thumbs/patrick-tokyo-day.jpg",
-   "short": "パトリック式",
-   "thumbs": {
-    "ページ": "thumbs/patrick-tokyo-day.jpg"
-   }
-  },
-  {
-   "id": 19,
-   "title": "ZOZOマリンスタジアム座席ガイド",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "座席番号を入れると、その席からの見え方が分かるガイド。",
-   "url": "https://yukitchy.github.io/zozo-seat-guide/",
-   "thumb": "thumbs/zozo-seat-guide.jpg",
-   "short": "ZOZO座席ガイド",
-   "thumbs": {
-    "ページ": "thumbs/zozo-seat-guide.jpg"
-   }
-  },
-  {
-   "id": 20,
-   "title": "KAPITAL全店舗マップ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "日本にあるKAPITAL全15店舗を、1枚の地図に集めたマップ。",
-   "url": "https://yukitchy.github.io/kapital-map/",
-   "thumb": "thumbs/kapital-map.jpg",
-   "short": "KAPITALマップ",
-   "thumbs": {
-    "ページ": "thumbs/kapital-map.jpg"
-   }
-  },
-  {
-   "id": 21,
-   "title": "秋葉原アニメデー（ユリア式）",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "写真コラージュで魅せる、ゲスト向け1日ページの形式「ユリア式」の見本。",
-   "url": "https://yukitchy.github.io/akiba-anime-day-kids/",
-   "thumb": "thumbs/akiba-anime-day-kids.jpg",
-   "short": "ユリア式",
-   "thumbs": {
-    "ページ": "thumbs/akiba-anime-day-kids.jpg"
-   }
-  },
-  {
-   "id": 22,
-   "title": "神楽坂・池袋ファンデー",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "ゲスト向け1日案内ページの標準形。写真タイルと地図で、回る順が分かる。",
-   "url": "https://yukitchy.github.io/kagurazaka-ikebukuro-dec10/",
-   "thumb": "thumbs/kagurazaka-ikebukuro-dec10.jpg",
-   "short": "神楽坂・池袋",
-   "thumbs": {
-    "ページ": "thumbs/kagurazaka-ikebukuro-dec10.jpg"
-   }
-  },
-  {
-   "id": 23,
-   "title": "秋葉原イブニングウォーク",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "夜の秋葉原を歩く、3ルートから選べる提案ページ。",
-   "url": "https://yukitchy.github.io/akiba-evening-walk/",
-   "thumb": "thumbs/akiba-evening-walk.jpg",
-   "short": "夜アキバ",
-   "thumbs": {
-    "ページ": "thumbs/akiba-evening-walk.jpg"
-   }
-  },
-  {
-   "id": 24,
-   "title": "大阪ガイド",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "大阪の観光と食べ歩きを1ページにまとめた、ゲスト向けガイド。",
-   "url": "https://yukitchy.github.io/osaka-guide-shaun/",
-   "thumb": "thumbs/osaka-guide-shaun.jpg",
-   "short": "大阪ガイド",
-   "thumbs": {
-    "ページ": "thumbs/osaka-guide-shaun.jpg"
-   }
-  },
-  {
-   "id": 25,
-   "title": "日本橋〜銀座 そば散策",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "日本橋から銀座へ、そばと甘味と散策を巡る提案ページ。",
-   "url": "https://yukitchy.github.io/nihonbashi-ginza-soba/",
-   "thumb": "thumbs/nihonbashi-ginza-soba.jpg",
-   "short": "そば散策",
-   "thumbs": {
-    "ページ": "thumbs/nihonbashi-ginza-soba.jpg"
-   }
-  },
-  {
-   "id": 26,
-   "title": "Podcast番組表",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "配信中の7番組を、試聴プレイヤー付きで並べた番組表サイト。",
-   "url": "https://program.yuukipodcast.com",
-   "thumb": "thumbs/podcast-program.jpg",
-   "short": "番組表",
-   "thumbs": {
-    "ページ": "thumbs/podcast-program.jpg"
-   }
-  },
-  {
-   "id": 27,
-   "title": "体験ラジオ診断サイト",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "全128回の中から、聞く人の状況に合う回を診断して案内するサイト。",
-   "url": "https://taiken.yuukipodcast.com",
-   "thumb": "thumbs/taiken-shindan.jpg",
-   "short": "体験ラジオ診断",
-   "thumbs": {
-    "ページ": "thumbs/taiken-shindan.jpg"
-   }
-  },
-  {
-   "id": 28,
-   "title": "個人ホームページ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "日英トップとPodcast7番組のカードを載せた、名刺代わりのサイト。",
-   "url": "https://home.yuukipodcast.com",
-   "thumb": "thumbs/home-yuukipodcast.jpg",
-   "short": "ホームページ",
-   "thumbs": {
-    "ページ": "thumbs/home-yuukipodcast.jpg"
-   }
-  },
-  {
-   "id": 29,
-   "title": "おおば歯科HPリメイク実験",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "実在の歯科サイト同等のホームページと予約システムを、どこまで作れるかの実験デモ。",
-   "url": "https://yukitchy.github.io/ooba-dental-demo/",
-   "thumb": "thumbs/ooba-dental-demo.jpg",
-   "short": "歯科HP実験",
-   "thumbs": {
-    "ページ": "thumbs/ooba-dental-demo.jpg"
-   }
-  },
-  {
-   "id": 30,
-   "title": "PHP脆弱性あんしん対策",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "PHPの重大な脆弱性が出た日に、自分のやることを3分で決められる解説ページ。",
-   "url": "https://yukitchy.github.io/php-anshin/",
-   "thumb": "thumbs/php-anshin.jpg",
-   "short": "PHPあんしん",
-   "thumbs": {
-    "ページ": "thumbs/php-anshin.jpg"
-   }
-  },
-  {
-   "id": 31,
-   "title": "近所ホットライン",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "民泊の苦情を記録に変える仕組みの、プロトタイプLP。",
-   "url": "https://yukitchy.github.io/minpaku-hotline/",
-   "thumb": "thumbs/minpaku-hotline.jpg",
-   "short": "近所ホットライン",
-   "thumbs": {
-    "ページ": "thumbs/minpaku-hotline.jpg"
-   }
-  },
-  {
-   "id": 32,
-   "title": "京都民泊規制 事実整理ページ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "京都市の民泊規制の素案を、一次資料だけで事実整理したページ。",
-   "url": "https://yukitchy.github.io/kyoto-minpaku/",
-   "thumb": "thumbs/kyoto-minpaku.jpg",
-   "short": "京都民泊規制",
-   "thumbs": {
-    "ページ": "thumbs/kyoto-minpaku.jpg"
-   }
-  },
-  {
-   "id": 33,
-   "title": "三行褒め日記",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "その日あった小さな良いことを、三行だけ書き残す日記サイト。",
-   "url": "https://yukitchy.github.io/home-nikki/",
-   "thumb": "thumbs/home-nikki.jpg",
-   "short": "三行褒め日記",
-   "thumbs": {
-    "ページ": "thumbs/home-nikki.jpg"
-   }
-  },
-  {
-   "id": 34,
-   "title": "Akihabara Tour Guide プロフィール",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "秋葉原ツアーガイドの実績と、各サービスの評価を英語でまとめた自己紹介ページ。",
-   "url": "https://yukitchy.github.io/yuuki-guide-profile/",
-   "thumb": "thumbs/yuuki-guide-profile.jpg",
-   "short": "ガイド紹介",
-   "thumbs": {
-    "ページ": "thumbs/yuuki-guide-profile.jpg"
-   }
-  },
-  {
-   "id": 35,
-   "title": "Yomeru 街の漢字フラッシュカード",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "実際に街で見かける看板の漢字を覚える、英語圏向けフラッシュカード。",
-   "url": "https://yukitchy.github.io/yomeru/",
-   "thumb": "thumbs/yomeru.jpg",
-   "short": "Yomeru",
-   "thumbs": {
-    "ページ": "thumbs/yomeru.jpg"
-   }
-  },
-  {
-   "id": 36,
-   "title": "Bento Lab",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "自作の便利ツールを、月額の定期便で届けるサービスのLP。",
-   "url": "https://yukitchy.github.io/bento-lab/",
-   "thumb": "thumbs/bento-lab.jpg",
-   "short": "Bento Lab",
-   "thumbs": {
-    "ページ": "thumbs/bento-lab.jpg"
-   }
-  },
-  {
-   "id": 37,
-   "title": "ナギ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "気分の落ち込みを受け止める、メンタルが辛い時期向けのセルフケアアプリ。",
-   "url": "https://yukitchy.github.io/nagi/lp.html",
-   "thumb": "thumbs/nagi.jpg",
-   "short": "ナギ",
-   "thumbs": {
-    "ページ": "thumbs/nagi.jpg"
-   }
-  },
-  {
-   "id": 38,
-   "title": "申請のミカタ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "生活保護の申請前に、必要な持ち物をチェックできるプロトタイプの提案LP。",
-   "url": "https://yukitchy.github.io/shinsei-no-mikata/",
-   "thumb": "thumbs/shinsei-no-mikata.jpg",
-   "short": "申請のミカタ",
-   "thumbs": {
-    "ページ": "thumbs/shinsei-no-mikata.jpg"
-   }
-  },
-  {
-   "id": 39,
-   "title": "Wi-Fi速さくらべ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "いま繋いでいるWi-Fiの速さを測って、場所ごとに並べて比べるツール。",
-   "url": "https://yukitchy.github.io/wifi-hayasa/",
-   "thumb": "thumbs/wifi-hayasa.jpg",
-   "short": "Wi-Fi速さ",
-   "thumbs": {
-    "アプリ": "thumbs/wifi-hayasa.jpg"
-   }
-  },
-  {
-   "id": 40,
-   "title": "いまいる？",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "「いま家守いる？」を1クリックで確認できるミニアプリ。",
-   "url": "https://yukitchy.github.io/imairu/",
-   "thumb": "thumbs/imairu.jpg",
-   "short": "いまいる？",
-   "thumbs": {
-    "アプリ": "thumbs/imairu.jpg"
-   }
-  },
-  {
-   "id": 41,
-   "title": "hideご飯会コンシェルジュ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "予約の検知から当日の案内、レビュー依頼までを回す、ご飯会の仕組み。",
-   "url": "https://yukitchy.github.io/hides-table/",
-   "thumb": "thumbs/hides-table.jpg",
-   "short": "ご飯会コンシェルジュ",
-   "thumbs": {
-    "アプリ": "thumbs/hides-table.jpg"
-   }
-  },
-  {
-   "id": 42,
-   "title": "面接ルーム",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "声で答える圧迫面接の練習と、ESの下書き作りができるトレーニングアプリ。",
-   "url": "https://yukitchy.github.io/mensetsu-room/",
-   "thumb": "thumbs/mensetsu-room.jpg",
-   "short": "面接ルーム",
-   "thumbs": {
-    "アプリ": "thumbs/mensetsu-room.jpg"
-   }
-  },
-  {
-   "id": 43,
-   "title": "Drip Zine",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "豆の量を入れると注ぐタイミングを声で案内する、コーヒーのドリップタイマー。",
-   "url": "https://yukitchy.github.io/drip-zine/",
-   "thumb": "thumbs/drip-zine.jpg",
-   "short": "Drip Zine",
-   "thumbs": {
-    "アプリ": "thumbs/drip-zine.jpg"
-   }
-  },
-  {
-   "id": 44,
-   "title": "やっとくボード",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "AI社員ごとに「判断待ち」を並べ、下準備の済んだ分から決めていくボードの見本。",
-   "url": "https://yukitchy.github.io/yattoku-board/",
-   "thumb": "thumbs/yattoku-board.jpg",
-   "short": "やっとくボード",
-   "thumbs": {
-    "アプリ": "thumbs/yattoku-board.jpg"
-   }
-  },
-  {
-   "id": 45,
-   "title": "素人AIラジオ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "AI初心者の2人が活用法を試すポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/033vD4s7A4CTOiR4A6Gjws",
-   "thumb": "",
-   "short": "素人AIラジオ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-shirouto-ai.webp"
-   }
-  },
-  {
-   "id": 46,
-   "title": "ゼロからの体験ツアーガイドラジオ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "ヨシとユウキの体験ツアーガイド番組のカバーアート。",
-   "url": "https://open.spotify.com/show/3sv0rNffYqHgYtkdEWUQdx",
-   "thumb": "",
-   "short": "体験ツアーラジオ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-tourguide.webp"
-   }
-  },
-  {
-   "id": 47,
-   "title": "みんらじ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "ゼロからの民泊ガイドラジオ（みんらじ）のカバーアート。",
-   "url": "https://open.spotify.com/show/1vSXCagPPaTKUwG6UGxrV3",
-   "thumb": "",
-   "short": "みんらじ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-minradi.webp"
-   }
-  },
-  {
-   "id": 48,
-   "title": "アキバなう カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "ササキチとユウキが秋葉原の今を伝えるポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/4AT5BQfMbvyCo5iHAttPL8",
-   "thumb": "",
-   "short": "アキバなう",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-akibanow.webp"
-   }
-  },
-  {
-   "id": 49,
-   "title": "メンタルよわよわラジオ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "メンタルと仕事の悩みを語るポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/6b1HahU3ytKTSmOnZI9qsD",
-   "thumb": "",
-   "short": "メンタルよわよわ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-mental-yowayowa.webp"
-   }
-  },
-  {
-   "id": 50,
-   "title": "イレギュラーコーヒー カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "つよぽんとユウキのコーヒー情報ポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/64em2Li4rP3SAfH9rgRswd",
-   "thumb": "",
-   "short": "イレギュラーコーヒー",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-irregular-coffee.webp"
-   }
-  },
-  {
-   "id": 51,
-   "title": "厚木トーク カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "厚木のしゃべり場ポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/758R6VVe9ql1D9YcKrXYfm",
-   "thumb": "",
-   "short": "厚木トーク",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-atsugi.webp"
-   }
-  },
-  {
-   "id": 52,
-   "title": "オタクのざつだん カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "JLPT N1向け日本語ポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/44LPCvK6Y21DtZqSNueLAa",
-   "thumb": "",
-   "short": "オタクのざつだん",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-otaku-zatsudan.webp"
-   }
-  },
-  {
-   "id": 53,
-   "title": "偏愛Channel カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "シンゴとユウキが推しへの偏愛を語るポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/2M2lOQ0UoTUDzuzffVq8q5",
-   "thumb": "",
-   "short": "偏愛Channel",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-henkoi.webp"
-   }
-  },
-  {
-   "id": 54,
-   "title": "愛の猫パンチ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "ユウイチとユウキのマーケ物申し系ポッドキャストのカバーアート。",
-   "url": "https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc",
-   "thumb": "",
-   "short": "愛の猫パンチ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-nekopunch.webp"
-   }
-  },
-  {
-   "id": 55,
-   "title": "北坂戸ラジオ カバーイラスト",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "北坂戸ラジオ（タイトル未定）のカバーアート案。",
-   "url": "",
-   "thumb": "",
-   "short": "北坂戸ラジオ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-cover-kitasakado.webp"
-   }
-  },
-  {
-   "id": 56,
-   "title": "だんどりー ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "ツアー段取りアプリ「だんどりー」の決定版ロゴ。段家マスコットと並ぶ横組み。",
-   "url": "",
-   "thumb": "",
-   "short": "だんどりー",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-dandori.webp"
-   }
-  },
-  {
-   "id": 57,
-   "title": "だんどりー マスコット「段家」",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "だんどりーのマスコット家族「段家」4人の集合イラスト。",
-   "url": "",
-   "thumb": "",
-   "short": "段家",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-dandori-mascot.webp"
-   }
-  },
-  {
-   "id": 58,
-   "title": "そばマップ ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "そば屋マップのバッジロゴ。地図ピンにそばの丼を組み合わせたマーク。",
-   "url": "",
-   "thumb": "",
-   "short": "そばマップ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-sobamap.webp"
-   }
-  },
-  {
-   "id": 59,
-   "title": "写真日記 ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "1日の写真と移動の記録から毎晩日記を生成する自作ツール「写真日記」の現行ロゴ。",
-   "url": "",
-   "thumb": "",
-   "short": "写真日記",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-nikki.webp"
-   }
-  },
-  {
-   "id": 60,
-   "title": "Anime Ledger ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [],
-   "desc": "遊び台帳 Anime Ledger のロゴマーク。",
-   "url": "https://yukitchy.github.io/anime-ledger/",
-   "thumb": "",
-   "short": "Anime Ledger",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-ledger.webp"
-   }
-  },
-  {
-   "id": 61,
-   "title": "AIポートフォリオ ロゴ",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "このポートフォリオサイト自身のアプリアイコン型ロゴ。紫の角丸四角に白抜き「Ai」。",
-   "url": "https://yukitchy.github.io/ai-portfolio/",
-   "thumb": "",
-   "short": "AIポートフォリオ",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-ai-portfolio.webp"
-   }
-  },
-  {
-   "id": 62,
-   "title": "ユウキPodcast文庫 ワードマーク",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "ポッドキャスト読み物サイト「ユウキPodcast文庫」のワードマーク。",
-   "url": "https://bunko.yuukipodcast.com/",
-   "thumb": "",
-   "short": "Podcast文庫",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-bunko.webp"
-   }
-  },
-  {
-   "id": 63,
-   "title": "Podcast番組表 ワードマーク",
-   "scope": [
-    "ロゴ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "配信中番組を並べた「ユウキのPodcast番組表」のワードマーク。",
-   "url": "https://program.yuukipodcast.com",
-   "thumb": "",
-   "short": "Podcast番組表",
-   "thumbs": {
-    "ロゴ": "thumbs/logo-program.webp"
-   }
-  },
-  {
-   "id": 66,
-   "title": "JLPT直前模試",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "N5・N4の本番形式を本番どおりの時間で解ける模擬試験。結果はブラウザに保存される。",
-   "url": "https://yukitchy.github.io/jlpt-mock/",
-   "thumb": "thumbs/jlpt-moshi.jpg",
-   "short": "JLPT模試",
-   "thumbs": {
-    "ページ": "thumbs/jlpt-moshi.jpg"
-   }
-  },
-  {
-   "id": 67,
-   "title": "SAUNA MAP",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "銭湯・温泉・サウナの個人記録を、マップとリストで見られるサイト。",
-   "url": "https://yukitchy.github.io/saunamap/",
-   "thumb": "thumbs/sauna-map.jpg",
-   "short": "SAUNA MAP",
-   "thumbs": {
-    "ページ": "thumbs/sauna-map.jpg"
-   }
-  },
-  {
-   "id": 68,
-   "title": "Sobamap そばマップ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "行ったそば・うどん店のレポと行きたい店のリストを、一枚の地図で見られる個人記録マップ。",
-   "url": "https://yukitchy.github.io/sobamap/",
-   "thumb": "thumbs/sobamap.jpg",
-   "short": "Sobamap",
-   "thumbs": {
-    "ページ": "thumbs/sobamap.jpg"
-   }
-  },
-  {
-   "id": 69,
-   "title": "StayKey サービスLP",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "予約した時間だけ鍵が開くスマートロック鍵自動化サービスの提案LP。日英中3言語＋解錠フロー体験デモ付き。",
-   "url": "https://yukitchy.github.io/staykey-lp/",
-   "thumb": "thumbs/staykey.jpg",
-   "short": "StayKey",
-   "thumbs": {
-    "ページ": "thumbs/staykey.jpg"
-   }
-  },
-  {
-   "id": 70,
-   "title": "Yoyoeigo提案「先生の道具箱」",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "「先生を新たに雇うのではなく、先生の道具になる」切り口でまとめたYoyoeigo向けの提案LP。",
-   "url": "https://yukitchy.github.io/yoyo-share/",
-   "thumb": "thumbs/yoyoeigo-teian.jpg",
-   "short": "Yoyoeigo提案",
-   "thumbs": {
-    "ページ": "thumbs/yoyoeigo-teian.jpg"
-   }
-  },
-  {
-   "id": 71,
-   "title": "MANGA DOJO Tokyo 協業提案LP",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "MANGA DOJO Tokyo向けの協業提案ページ。行程ビルダーで夜枠プランの価値をその場で体感してもらえる。",
-   "url": "https://yukitchy.github.io/mangadojo-teian/",
-   "thumb": "thumbs/manga-dojo-teian.jpg",
-   "short": "MANGA DOJO提案",
-   "thumbs": {
-    "ページ": "thumbs/manga-dojo-teian.jpg"
-   }
-  },
-  {
-   "id": 72,
-   "title": "BluePlanet DX提案書",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "BluePlanetの複数事業を横断したWeb集客・DX施策の提案書LP。",
-   "url": "",
-   "thumb": "thumbs/blueplanet-dx.jpg",
-   "short": "BluePlanet",
-   "thumbs": {
-    "ページ": "thumbs/blueplanet-dx.jpg"
-   }
-  },
-  {
-   "id": 73,
-   "title": "Eating Local in Japan",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "日本の日常の食事・マナー・使えるフレーズを旅行者向けにまとめた英語ガイドページ。",
-   "url": "https://yukitchy.github.io/japanese-food-guide/",
-   "thumb": "thumbs/eating-local.jpg",
-   "short": "Eating Local",
-   "thumbs": {
-    "ページ": "thumbs/eating-local.jpg"
-   }
-  },
-  {
-   "id": 74,
-   "title": "Tokyo Train Guide",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "東京の電車の乗り方を旅行者向けにまとめた英語の一枚ガイドページ。",
-   "url": "https://yukitchy.github.io/tokyo-train-guide/",
-   "thumb": "thumbs/tokyo-train-guide.jpg",
-   "short": "Train Guide",
-   "thumbs": {
-    "ページ": "thumbs/tokyo-train-guide.jpg"
-   }
-  },
-  {
-   "id": 75,
-   "title": "住吉の食べ歩きマップ",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "住吉駅から徒歩15分以内の実在の飲食店15軒を、手描き風の地図と日本語名つきで紹介する英語ページ。",
-   "url": "https://yukitchy.github.io/sumiyoshi-eats/",
-   "thumb": "thumbs/sumiyoshi-eats.jpg",
-   "short": "住吉マップ",
-   "thumbs": {
-    "ページ": "thumbs/sumiyoshi-eats.jpg"
-   }
-  },
-  {
-   "id": 76,
-   "title": "穴場温泉16",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "東京から2〜3時間圏の穴場温泉16件を、日英切り替えで見比べられる個人用の旅先ガイド。",
-   "url": "https://yukitchy.github.io/onsen-anaba/",
-   "thumb": "thumbs/onsen16.jpg",
-   "short": "穴場温泉16",
-   "thumbs": {
-    "ページ": "thumbs/onsen16.jpg"
-   }
-  },
-  {
-   "id": 77,
-   "title": "盆踊りキット",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "盆踊り参加者向けの案内・実績・英語ページをまとめた、出張開催ガイドの1セット。",
-   "url": "",
-   "thumb": "thumbs/bonodori-kit.jpg",
-   "short": "盆踊りキット",
-   "thumbs": {
-    "ページ": "thumbs/bonodori-kit.jpg"
-   }
-  },
-  {
-   "id": 78,
-   "title": "toaru酒造ツアー ご提案",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "酒造ツアー向けに、Claudeコーチングの提案書・予約台帳・ヒアリングフォームを1つにまとめた提案一式。",
-   "url": "",
-   "thumb": "thumbs/toaru-sakazou.jpg",
-   "short": "酒造ツアー提案",
-   "thumbs": {
-    "ページ": "thumbs/toaru-sakazou.jpg"
-   }
-  },
-  {
-   "id": 79,
-   "title": "宿泊のしおりテンプレート",
-   "scope": [
-    "ページ"
-   ],
-   "ai": [],
-   "desc": "Wi-Fi・住所・鍵・ルール・周辺店舗を1ページに集め、日英をボタンで切り替えられる民泊オーナー向けテンプレート。",
-   "url": "",
-   "thumb": "thumbs/shukuhaku-shiori.jpg",
-   "short": "宿泊のしおり",
-   "thumbs": {
-    "ページ": "thumbs/shukuhaku-shiori.jpg"
-   }
-  },
-  {
-   "id": 80,
-   "title": "AI Arena",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Gemini"
-   ],
-   "desc": "同じお題を最大3スロットのAIサービスへ同時発注し、横並びで比較できる実験ツール。",
-   "url": "",
-   "thumb": "thumbs/ai-arena.jpg",
-   "short": "AI Arena",
-   "thumbs": {
-    "アプリ": "thumbs/ai-arena.jpg"
-   }
-  },
-  {
-   "id": 81,
-   "title": "AI/SEO健診",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "サイトのrobots.txt・実クロール・sitemap・llms.txt・og:imageを一括診断し、生成AIに見つけてもらえる状態か判定するツール。",
-   "url": "",
-   "thumb": "thumbs/app-81.jpg",
-   "short": "AI/SEO健診",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 82,
-   "title": "Claude利用量バー",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "Claude Codeの利用量（残り%・リセット時刻・API換算コスト）をmacOSメニューバーに常時表示するアプリ。",
-   "url": "",
-   "thumb": "thumbs/app-82.jpg",
-   "short": "利用量バー",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 83,
-   "title": "ゾンビ掃除係",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "脈の止まったClaudeセッションをメニューバーに数字で出して、見てからワンボタンで終了できる常駐ツール。",
-   "url": "",
-   "thumb": "thumbs/app-83.jpg",
-   "short": "ゾンビ掃除係",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 84,
-   "title": "PJダッシュボード",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "進行中プロジェクトを徒競走レーンで一覧し、押すとドシエが開く司令塔ダッシュボード。",
-   "url": "",
-   "thumb": "thumbs/pj-dashboard.jpg",
-   "short": "PJダッシュボード",
-   "thumbs": {
-    "アプリ": "thumbs/pj-dashboard.jpg"
-   }
-  },
-  {
-   "id": 85,
-   "title": "Podcast再生数ボード",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Spotify for Creatorsの再生数を毎朝自動で集め、番組別の推移と施策案を週報形式で見せるボード。",
-   "url": "",
-   "thumb": "thumbs/podcast-play-board.jpg",
-   "short": "再生数ボード",
-   "thumbs": {
-    "アプリ": "thumbs/podcast-play-board.jpg"
-   }
-  },
-  {
-   "id": 86,
-   "title": "billing（請求書・見積書の発行管理）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "1件=JSON1つから請求書・見積書のPDF、確定申告用の台帳CSV、ダッシュボードを作るツール。",
-   "url": "",
-   "thumb": "thumbs/app-86.jpg",
-   "short": "billing",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 87,
-   "title": "うりあげ帳",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Viator/Airbnb/GetYourGuideと銀行明細をまとめて、freee取り込み用の取引CSVと経費仕分けを作る売上台帳。",
-   "url": "",
-   "thumb": "thumbs/uriagecho.jpg",
-   "short": "うりあげ帳",
-   "thumbs": {
-    "アプリ": "thumbs/uriagecho.jpg"
-   }
-  },
-  {
-   "id": 88,
-   "title": "マネー・ダッシュボード",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "預金ベースの総資産・収支・投資に回せる額を一目で見るダッシュボード。毎朝7:30に自動更新。",
-   "url": "",
-   "thumb": "thumbs/app-88.jpg",
-   "short": "マネーDB",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 89,
-   "title": "ジャケ屋",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Podcastのカバーアートのロゴ・タイトルの大きさや位置をブラウザ上のスライダーで調整し、3000×3000pxで書き出すツール。",
-   "url": "",
-   "thumb": "thumbs/jakeya.jpg",
-   "short": "ジャケ屋",
-   "thumbs": {
-    "アプリ": "thumbs/jakeya.jpg"
-   }
-  },
-  {
-   "id": 90,
-   "title": "セトリメーカー",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "イベントの録音を読み込むと、曲の区切りを探して時刻つきのセットリストを作るブラウザアプリ。",
-   "url": "https://yukitchy.github.io/setlist-maker/",
-   "thumb": "thumbs/setlist-maker.jpg",
-   "short": "セトリメーカー",
-   "thumbs": {
-    "アプリ": "thumbs/setlist-maker.jpg"
-   }
-  },
-  {
-   "id": 91,
-   "title": "ヒトログ（人脈資産DB）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "出会った人の情報をRPGのステータス画面のように鑑定してデータベース化する人脈資産管理アプリ。",
-   "url": "",
-   "thumb": "thumbs/app-91.jpg",
-   "short": "ヒトログ",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 92,
-   "title": "ネタ帳（カンペ屋）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "8番組のラジオネタ在庫ダッシュボード＋即席カンペ。全番組の在庫・収録ペース・「そろそろ録る順」を可視化。",
-   "url": "",
-   "thumb": "thumbs/netacho.jpg",
-   "short": "ネタ帳",
-   "thumbs": {
-    "アプリ": "thumbs/netacho.jpg"
-   }
-  },
-  {
-   "id": 93,
-   "title": "ユウキの畑",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "作ったものを種→苗→成長中→出荷待ちの畝で管理する棚。出荷待ちなのに出荷先が空の数字が、そのまま次の営業リストになる。",
-   "url": "",
-   "thumb": "thumbs/yuki-hatake.jpg",
-   "short": "ユウキの畑",
-   "thumbs": {
-    "アプリ": "thumbs/yuki-hatake.jpg"
-   }
-  },
-  {
-   "id": 94,
-   "title": "ユウキ学園 PIXEL ACADEMY",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "launchd常駐BOTをピクセル美少女学生として可視化する学園。正常なら授業中、異常なら倒れる。",
-   "url": "",
-   "thumb": "thumbs/yuki-gakuen.jpg",
-   "short": "ユウキ学園",
-   "thumbs": {
-    "アプリ": "thumbs/yuki-gakuen.jpg"
-   }
-  },
-  {
-   "id": 95,
-   "title": "もったいないおばけ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ギフト券・引換券・チケット・ポイントなど期限切れになりがちな資産を1画面の台帳に集め、使い切ったら成仏ボタンで消すアプリ。",
-   "url": "",
-   "thumb": "thumbs/mottainai-obake.jpg",
-   "short": "もったいないおばけ",
-   "thumbs": {
-    "アプリ": "thumbs/mottainai-obake.jpg"
-   }
-  },
-  {
-   "id": 96,
-   "title": "ツアー写真セレクタ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ツアー写真100〜200枚からベスト25枚を全ローカルAI（Apple Vision）で自動選抜するツール。",
-   "url": "",
-   "thumb": "thumbs/tour-photo-selector.jpg",
-   "short": "写真セレクタ",
-   "thumbs": {
-    "アプリ": "thumbs/tour-photo-selector.jpg"
-   }
-  },
-  {
-   "id": 97,
-   "title": "レッスン文庫",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "レッスン記録のMarkdownから、生徒ごとの読み物風HTMLと先生用の一覧ビューを自動ビルドするツール。",
-   "url": "",
-   "thumb": "thumbs/app-97.jpg",
-   "short": "レッスン文庫",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 98,
-   "title": "レッスン準備の箱",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "生徒の返事（面接日・業界・レベルなど）を入力すると、90分の時間割と模擬面接の質問セットをその場で組み立てる箱。",
-   "url": "",
-   "thumb": "thumbs/lesson-prep-box.jpg",
-   "short": "レッスン準備の箱",
-   "thumbs": {
-    "アプリ": "thumbs/lesson-prep-box.jpg"
-   }
-  },
-  {
-   "id": 99,
-   "title": "ぶつ切り検分台",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Podcast編集前後の音声を並べて解析し、切れ目や不自然な間を赤帯で可視化して聴き比べできる検分ツール。",
-   "url": "",
-   "thumb": "thumbs/butsugiri-kenbun.jpg",
-   "short": "ぶつ切り検分台",
-   "thumbs": {
-    "アプリ": "thumbs/butsugiri-kenbun.jpg"
-   }
-  },
-  {
-   "id": 100,
-   "title": "callfix（会議音声診断）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Meet/Zoom中の「声が入らない・こもる・途切れる」をホットキー一発で診断する会議音声トラブルシューター。",
-   "url": "",
-   "thumb": "thumbs/app-100.jpg",
-   "short": "callfix",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 101,
-   "title": "解約屋",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "領収書メールやカード明細を貼るだけで契約中の固定費を読み取り、年いくら落とせるかと安い乗り換え先を出すツール。",
-   "url": "",
-   "thumb": "thumbs/kaiyakuya.jpg",
-   "short": "解約屋",
-   "thumbs": {
-    "アプリ": "thumbs/kaiyakuya.jpg"
-   }
-  },
-  {
-   "id": 102,
-   "title": "提案屋",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "相手のことを9項目埋めると、その人に刺さる質問・見せ方・出力の置き場所・締めの一文が出る提案カルテ生成ツール。",
-   "url": "",
-   "thumb": "thumbs/app-102.jpg",
-   "short": "提案屋",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 103,
-   "title": "Quest Concierge（AIツアーコンシェルジュ）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ツアーゲスト専用URLで24時間旅程相談に答え、遅延や雨天時は約束を守りながら残りの旅程を3案に組み直すAIコンシェルジュ。",
-   "url": "",
-   "thumb": "thumbs/quest-concierge.jpg",
-   "short": "Quest Concierge",
-   "thumbs": {
-    "アプリ": "thumbs/quest-concierge.jpg"
-   }
-  },
-  {
-   "id": 104,
-   "title": "走った地図",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ジョギングの経路がStravaから地図に残り、先週の自分と比べられるPWA。走った日は地図カードが自動で公開される。",
-   "url": "",
-   "thumb": "thumbs/hashitta-chizu.jpg",
-   "short": "走った地図",
-   "thumbs": {
-    "アプリ": "thumbs/hashitta-chizu.jpg"
-   }
-  },
-  {
-   "id": 105,
-   "title": "民泊可能物件マップ（大田区）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "住所を入れると民泊（住宅宿泊事業）が可能か判定するマップツール。公開APIとGISデータのみで大田区パイロット実装。",
-   "url": "",
-   "thumb": "thumbs/minpaku-map-ota.jpg",
-   "short": "民泊物件マップ",
-   "thumbs": {
-    "アプリ": "thumbs/minpaku-map-ota.jpg"
-   }
-  },
-  {
-   "id": 106,
-   "title": "日本株ETF自動売買",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "日本株ETFのデータ取得・バックテスト・ペーパートレード・ダッシュボードの基盤システム。",
-   "url": "",
-   "thumb": "thumbs/app-106.jpg",
-   "short": "ETF自動売買",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 107,
-   "title": "明君 Meikun",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "外部の予約プラットフォームに依存せず、自前でツアー予約を受けて捌くための予約コントローラー。",
-   "url": "",
-   "thumb": "thumbs/meikun.jpg",
-   "short": "明君 Meikun",
-   "thumbs": {
-    "アプリ": "thumbs/meikun.jpg"
-   }
-  },
-  {
-   "id": 108,
-   "title": "広告どっち？",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Google広告の2案のA/Bテストを、毎朝のCSVから日別のタイル・比較表・費用・グラフで見比べるボード。",
-   "url": "",
-   "thumb": "thumbs/app-108.jpg",
-   "short": "広告どっち？",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 109,
-   "title": "声工房",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "ChatGPT"
-   ],
-   "desc": "自分の声を録って、その声で好きな日本語文を読ませるローカル完結の音声合成ブース。",
-   "url": "",
-   "thumb": "thumbs/koeboko.jpg",
-   "short": "声工房",
-   "thumbs": {
-    "アプリ": "thumbs/koeboko.jpg"
-   }
-  },
-  {
-   "id": 110,
-   "title": "似合う試着室",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Gemini"
-   ],
-   "desc": "自分の顔写真とヘアカタログの写真をGeminiで合成し、美容師に見せる試着シートを作るツール。",
-   "url": "",
-   "thumb": "thumbs/app-110.jpg",
-   "short": "似合う試着室",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 111,
-   "title": "大人の体育",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "目的別コンディショニングを筋トレ・ストレッチ・食事でコンサルするWebアプリ。",
-   "url": "",
-   "thumb": "thumbs/app-111.jpg",
-   "short": "大人の体育",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 112,
-   "title": "部屋の理想図鑑",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "物件データを入力するだけで「Claudeに貼れば理想のインテリア提案がもらえるプロンプト」を自動生成するツール。",
-   "url": "",
-   "thumb": "thumbs/app-112.jpg",
-   "short": "部屋の理想図鑑",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 113,
-   "title": "神ショートカット チートシート",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "Claude Code・Mac・各ツールのショートカットをまとめたローカルHTMLリファレンス。",
-   "url": "",
-   "thumb": "thumbs/shortcut-cheatsheet.jpg",
-   "short": "神ショートカット",
-   "thumbs": {
-    "アプリ": "thumbs/shortcut-cheatsheet.jpg"
-   }
-  },
-  {
-   "id": 114,
-   "title": "音声レジュメ生成キット",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude",
-    "Gemini"
-   ],
-   "desc": "録音1本から議事録・記事を作る指示書一式を、固有名詞辞書と検品スクリプト付きで他人の環境でも動く形に汎用化したキット。",
-   "url": "",
-   "thumb": "thumbs/resume-kit.jpg",
-   "short": "レジュメ生成キット",
-   "thumbs": {
-    "アプリ": "thumbs/resume-kit.jpg"
-   }
-  },
-  {
-   "id": 115,
-   "title": "サイト直接コメントレビュー環境",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "作ったページの上に直接指摘を書き込み、コメントデータで受け取る校正ツール。",
-   "url": "",
-   "thumb": "thumbs/comment-review.jpg",
-   "short": "コメントレビュー",
-   "thumbs": {
-    "アプリ": "thumbs/comment-review.jpg"
-   }
-  },
-  {
-   "id": 116,
-   "title": "サ活いつなら？",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "サウナ施設探し・サ友との日程調整・サ活記録を1本のURLにまとめるPWA。「いつなら？」のサウナ版。",
-   "url": "",
-   "thumb": "thumbs/sakatsu-itsunara.jpg",
-   "short": "サ活いつなら？",
-   "thumbs": {
-    "アプリ": "thumbs/sakatsu-itsunara.jpg"
-   }
-  },
-  {
-   "id": 117,
-   "title": "おおば先生Claude導入教材キット",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude",
-    "ChatGPT"
-   ],
-   "desc": "Claude導入直後の歯科医院向け教材一式。図解・雇用契約書プロンプト・体験メニュー10・Meet台本などの5点セット。",
-   "url": "",
-   "thumb": "thumbs/ooba-kyozai.jpg",
-   "short": "Claude導入教材",
-   "thumbs": {
-    "アプリ": "thumbs/ooba-kyozai.jpg"
-   }
-  },
-  {
-   "id": 118,
-   "title": "リズムもちつき",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "うさぎが餅をつくリズム天国風ブラウザゲーム。BGM・SEは全てWeb Audio合成、コンボとランク表示つき。",
-   "url": "",
-   "thumb": "thumbs/rhythm-mochitsuki.jpg",
-   "short": "リズムもちつき",
-   "thumbs": {
-    "アプリ": "thumbs/rhythm-mochitsuki.jpg"
-   }
-  },
-  {
-   "id": 119,
-   "title": "カタルタ（会話がつむがれるカード）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "引いたカードの言葉で話を転がす会話ゲームのブラウザ版。収録やもくもく会のアイスブレイク用。",
-   "url": "",
-   "thumb": "thumbs/app-119.jpg",
-   "short": "カタルタ",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 120,
-   "title": "できる屋（AIメニュー生成）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "知人・新規出会いの職業情報から「あなたへのAIにできること」を一枚のPNG/HTMLで生成するスキル。",
-   "url": "",
-   "thumb": "thumbs/dekiruya.jpg",
-   "short": "できる屋",
-   "thumbs": {
-    "アプリ": "thumbs/dekiruya.jpg"
-   }
-  },
-  {
-   "id": 121,
-   "title": "natural-japanese（日本語のAI臭検出）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "議事録・レポート・提案書などの日本語文書を通すと、機械翻訳っぽい・AIっぽい言い回しを検出して自然な文章に直すスキル。",
-   "url": "",
-   "thumb": "thumbs/app-121.jpg",
-   "short": "natural-japanese",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 122,
-   "title": "秘書室（承認箱）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "35プロジェクト横断の「判断待ち」をプル型で1画面に集約する承認箱。Podcast検聴GO・BOT異常・返信待ちを承認タイムラインで見せる。",
-   "url": "",
-   "thumb": "thumbs/app-122.jpg",
-   "short": "秘書室",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 123,
-   "title": "補助金ハンター秘書",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "今応募できる補助金・助成金を公募DBから拾い上げ、選んだら申請書の下書きまで作る秘書スキル。",
-   "url": "",
-   "thumb": "thumbs/app-123.jpg",
-   "short": "補助金ハンター",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 124,
-   "title": "秋葉原ツアーしおり生成",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ゲストのフォーム回答と予約情報から、専用ツアー案と日英のしおりを一式作成するスキル。",
-   "url": "",
-   "thumb": "thumbs/app-124.jpg",
-   "short": "ツアーしおり生成",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 125,
-   "title": "せばすちゃんBOT",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "LINEで動くAI執事。アイデアを送ると提案から自動実装まで進み、稼働中プロジェクトへの修正依頼もLINEから自動判定して即着手する。",
-   "url": "",
-   "thumb": "thumbs/app-125.jpg",
-   "short": "せばすちゃん",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 126,
-   "title": "ポン出し編集",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "収録音声を放り込むだけでPodcastが完成する全自動編集。編集後はAIが波形と耳で自動検品する。",
-   "url": "",
-   "thumb": "thumbs/pon-dashi.jpg",
-   "short": "ポン出し編集",
-   "thumbs": {
-    "アプリ": "thumbs/pon-dashi.jpg"
-   }
-  },
-  {
-   "id": 127,
-   "title": "italki予約コンシェルジュ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "italkiに予約リクエストが入ると、Gmail検知→カレンダー空き判定→通知→板書自動作成までつなぐコンシェルジュ自動化。",
-   "url": "",
-   "thumb": "thumbs/app-127.jpg",
-   "short": "italkiコンシェルジュ",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 128,
-   "title": "予約かぶり番",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "GetYourGuideとViatorの予約メールを5分ごとに読んでカレンダーに入れ、他のツアーや遠征とぶつかる時だけ知らせる見張り役。",
-   "url": "",
-   "thumb": "thumbs/app-128.jpg",
-   "short": "予約かぶり番",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 129,
-   "title": "ツアーレビュー返信BOT",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "ゲストのツアーレビューを毎朝8:30に取得し、返信文案を自動生成してGoogleシートで管理するBOT。",
-   "url": "",
-   "thumb": "thumbs/app-129.jpg",
-   "short": "レビュー返信BOT",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 130,
-   "title": "みまもりダッシュボード",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "launchd常駐BOT約35本の無音死を毎日2回自動点検する番犬。異常はダッシュボードとMac通知で知らせる。",
-   "url": "",
-   "thumb": "thumbs/mimamori-dashboard.jpg",
-   "short": "みまもりDB",
-   "thumbs": {
-    "アプリ": "thumbs/mimamori-dashboard.jpg"
-   }
-  },
-  {
-   "id": 131,
-   "title": "Podcast全回文字起こしDB",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "7番組501エピソードの音声を全文字起こししてSQLite DBに蓄積。全文検索・RAG・記事化に使える基盤。",
-   "url": "",
-   "thumb": "thumbs/app-131.jpg",
-   "short": "文字起こしDB",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 132,
-   "title": "お便り番台",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "SpotifyのPodcastコメントを週1収集し、返信案→承認→自動返信まで回すBOT。未承認のものには絶対に返信しない。",
-   "url": "",
-   "thumb": "thumbs/app-132.jpg",
-   "short": "お便り番台",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 133,
-   "title": "シイレウォッチ",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "メルカリで条件に合う安い出品を検知し、URL付きでLINE通知＋相場推移も記録するフリマ監視BOT。購入は自分で判断する。",
-   "url": "",
-   "thumb": "thumbs/shiire-watch.jpg",
-   "short": "シイレウォッチ",
-   "thumbs": {
-    "アプリ": "thumbs/shiire-watch.jpg"
-   }
-  },
-  {
-   "id": 134,
-   "title": "Viator予約自動受理BOT",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "Viatorの予約リクエストメールから、カレンダー空き判定・仮押さえ・最終確認・受理や代替提案までつなぐBOT。",
-   "url": "",
-   "thumb": "thumbs/app-134.jpg",
-   "short": "Viator受理BOT",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 135,
-   "title": "判断待ちスマホ通知",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "Claudeの作業が判断・許可待ちで止まった瞬間、スマホにプッシュが飛び、アプリから返信するだけで作業が再開できる仕組み。",
-   "url": "",
-   "thumb": "thumbs/app-135.jpg",
-   "short": "判断待ち通知",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 136,
-   "title": "日報ラジオBOT",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "1日の出来事を、パーソナル・デイリー・ラジオの音声要約として自動生成するシステム。",
-   "url": "",
-   "thumb": "thumbs/app-136.jpg",
-   "short": "日報ラジオ",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 137,
-   "title": "かべうち（Echo Brainstorm）",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Claude"
-   ],
-   "desc": "Amazon EchoとClaude APIを繋いだ音声の聞き手。話しかけると質問で掘り下げてくれるブレスト相手。",
-   "url": "",
-   "thumb": "thumbs/app-137.jpg",
-   "short": "かべうち",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 138,
-   "title": "しまっちゃうよおじさん",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [],
-   "desc": "毎週日曜20時に全プロジェクトを裁定し「出す1本・しまっちゃう1本・断り下書き」をLINEで届けるBOT。",
-   "url": "",
-   "thumb": "thumbs/app-138.jpg",
-   "short": "しまっちゃうよおじさん",
-   "thumbs": {
-    "アプリ": ""
-   }
-  },
-  {
-   "id": 139,
-   "title": "切り抜き動画BOT",
-   "scope": [
-    "アプリ"
-   ],
-   "ai": [
-    "Gemini"
-   ],
-   "desc": "Podcast新着回の結論部分をGeminiが選び、40〜60秒の縦型切り抜き動画にしてX投稿まで自動化するBOT。",
-   "url": "",
-   "thumb": "thumbs/kirinuki-bot.jpg",
-   "short": "切り抜き動画BOT",
-   "thumbs": {
-    "アプリ": "thumbs/kirinuki-bot.jpg"
-   }
-  }
- ]
+  "sample": true,
+  "profile": {
+    "name": "市原佑樹（Anime Sensei）",
+    "role": "AIで作るデザイン：ロゴ・ページ・アプリUI",
+    "bio": "ChatGPTやClaudeを使い分けて、ロゴの形出しからページ・アプリ画面の実装まで一人で仕上げます。ここに載せたのは、実際に公開して使っているものです。",
+    "contactLabel": "仕事の相談をする",
+    "contactNote": "メールまたはフォームで相談できます"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Anime Sensei Tours ロゴ＆マスコット",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "秋葉原アニメツアーのロゴと案内役マスコット。",
+      "url": "https://www.animesenseijp.com/akihabara-tour/",
+      "thumb": "",
+      "short": "Anime Sensei",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-anime.webp"
+      }
+    },
+    {
+      "id": 2,
+      "title": "アキバツアーLP",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "海外ゲスト向けの秋葉原ツアー紹介と予約導線。",
+      "url": "https://www.animesenseijp.com/akihabara-tour/",
+      "thumb": "thumbs/akiba.jpg",
+      "thumbs": {
+        "ページ": "thumbs/akiba.jpg"
+      }
+    },
+    {
+      "id": 3,
+      "title": "経理くん ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "フリーランスの請求書と収支をまとめるサービス『経理くん』のロゴ。",
+      "url": "https://yukitchy.github.io/money-setup-lp/",
+      "thumb": "",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-keiri.webp"
+      }
+    },
+    {
+      "id": 64,
+      "title": "経理くん LP",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "フリーランスの請求書と収支をまとめるサービスのLP。",
+      "url": "https://yukitchy.github.io/money-setup-lp/",
+      "thumb": "thumbs/keiri.jpg",
+      "thumbs": {
+        "ページ": "thumbs/keiri.jpg"
+      }
+    },
+    {
+      "id": 4,
+      "title": "タダヨミ ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "いま無料の漫画を終了が近い順に並べるサイト『タダヨミ』のロゴ。",
+      "url": "https://yukitchy.github.io/tadayomi/",
+      "thumb": "",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-tadayomi.webp"
+      }
+    },
+    {
+      "id": 65,
+      "title": "タダヨミ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "いま無料の漫画を終了が近い順に並べるまとめサイト。",
+      "url": "https://yukitchy.github.io/tadayomi/",
+      "thumb": "thumbs/tadayomi.jpg",
+      "thumbs": {
+        "ページ": "thumbs/tadayomi.jpg"
+      }
+    },
+    {
+      "id": 140,
+      "title": "ワイスピ ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "実測Wi-Fiマップ『ワイスピ』のロゴ。スピードラインをモチーフにしたフラットデザイン。",
+      "url": "https://yukitchy.github.io/booking-trends-board/wifi-map/",
+      "thumb": "thumbs/logo-wispi.png",
+      "short": "ワイスピ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-wispi.png"
+      }
+    },
+    {
+      "id": 141,
+      "title": "ワイスピ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "歩きながら近くて速いWi-Fiを探す実測マップ。載っているのは実際に測ったスポットだけ。",
+      "url": "https://yukitchy.github.io/booking-trends-board/wifi-map/",
+      "thumb": "thumbs/wispi.jpg",
+      "short": "ワイスピ",
+      "thumbs": {
+        "ページ": "thumbs/wispi.jpg"
+      }
+    },
+    {
+      "id": 5,
+      "title": "だんどりー",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "段取りを組むためのアプリのUI。",
+      "url": "",
+      "thumb": "thumbs/app-5.jpg",
+      "short": "だんどりー",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 6,
+      "title": "ゲスト向けコースページ群",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "ツアーゲストごとに作るコース選択ページ。",
+      "url": "https://yukitchy.github.io/course-picker",
+      "thumb": "thumbs/app-6.jpg",
+      "short": "コースページ",
+      "thumbs": {
+        "ページ": ""
+      }
+    },
+    {
+      "id": 7,
+      "title": "ゆりっぺ東京ツアーサイト",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "金沢在住のガイドが東京を案内するツアーの紹介サイト。",
+      "url": "https://yukitchy.github.io/yuri-tokyo-tours/",
+      "thumb": "thumbs/yuri.jpg",
+      "thumbs": {
+        "ページ": "thumbs/yuri.jpg"
+      }
+    },
+    {
+      "id": 8,
+      "title": "レシート仕分けアプリ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "レシートを撮って経費を仕分けるスマホ用アプリ。",
+      "url": "https://yukitchy.github.io/receipt-sorter/",
+      "thumb": "thumbs/receipt.jpg",
+      "thumbs": {
+        "アプリ": "thumbs/receipt.jpg"
+      }
+    },
+    {
+      "id": 9,
+      "title": "遊び台帳 Anime Ledger",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "やりたいこと・やったことを記録する台帳アプリ。",
+      "url": "https://yukitchy.github.io/anime-ledger/",
+      "thumb": "thumbs/ledger.jpg",
+      "thumbs": {
+        "アプリ": "thumbs/ledger.jpg"
+      }
+    },
+    {
+      "id": 10,
+      "title": "SOTA'S ENGLISH GYM",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "英語の練習メニューをこなすトレーニングアプリ。",
+      "url": "https://yukitchy.github.io/sota-english-gym/",
+      "thumb": "thumbs/app-10.jpg",
+      "short": "SOTA'S GYM",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 11,
+      "title": "Dokkai Dojo",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "JLPT読解ドリル。N5〜N1対応で、全ての選択肢に解説が付く。",
+      "url": "https://yukitchy.github.io/dokkai-dojo/",
+      "thumb": "thumbs/dokkai-dojo.jpg",
+      "short": "Dokkai Dojo",
+      "thumbs": {
+        "ページ": "thumbs/dokkai-dojo.jpg"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Kanji Dojo",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "部首から熟語まで、9段階を順に進む漢字の反復学習サイト。",
+      "url": "https://yukitchy.github.io/kanji-dojo/",
+      "thumb": "thumbs/kanji-dojo.jpg",
+      "short": "Kanji Dojo",
+      "thumbs": {
+        "ページ": "thumbs/kanji-dojo.jpg"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Japan: First Quest",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "RPG風の初来日ガイド。自作ドット絵とチェックリストで渡航前を案内する。",
+      "url": "https://home.yuukipodcast.com/first-quest.html",
+      "thumb": "thumbs/first-quest.jpg",
+      "short": "First Quest",
+      "thumbs": {
+        "ページ": "thumbs/first-quest.jpg"
+      }
+    },
+    {
+      "id": 14,
+      "title": "北斗の拳で日本語",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "北斗の拳のセリフで日本語を学ぶ教材。発音練習までできる。",
+      "url": "https://yukitchy.github.io/hokuto-nihongo/",
+      "thumb": "thumbs/hokuto-nihongo.jpg",
+      "short": "北斗日本語",
+      "thumbs": {
+        "ページ": "thumbs/hokuto-nihongo.jpg"
+      }
+    },
+    {
+      "id": 15,
+      "title": "AI相棒設定診断",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "質問に答えると、自分に合うAIの相棒設定タイプが分かる診断サイト。",
+      "url": "https://yukitchy.github.io/ai-party-shindan/",
+      "thumb": "thumbs/ai-party-shindan.jpg",
+      "short": "AI相棒診断",
+      "thumbs": {
+        "ページ": "thumbs/ai-party-shindan.jpg"
+      }
+    },
+    {
+      "id": 16,
+      "title": "EAT MAP 東京グルメガイド",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "東京のエリア別に、英語で選べるグルメガイド。",
+      "url": "https://yukitchy.github.io/where-to-eat/",
+      "thumb": "thumbs/where-to-eat.jpg",
+      "short": "EAT MAP",
+      "thumbs": {
+        "ページ": "thumbs/where-to-eat.jpg"
+      }
+    },
+    {
+      "id": 17,
+      "title": "OshiGuide 推し聖地ガイド名鑑",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "好きな作品から現地ガイドを探せる、アニメ聖地の名鑑サイト。",
+      "url": "https://yukitchy.github.io/oshi-guide/",
+      "thumb": "thumbs/oshi-guide.jpg",
+      "short": "OshiGuide",
+      "thumbs": {
+        "ページ": "thumbs/oshi-guide.jpg"
+      }
+    },
+    {
+      "id": 18,
+      "title": "パトリック式ルートページ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "地図が予定のスクロールに合わせて動く、ゲスト専用の1日ルートページ。",
+      "url": "https://yukitchy.github.io/patrick-tokyo-day/",
+      "thumb": "thumbs/patrick-tokyo-day.jpg",
+      "short": "パトリック式",
+      "thumbs": {
+        "ページ": "thumbs/patrick-tokyo-day.jpg"
+      }
+    },
+    {
+      "id": 19,
+      "title": "ZOZOマリンスタジアム座席ガイド",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "座席番号を入れると、その席からの見え方が分かるガイド。",
+      "url": "https://yukitchy.github.io/zozo-seat-guide/",
+      "thumb": "thumbs/zozo-seat-guide.jpg",
+      "short": "ZOZO座席ガイド",
+      "thumbs": {
+        "ページ": "thumbs/zozo-seat-guide.jpg"
+      }
+    },
+    {
+      "id": 20,
+      "title": "KAPITAL全店舗マップ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "日本にあるKAPITAL全15店舗を、1枚の地図に集めたマップ。",
+      "url": "https://yukitchy.github.io/kapital-map/",
+      "thumb": "thumbs/kapital-map.jpg",
+      "short": "KAPITALマップ",
+      "thumbs": {
+        "ページ": "thumbs/kapital-map.jpg"
+      }
+    },
+    {
+      "id": 21,
+      "title": "秋葉原アニメデー（ユリア式）",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "写真コラージュで魅せる、ゲスト向け1日ページの形式「ユリア式」の見本。",
+      "url": "https://yukitchy.github.io/akiba-anime-day-kids/",
+      "thumb": "thumbs/akiba-anime-day-kids.jpg",
+      "short": "ユリア式",
+      "thumbs": {
+        "ページ": "thumbs/akiba-anime-day-kids.jpg"
+      }
+    },
+    {
+      "id": 22,
+      "title": "神楽坂・池袋ファンデー",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "ゲスト向け1日案内ページの標準形。写真タイルと地図で、回る順が分かる。",
+      "url": "https://yukitchy.github.io/kagurazaka-ikebukuro-dec10/",
+      "thumb": "thumbs/kagurazaka-ikebukuro-dec10.jpg",
+      "short": "神楽坂・池袋",
+      "thumbs": {
+        "ページ": "thumbs/kagurazaka-ikebukuro-dec10.jpg"
+      }
+    },
+    {
+      "id": 23,
+      "title": "秋葉原イブニングウォーク",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "夜の秋葉原を歩く、3ルートから選べる提案ページ。",
+      "url": "https://yukitchy.github.io/akiba-evening-walk/",
+      "thumb": "thumbs/akiba-evening-walk.jpg",
+      "short": "夜アキバ",
+      "thumbs": {
+        "ページ": "thumbs/akiba-evening-walk.jpg"
+      }
+    },
+    {
+      "id": 24,
+      "title": "大阪ガイド",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "大阪の観光と食べ歩きを1ページにまとめた、ゲスト向けガイド。",
+      "url": "https://yukitchy.github.io/osaka-guide-shaun/",
+      "thumb": "thumbs/osaka-guide-shaun.jpg",
+      "short": "大阪ガイド",
+      "thumbs": {
+        "ページ": "thumbs/osaka-guide-shaun.jpg"
+      }
+    },
+    {
+      "id": 25,
+      "title": "日本橋〜銀座 そば散策",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "日本橋から銀座へ、そばと甘味と散策を巡る提案ページ。",
+      "url": "https://yukitchy.github.io/nihonbashi-ginza-soba/",
+      "thumb": "thumbs/nihonbashi-ginza-soba.jpg",
+      "short": "そば散策",
+      "thumbs": {
+        "ページ": "thumbs/nihonbashi-ginza-soba.jpg"
+      }
+    },
+    {
+      "id": 26,
+      "title": "Podcast番組表",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "配信中の7番組を、試聴プレイヤー付きで並べた番組表サイト。",
+      "url": "https://program.yuukipodcast.com",
+      "thumb": "thumbs/podcast-program.jpg",
+      "short": "番組表",
+      "thumbs": {
+        "ページ": "thumbs/podcast-program.jpg"
+      }
+    },
+    {
+      "id": 27,
+      "title": "体験ラジオ診断サイト",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "全128回の中から、聞く人の状況に合う回を診断して案内するサイト。",
+      "url": "https://taiken.yuukipodcast.com",
+      "thumb": "thumbs/taiken-shindan.jpg",
+      "short": "体験ラジオ診断",
+      "thumbs": {
+        "ページ": "thumbs/taiken-shindan.jpg"
+      }
+    },
+    {
+      "id": 28,
+      "title": "個人ホームページ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "日英トップとPodcast7番組のカードを載せた、名刺代わりのサイト。",
+      "url": "https://home.yuukipodcast.com",
+      "thumb": "thumbs/home-yuukipodcast.jpg",
+      "short": "ホームページ",
+      "thumbs": {
+        "ページ": "thumbs/home-yuukipodcast.jpg"
+      }
+    },
+    {
+      "id": 29,
+      "title": "おおば歯科HPリメイク実験",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "実在の歯科サイト同等のホームページと予約システムを、どこまで作れるかの実験デモ。",
+      "url": "https://yukitchy.github.io/ooba-dental-demo/",
+      "thumb": "thumbs/ooba-dental-demo.jpg",
+      "short": "歯科HP実験",
+      "thumbs": {
+        "ページ": "thumbs/ooba-dental-demo.jpg"
+      }
+    },
+    {
+      "id": 30,
+      "title": "PHP脆弱性あんしん対策",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "PHPの重大な脆弱性が出た日に、自分のやることを3分で決められる解説ページ。",
+      "url": "https://yukitchy.github.io/php-anshin/",
+      "thumb": "thumbs/php-anshin.jpg",
+      "short": "PHPあんしん",
+      "thumbs": {
+        "ページ": "thumbs/php-anshin.jpg"
+      }
+    },
+    {
+      "id": 31,
+      "title": "近所ホットライン",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "民泊の苦情を記録に変える仕組みの、プロトタイプLP。",
+      "url": "https://yukitchy.github.io/minpaku-hotline/",
+      "thumb": "thumbs/minpaku-hotline.jpg",
+      "short": "近所ホットライン",
+      "thumbs": {
+        "ページ": "thumbs/minpaku-hotline.jpg"
+      }
+    },
+    {
+      "id": 32,
+      "title": "京都民泊規制 事実整理ページ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "京都市の民泊規制の素案を、一次資料だけで事実整理したページ。",
+      "url": "https://yukitchy.github.io/kyoto-minpaku/",
+      "thumb": "thumbs/kyoto-minpaku.jpg",
+      "short": "京都民泊規制",
+      "thumbs": {
+        "ページ": "thumbs/kyoto-minpaku.jpg"
+      }
+    },
+    {
+      "id": 33,
+      "title": "三行褒め日記",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "その日あった小さな良いことを、三行だけ書き残す日記サイト。",
+      "url": "https://yukitchy.github.io/home-nikki/",
+      "thumb": "thumbs/home-nikki.jpg",
+      "short": "三行褒め日記",
+      "thumbs": {
+        "ページ": "thumbs/home-nikki.jpg"
+      }
+    },
+    {
+      "id": 34,
+      "title": "Akihabara Tour Guide プロフィール",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "秋葉原ツアーガイドの実績と、各サービスの評価を英語でまとめた自己紹介ページ。",
+      "url": "https://yukitchy.github.io/yuuki-guide-profile/",
+      "thumb": "thumbs/yuuki-guide-profile.jpg",
+      "short": "ガイド紹介",
+      "thumbs": {
+        "ページ": "thumbs/yuuki-guide-profile.jpg"
+      }
+    },
+    {
+      "id": 35,
+      "title": "Yomeru 街の漢字フラッシュカード",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "実際に街で見かける看板の漢字を覚える、英語圏向けフラッシュカード。",
+      "url": "https://yukitchy.github.io/yomeru/",
+      "thumb": "thumbs/yomeru.jpg",
+      "short": "Yomeru",
+      "thumbs": {
+        "ページ": "thumbs/yomeru.jpg"
+      }
+    },
+    {
+      "id": 36,
+      "title": "Bento Lab",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "自作の便利ツールを、月額の定期便で届けるサービスのLP。",
+      "url": "https://yukitchy.github.io/bento-lab/",
+      "thumb": "thumbs/bento-lab.jpg",
+      "short": "Bento Lab",
+      "thumbs": {
+        "ページ": "thumbs/bento-lab.jpg"
+      }
+    },
+    {
+      "id": 37,
+      "title": "ナギ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "気分の落ち込みを受け止める、メンタルが辛い時期向けのセルフケアアプリ。",
+      "url": "https://yukitchy.github.io/nagi/lp.html",
+      "thumb": "thumbs/nagi.jpg",
+      "short": "ナギ",
+      "thumbs": {
+        "ページ": "thumbs/nagi.jpg"
+      }
+    },
+    {
+      "id": 38,
+      "title": "申請のミカタ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "生活保護の申請前に、必要な持ち物をチェックできるプロトタイプの提案LP。",
+      "url": "https://yukitchy.github.io/shinsei-no-mikata/",
+      "thumb": "thumbs/shinsei-no-mikata.jpg",
+      "short": "申請のミカタ",
+      "thumbs": {
+        "ページ": "thumbs/shinsei-no-mikata.jpg"
+      }
+    },
+    {
+      "id": 39,
+      "title": "Wi-Fi速さくらべ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "いま繋いでいるWi-Fiの速さを測って、場所ごとに並べて比べるツール。",
+      "url": "https://yukitchy.github.io/wifi-hayasa/",
+      "thumb": "thumbs/wifi-hayasa.jpg",
+      "short": "Wi-Fi速さ",
+      "thumbs": {
+        "アプリ": "thumbs/wifi-hayasa.jpg"
+      }
+    },
+    {
+      "id": 40,
+      "title": "いまいる？",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "「いま家守いる？」を1クリックで確認できるミニアプリ。",
+      "url": "https://yukitchy.github.io/imairu/",
+      "thumb": "thumbs/imairu.jpg",
+      "short": "いまいる？",
+      "thumbs": {
+        "アプリ": "thumbs/imairu.jpg"
+      }
+    },
+    {
+      "id": 41,
+      "title": "hideご飯会コンシェルジュ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "予約の検知から当日の案内、レビュー依頼までを回す、ご飯会の仕組み。",
+      "url": "https://yukitchy.github.io/hides-table/",
+      "thumb": "thumbs/hides-table.jpg",
+      "short": "ご飯会コンシェルジュ",
+      "thumbs": {
+        "アプリ": "thumbs/hides-table.jpg"
+      }
+    },
+    {
+      "id": 42,
+      "title": "面接ルーム",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "声で答える圧迫面接の練習と、ESの下書き作りができるトレーニングアプリ。",
+      "url": "https://yukitchy.github.io/mensetsu-room/",
+      "thumb": "thumbs/mensetsu-room.jpg",
+      "short": "面接ルーム",
+      "thumbs": {
+        "アプリ": "thumbs/mensetsu-room.jpg"
+      }
+    },
+    {
+      "id": 43,
+      "title": "Drip Zine",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "豆の量を入れると注ぐタイミングを声で案内する、コーヒーのドリップタイマー。",
+      "url": "https://yukitchy.github.io/drip-zine/",
+      "thumb": "thumbs/drip-zine.jpg",
+      "short": "Drip Zine",
+      "thumbs": {
+        "アプリ": "thumbs/drip-zine.jpg"
+      }
+    },
+    {
+      "id": 44,
+      "title": "やっとくボード",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "AI社員ごとに「判断待ち」を並べ、下準備の済んだ分から決めていくボードの見本。",
+      "url": "https://yukitchy.github.io/yattoku-board/",
+      "thumb": "thumbs/yattoku-board.jpg",
+      "short": "やっとくボード",
+      "thumbs": {
+        "アプリ": "thumbs/yattoku-board.jpg"
+      }
+    },
+    {
+      "id": 45,
+      "title": "素人AIラジオ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "AI初心者の2人が活用法を試すポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/033vD4s7A4CTOiR4A6Gjws",
+      "thumb": "",
+      "short": "素人AIラジオ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-shirouto-ai.webp"
+      }
+    },
+    {
+      "id": 46,
+      "title": "ゼロからの体験ツアーガイドラジオ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "ヨシとユウキの体験ツアーガイド番組のカバーアート。",
+      "url": "https://open.spotify.com/show/3sv0rNffYqHgYtkdEWUQdx",
+      "thumb": "",
+      "short": "体験ツアーラジオ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-tourguide.webp"
+      }
+    },
+    {
+      "id": 47,
+      "title": "みんらじ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "ゼロからの民泊ガイドラジオ（みんらじ）のカバーアート。",
+      "url": "https://open.spotify.com/show/1vSXCagPPaTKUwG6UGxrV3",
+      "thumb": "",
+      "short": "みんらじ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-minradi.webp"
+      }
+    },
+    {
+      "id": 48,
+      "title": "アキバなう カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "ササキチとユウキが秋葉原の今を伝えるポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/4AT5BQfMbvyCo5iHAttPL8",
+      "thumb": "",
+      "short": "アキバなう",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-akibanow.webp"
+      }
+    },
+    {
+      "id": 49,
+      "title": "メンタルよわよわラジオ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "メンタルと仕事の悩みを語るポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/6b1HahU3ytKTSmOnZI9qsD",
+      "thumb": "",
+      "short": "メンタルよわよわ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-mental-yowayowa.webp"
+      }
+    },
+    {
+      "id": 50,
+      "title": "イレギュラーコーヒー カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "つよぽんとユウキのコーヒー情報ポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/64em2Li4rP3SAfH9rgRswd",
+      "thumb": "",
+      "short": "イレギュラーコーヒー",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-irregular-coffee.webp"
+      }
+    },
+    {
+      "id": 51,
+      "title": "厚木トーク カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "厚木のしゃべり場ポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/758R6VVe9ql1D9YcKrXYfm",
+      "thumb": "",
+      "short": "厚木トーク",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-atsugi.webp"
+      }
+    },
+    {
+      "id": 52,
+      "title": "オタクのざつだん カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "JLPT N1向け日本語ポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/44LPCvK6Y21DtZqSNueLAa",
+      "thumb": "",
+      "short": "オタクのざつだん",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-otaku-zatsudan.webp"
+      }
+    },
+    {
+      "id": 53,
+      "title": "偏愛Channel カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "シンゴとユウキが推しへの偏愛を語るポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/2M2lOQ0UoTUDzuzffVq8q5",
+      "thumb": "",
+      "short": "偏愛Channel",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-henkoi.webp"
+      }
+    },
+    {
+      "id": 54,
+      "title": "愛の猫パンチ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "ユウイチとユウキのマーケ物申し系ポッドキャストのカバーアート。",
+      "url": "https://open.spotify.com/show/033SdHMot0yrMpyGbboAYc",
+      "thumb": "",
+      "short": "愛の猫パンチ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-nekopunch.webp"
+      }
+    },
+    {
+      "id": 55,
+      "title": "北坂戸ラジオ カバーイラスト",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "北坂戸ラジオ（タイトル未定）のカバーアート案。",
+      "url": "",
+      "thumb": "",
+      "short": "北坂戸ラジオ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-cover-kitasakado.webp"
+      }
+    },
+    {
+      "id": 56,
+      "title": "だんどりー ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "ツアー段取りアプリ「だんどりー」の決定版ロゴ。段家マスコットと並ぶ横組み。",
+      "url": "",
+      "thumb": "",
+      "short": "だんどりー",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-dandori.webp"
+      }
+    },
+    {
+      "id": 57,
+      "title": "だんどりー マスコット「段家」",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "だんどりーのマスコット家族「段家」4人の集合イラスト。",
+      "url": "",
+      "thumb": "",
+      "short": "段家",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-dandori-mascot.webp"
+      }
+    },
+    {
+      "id": 58,
+      "title": "そばマップ ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "そば屋マップのバッジロゴ。地図ピンにそばの丼を組み合わせたマーク。",
+      "url": "",
+      "thumb": "",
+      "short": "そばマップ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-sobamap.webp"
+      }
+    },
+    {
+      "id": 59,
+      "title": "写真日記 ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "1日の写真と移動の記録から毎晩日記を生成する自作ツール「写真日記」の現行ロゴ。",
+      "url": "",
+      "thumb": "",
+      "short": "写真日記",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-nikki.webp"
+      }
+    },
+    {
+      "id": 60,
+      "title": "Anime Ledger ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [],
+      "desc": "遊び台帳 Anime Ledger のロゴマーク。",
+      "url": "https://yukitchy.github.io/anime-ledger/",
+      "thumb": "",
+      "short": "Anime Ledger",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-ledger.webp"
+      }
+    },
+    {
+      "id": 61,
+      "title": "AIポートフォリオ ロゴ",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "このポートフォリオサイト自身のアプリアイコン型ロゴ。紫の角丸四角に白抜き「Ai」。",
+      "url": "https://yukitchy.github.io/ai-portfolio/",
+      "thumb": "",
+      "short": "AIポートフォリオ",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-ai-portfolio.webp"
+      }
+    },
+    {
+      "id": 62,
+      "title": "ユウキPodcast文庫 ワードマーク",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "ポッドキャスト読み物サイト「ユウキPodcast文庫」のワードマーク。",
+      "url": "https://bunko.yuukipodcast.com/",
+      "thumb": "",
+      "short": "Podcast文庫",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-bunko.webp"
+      }
+    },
+    {
+      "id": 63,
+      "title": "Podcast番組表 ワードマーク",
+      "scope": [
+        "ロゴ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "配信中番組を並べた「ユウキのPodcast番組表」のワードマーク。",
+      "url": "https://program.yuukipodcast.com",
+      "thumb": "",
+      "short": "Podcast番組表",
+      "thumbs": {
+        "ロゴ": "thumbs/logo-program.webp"
+      }
+    },
+    {
+      "id": 66,
+      "title": "JLPT直前模試",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "N5・N4の本番形式を本番どおりの時間で解ける模擬試験。結果はブラウザに保存される。",
+      "url": "https://yukitchy.github.io/jlpt-mock/",
+      "thumb": "thumbs/jlpt-moshi.jpg",
+      "short": "JLPT模試",
+      "thumbs": {
+        "ページ": "thumbs/jlpt-moshi.jpg"
+      }
+    },
+    {
+      "id": 67,
+      "title": "SAUNA MAP",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "銭湯・温泉・サウナの個人記録を、マップとリストで見られるサイト。",
+      "url": "https://yukitchy.github.io/saunamap/",
+      "thumb": "thumbs/sauna-map.jpg",
+      "short": "SAUNA MAP",
+      "thumbs": {
+        "ページ": "thumbs/sauna-map.jpg"
+      }
+    },
+    {
+      "id": 68,
+      "title": "Sobamap そばマップ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "行ったそば・うどん店のレポと行きたい店のリストを、一枚の地図で見られる個人記録マップ。",
+      "url": "https://yukitchy.github.io/sobamap/",
+      "thumb": "thumbs/sobamap.jpg",
+      "short": "Sobamap",
+      "thumbs": {
+        "ページ": "thumbs/sobamap.jpg"
+      }
+    },
+    {
+      "id": 69,
+      "title": "StayKey サービスLP",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "予約した時間だけ鍵が開くスマートロック鍵自動化サービスの提案LP。日英中3言語＋解錠フロー体験デモ付き。",
+      "url": "https://yukitchy.github.io/staykey-lp/",
+      "thumb": "thumbs/staykey.jpg",
+      "short": "StayKey",
+      "thumbs": {
+        "ページ": "thumbs/staykey.jpg"
+      }
+    },
+    {
+      "id": 70,
+      "title": "Yoyoeigo提案「先生の道具箱」",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "「先生を新たに雇うのではなく、先生の道具になる」切り口でまとめたYoyoeigo向けの提案LP。",
+      "url": "https://yukitchy.github.io/yoyo-share/",
+      "thumb": "thumbs/yoyoeigo-teian.jpg",
+      "short": "Yoyoeigo提案",
+      "thumbs": {
+        "ページ": "thumbs/yoyoeigo-teian.jpg"
+      }
+    },
+    {
+      "id": 71,
+      "title": "MANGA DOJO Tokyo 協業提案LP",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "MANGA DOJO Tokyo向けの協業提案ページ。行程ビルダーで夜枠プランの価値をその場で体感してもらえる。",
+      "url": "https://yukitchy.github.io/mangadojo-teian/",
+      "thumb": "thumbs/manga-dojo-teian.jpg",
+      "short": "MANGA DOJO提案",
+      "thumbs": {
+        "ページ": "thumbs/manga-dojo-teian.jpg"
+      }
+    },
+    {
+      "id": 72,
+      "title": "BluePlanet DX提案書",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "BluePlanetの複数事業を横断したWeb集客・DX施策の提案書LP。",
+      "url": "",
+      "thumb": "thumbs/blueplanet-dx.jpg",
+      "short": "BluePlanet",
+      "thumbs": {
+        "ページ": "thumbs/blueplanet-dx.jpg"
+      }
+    },
+    {
+      "id": 73,
+      "title": "Eating Local in Japan",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "日本の日常の食事・マナー・使えるフレーズを旅行者向けにまとめた英語ガイドページ。",
+      "url": "https://yukitchy.github.io/japanese-food-guide/",
+      "thumb": "thumbs/eating-local.jpg",
+      "short": "Eating Local",
+      "thumbs": {
+        "ページ": "thumbs/eating-local.jpg"
+      }
+    },
+    {
+      "id": 74,
+      "title": "Tokyo Train Guide",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "東京の電車の乗り方を旅行者向けにまとめた英語の一枚ガイドページ。",
+      "url": "https://yukitchy.github.io/tokyo-train-guide/",
+      "thumb": "thumbs/tokyo-train-guide.jpg",
+      "short": "Train Guide",
+      "thumbs": {
+        "ページ": "thumbs/tokyo-train-guide.jpg"
+      }
+    },
+    {
+      "id": 75,
+      "title": "住吉の食べ歩きマップ",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "住吉駅から徒歩15分以内の実在の飲食店15軒を、手描き風の地図と日本語名つきで紹介する英語ページ。",
+      "url": "https://yukitchy.github.io/sumiyoshi-eats/",
+      "thumb": "thumbs/sumiyoshi-eats.jpg",
+      "short": "住吉マップ",
+      "thumbs": {
+        "ページ": "thumbs/sumiyoshi-eats.jpg"
+      }
+    },
+    {
+      "id": 76,
+      "title": "穴場温泉16",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "東京から2〜3時間圏の穴場温泉16件を、日英切り替えで見比べられる個人用の旅先ガイド。",
+      "url": "https://yukitchy.github.io/onsen-anaba/",
+      "thumb": "thumbs/onsen16.jpg",
+      "short": "穴場温泉16",
+      "thumbs": {
+        "ページ": "thumbs/onsen16.jpg"
+      }
+    },
+    {
+      "id": 77,
+      "title": "盆踊りキット",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "盆踊り参加者向けの案内・実績・英語ページをまとめた、出張開催ガイドの1セット。",
+      "url": "",
+      "thumb": "thumbs/bonodori-kit.jpg",
+      "short": "盆踊りキット",
+      "thumbs": {
+        "ページ": "thumbs/bonodori-kit.jpg"
+      }
+    },
+    {
+      "id": 78,
+      "title": "toaru酒造ツアー ご提案",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "酒造ツアー向けに、Claudeコーチングの提案書・予約台帳・ヒアリングフォームを1つにまとめた提案一式。",
+      "url": "",
+      "thumb": "thumbs/toaru-sakazou.jpg",
+      "short": "酒造ツアー提案",
+      "thumbs": {
+        "ページ": "thumbs/toaru-sakazou.jpg"
+      }
+    },
+    {
+      "id": 79,
+      "title": "宿泊のしおりテンプレート",
+      "scope": [
+        "ページ"
+      ],
+      "ai": [],
+      "desc": "Wi-Fi・住所・鍵・ルール・周辺店舗を1ページに集め、日英をボタンで切り替えられる民泊オーナー向けテンプレート。",
+      "url": "",
+      "thumb": "thumbs/shukuhaku-shiori.jpg",
+      "short": "宿泊のしおり",
+      "thumbs": {
+        "ページ": "thumbs/shukuhaku-shiori.jpg"
+      }
+    },
+    {
+      "id": 80,
+      "title": "AI Arena",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Gemini"
+      ],
+      "desc": "同じお題を最大3スロットのAIサービスへ同時発注し、横並びで比較できる実験ツール。",
+      "url": "",
+      "thumb": "thumbs/ai-arena.jpg",
+      "short": "AI Arena",
+      "thumbs": {
+        "アプリ": "thumbs/ai-arena.jpg"
+      }
+    },
+    {
+      "id": 81,
+      "title": "AI/SEO健診",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "サイトのrobots.txt・実クロール・sitemap・llms.txt・og:imageを一括診断し、生成AIに見つけてもらえる状態か判定するツール。",
+      "url": "",
+      "thumb": "thumbs/app-81.jpg",
+      "short": "AI/SEO健診",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 82,
+      "title": "Claude利用量バー",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "Claude Codeの利用量（残り%・リセット時刻・API換算コスト）をmacOSメニューバーに常時表示するアプリ。",
+      "url": "",
+      "thumb": "thumbs/app-82.jpg",
+      "short": "利用量バー",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 83,
+      "title": "ゾンビ掃除係",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "脈の止まったClaudeセッションをメニューバーに数字で出して、見てからワンボタンで終了できる常駐ツール。",
+      "url": "",
+      "thumb": "thumbs/app-83.jpg",
+      "short": "ゾンビ掃除係",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 84,
+      "title": "PJダッシュボード",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "進行中プロジェクトを徒競走レーンで一覧し、押すとドシエが開く司令塔ダッシュボード。",
+      "url": "",
+      "thumb": "thumbs/pj-dashboard.jpg",
+      "short": "PJダッシュボード",
+      "thumbs": {
+        "アプリ": "thumbs/pj-dashboard.jpg"
+      }
+    },
+    {
+      "id": 85,
+      "title": "Podcast再生数ボード",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Spotify for Creatorsの再生数を毎朝自動で集め、番組別の推移と施策案を週報形式で見せるボード。",
+      "url": "",
+      "thumb": "thumbs/podcast-play-board.jpg",
+      "short": "再生数ボード",
+      "thumbs": {
+        "アプリ": "thumbs/podcast-play-board.jpg"
+      }
+    },
+    {
+      "id": 86,
+      "title": "billing（請求書・見積書の発行管理）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "1件=JSON1つから請求書・見積書のPDF、確定申告用の台帳CSV、ダッシュボードを作るツール。",
+      "url": "",
+      "thumb": "thumbs/app-86.jpg",
+      "short": "billing",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 87,
+      "title": "うりあげ帳",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Viator/Airbnb/GetYourGuideと銀行明細をまとめて、freee取り込み用の取引CSVと経費仕分けを作る売上台帳。",
+      "url": "",
+      "thumb": "thumbs/uriagecho.jpg",
+      "short": "うりあげ帳",
+      "thumbs": {
+        "アプリ": "thumbs/uriagecho.jpg"
+      }
+    },
+    {
+      "id": 88,
+      "title": "マネー・ダッシュボード",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "預金ベースの総資産・収支・投資に回せる額を一目で見るダッシュボード。毎朝7:30に自動更新。",
+      "url": "",
+      "thumb": "thumbs/app-88.jpg",
+      "short": "マネーDB",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 89,
+      "title": "ジャケ屋",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Podcastのカバーアートのロゴ・タイトルの大きさや位置をブラウザ上のスライダーで調整し、3000×3000pxで書き出すツール。",
+      "url": "",
+      "thumb": "thumbs/jakeya.jpg",
+      "short": "ジャケ屋",
+      "thumbs": {
+        "アプリ": "thumbs/jakeya.jpg"
+      }
+    },
+    {
+      "id": 90,
+      "title": "セトリメーカー",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "イベントの録音を読み込むと、曲の区切りを探して時刻つきのセットリストを作るブラウザアプリ。",
+      "url": "https://yukitchy.github.io/setlist-maker/",
+      "thumb": "thumbs/setlist-maker.jpg",
+      "short": "セトリメーカー",
+      "thumbs": {
+        "アプリ": "thumbs/setlist-maker.jpg"
+      }
+    },
+    {
+      "id": 91,
+      "title": "ヒトログ（人脈資産DB）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "出会った人の情報をRPGのステータス画面のように鑑定してデータベース化する人脈資産管理アプリ。",
+      "url": "",
+      "thumb": "thumbs/app-91.jpg",
+      "short": "ヒトログ",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 92,
+      "title": "ネタ帳（カンペ屋）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "8番組のラジオネタ在庫ダッシュボード＋即席カンペ。全番組の在庫・収録ペース・「そろそろ録る順」を可視化。",
+      "url": "",
+      "thumb": "thumbs/netacho.jpg",
+      "short": "ネタ帳",
+      "thumbs": {
+        "アプリ": "thumbs/netacho.jpg"
+      }
+    },
+    {
+      "id": 93,
+      "title": "ユウキの畑",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "作ったものを種→苗→成長中→出荷待ちの畝で管理する棚。出荷待ちなのに出荷先が空の数字が、そのまま次の営業リストになる。",
+      "url": "",
+      "thumb": "thumbs/yuki-hatake.jpg",
+      "short": "ユウキの畑",
+      "thumbs": {
+        "アプリ": "thumbs/yuki-hatake.jpg"
+      }
+    },
+    {
+      "id": 94,
+      "title": "ユウキ学園 PIXEL ACADEMY",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "launchd常駐BOTをピクセル美少女学生として可視化する学園。正常なら授業中、異常なら倒れる。",
+      "url": "",
+      "thumb": "thumbs/yuki-gakuen.jpg",
+      "short": "ユウキ学園",
+      "thumbs": {
+        "アプリ": "thumbs/yuki-gakuen.jpg"
+      }
+    },
+    {
+      "id": 95,
+      "title": "もったいないおばけ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ギフト券・引換券・チケット・ポイントなど期限切れになりがちな資産を1画面の台帳に集め、使い切ったら成仏ボタンで消すアプリ。",
+      "url": "",
+      "thumb": "thumbs/mottainai-obake.jpg",
+      "short": "もったいないおばけ",
+      "thumbs": {
+        "アプリ": "thumbs/mottainai-obake.jpg"
+      }
+    },
+    {
+      "id": 96,
+      "title": "ツアー写真セレクタ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ツアー写真100〜200枚からベスト25枚を全ローカルAI（Apple Vision）で自動選抜するツール。",
+      "url": "",
+      "thumb": "thumbs/tour-photo-selector.jpg",
+      "short": "写真セレクタ",
+      "thumbs": {
+        "アプリ": "thumbs/tour-photo-selector.jpg"
+      }
+    },
+    {
+      "id": 97,
+      "title": "レッスン文庫",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "レッスン記録のMarkdownから、生徒ごとの読み物風HTMLと先生用の一覧ビューを自動ビルドするツール。",
+      "url": "",
+      "thumb": "thumbs/app-97.jpg",
+      "short": "レッスン文庫",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 98,
+      "title": "レッスン準備の箱",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "生徒の返事（面接日・業界・レベルなど）を入力すると、90分の時間割と模擬面接の質問セットをその場で組み立てる箱。",
+      "url": "",
+      "thumb": "thumbs/lesson-prep-box.jpg",
+      "short": "レッスン準備の箱",
+      "thumbs": {
+        "アプリ": "thumbs/lesson-prep-box.jpg"
+      }
+    },
+    {
+      "id": 99,
+      "title": "ぶつ切り検分台",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Podcast編集前後の音声を並べて解析し、切れ目や不自然な間を赤帯で可視化して聴き比べできる検分ツール。",
+      "url": "",
+      "thumb": "thumbs/butsugiri-kenbun.jpg",
+      "short": "ぶつ切り検分台",
+      "thumbs": {
+        "アプリ": "thumbs/butsugiri-kenbun.jpg"
+      }
+    },
+    {
+      "id": 100,
+      "title": "callfix（会議音声診断）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Meet/Zoom中の「声が入らない・こもる・途切れる」をホットキー一発で診断する会議音声トラブルシューター。",
+      "url": "",
+      "thumb": "thumbs/app-100.jpg",
+      "short": "callfix",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 101,
+      "title": "解約屋",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "領収書メールやカード明細を貼るだけで契約中の固定費を読み取り、年いくら落とせるかと安い乗り換え先を出すツール。",
+      "url": "",
+      "thumb": "thumbs/kaiyakuya.jpg",
+      "short": "解約屋",
+      "thumbs": {
+        "アプリ": "thumbs/kaiyakuya.jpg"
+      }
+    },
+    {
+      "id": 102,
+      "title": "提案屋",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "相手のことを9項目埋めると、その人に刺さる質問・見せ方・出力の置き場所・締めの一文が出る提案カルテ生成ツール。",
+      "url": "",
+      "thumb": "thumbs/app-102.jpg",
+      "short": "提案屋",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 103,
+      "title": "Quest Concierge（AIツアーコンシェルジュ）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ツアーゲスト専用URLで24時間旅程相談に答え、遅延や雨天時は約束を守りながら残りの旅程を3案に組み直すAIコンシェルジュ。",
+      "url": "",
+      "thumb": "thumbs/quest-concierge.jpg",
+      "short": "Quest Concierge",
+      "thumbs": {
+        "アプリ": "thumbs/quest-concierge.jpg"
+      }
+    },
+    {
+      "id": 104,
+      "title": "走った地図",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ジョギングの経路がStravaから地図に残り、先週の自分と比べられるPWA。走った日は地図カードが自動で公開される。",
+      "url": "",
+      "thumb": "thumbs/hashitta-chizu.jpg",
+      "short": "走った地図",
+      "thumbs": {
+        "アプリ": "thumbs/hashitta-chizu.jpg"
+      }
+    },
+    {
+      "id": 105,
+      "title": "民泊可能物件マップ（大田区）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "住所を入れると民泊（住宅宿泊事業）が可能か判定するマップツール。公開APIとGISデータのみで大田区パイロット実装。",
+      "url": "",
+      "thumb": "thumbs/minpaku-map-ota.jpg",
+      "short": "民泊物件マップ",
+      "thumbs": {
+        "アプリ": "thumbs/minpaku-map-ota.jpg"
+      }
+    },
+    {
+      "id": 106,
+      "title": "日本株ETF自動売買",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "日本株ETFのデータ取得・バックテスト・ペーパートレード・ダッシュボードの基盤システム。",
+      "url": "",
+      "thumb": "thumbs/app-106.jpg",
+      "short": "ETF自動売買",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 107,
+      "title": "明君 Meikun",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "外部の予約プラットフォームに依存せず、自前でツアー予約を受けて捌くための予約コントローラー。",
+      "url": "",
+      "thumb": "thumbs/meikun.jpg",
+      "short": "明君 Meikun",
+      "thumbs": {
+        "アプリ": "thumbs/meikun.jpg"
+      }
+    },
+    {
+      "id": 108,
+      "title": "広告どっち？",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Google広告の2案のA/Bテストを、毎朝のCSVから日別のタイル・比較表・費用・グラフで見比べるボード。",
+      "url": "",
+      "thumb": "thumbs/app-108.jpg",
+      "short": "広告どっち？",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 109,
+      "title": "声工房",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "ChatGPT"
+      ],
+      "desc": "自分の声を録って、その声で好きな日本語文を読ませるローカル完結の音声合成ブース。",
+      "url": "",
+      "thumb": "thumbs/koeboko.jpg",
+      "short": "声工房",
+      "thumbs": {
+        "アプリ": "thumbs/koeboko.jpg"
+      }
+    },
+    {
+      "id": 110,
+      "title": "似合う試着室",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Gemini"
+      ],
+      "desc": "自分の顔写真とヘアカタログの写真をGeminiで合成し、美容師に見せる試着シートを作るツール。",
+      "url": "",
+      "thumb": "thumbs/app-110.jpg",
+      "short": "似合う試着室",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 111,
+      "title": "大人の体育",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "目的別コンディショニングを筋トレ・ストレッチ・食事でコンサルするWebアプリ。",
+      "url": "",
+      "thumb": "thumbs/app-111.jpg",
+      "short": "大人の体育",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 112,
+      "title": "部屋の理想図鑑",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "物件データを入力するだけで「Claudeに貼れば理想のインテリア提案がもらえるプロンプト」を自動生成するツール。",
+      "url": "",
+      "thumb": "thumbs/app-112.jpg",
+      "short": "部屋の理想図鑑",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 113,
+      "title": "神ショートカット チートシート",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "Claude Code・Mac・各ツールのショートカットをまとめたローカルHTMLリファレンス。",
+      "url": "",
+      "thumb": "thumbs/shortcut-cheatsheet.jpg",
+      "short": "神ショートカット",
+      "thumbs": {
+        "アプリ": "thumbs/shortcut-cheatsheet.jpg"
+      }
+    },
+    {
+      "id": 114,
+      "title": "音声レジュメ生成キット",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude",
+        "Gemini"
+      ],
+      "desc": "録音1本から議事録・記事を作る指示書一式を、固有名詞辞書と検品スクリプト付きで他人の環境でも動く形に汎用化したキット。",
+      "url": "",
+      "thumb": "thumbs/resume-kit.jpg",
+      "short": "レジュメ生成キット",
+      "thumbs": {
+        "アプリ": "thumbs/resume-kit.jpg"
+      }
+    },
+    {
+      "id": 115,
+      "title": "サイト直接コメントレビュー環境",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "作ったページの上に直接指摘を書き込み、コメントデータで受け取る校正ツール。",
+      "url": "",
+      "thumb": "thumbs/comment-review.jpg",
+      "short": "コメントレビュー",
+      "thumbs": {
+        "アプリ": "thumbs/comment-review.jpg"
+      }
+    },
+    {
+      "id": 116,
+      "title": "サ活いつなら？",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "サウナ施設探し・サ友との日程調整・サ活記録を1本のURLにまとめるPWA。「いつなら？」のサウナ版。",
+      "url": "",
+      "thumb": "thumbs/sakatsu-itsunara.jpg",
+      "short": "サ活いつなら？",
+      "thumbs": {
+        "アプリ": "thumbs/sakatsu-itsunara.jpg"
+      }
+    },
+    {
+      "id": 117,
+      "title": "おおば先生Claude導入教材キット",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude",
+        "ChatGPT"
+      ],
+      "desc": "Claude導入直後の歯科医院向け教材一式。図解・雇用契約書プロンプト・体験メニュー10・Meet台本などの5点セット。",
+      "url": "",
+      "thumb": "thumbs/ooba-kyozai.jpg",
+      "short": "Claude導入教材",
+      "thumbs": {
+        "アプリ": "thumbs/ooba-kyozai.jpg"
+      }
+    },
+    {
+      "id": 118,
+      "title": "リズムもちつき",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "うさぎが餅をつくリズム天国風ブラウザゲーム。BGM・SEは全てWeb Audio合成、コンボとランク表示つき。",
+      "url": "",
+      "thumb": "thumbs/rhythm-mochitsuki.jpg",
+      "short": "リズムもちつき",
+      "thumbs": {
+        "アプリ": "thumbs/rhythm-mochitsuki.jpg"
+      }
+    },
+    {
+      "id": 119,
+      "title": "カタルタ（会話がつむがれるカード）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "引いたカードの言葉で話を転がす会話ゲームのブラウザ版。収録やもくもく会のアイスブレイク用。",
+      "url": "",
+      "thumb": "thumbs/app-119.jpg",
+      "short": "カタルタ",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 120,
+      "title": "できる屋（AIメニュー生成）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "知人・新規出会いの職業情報から「あなたへのAIにできること」を一枚のPNG/HTMLで生成するスキル。",
+      "url": "",
+      "thumb": "thumbs/dekiruya.jpg",
+      "short": "できる屋",
+      "thumbs": {
+        "アプリ": "thumbs/dekiruya.jpg"
+      }
+    },
+    {
+      "id": 121,
+      "title": "natural-japanese（日本語のAI臭検出）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "議事録・レポート・提案書などの日本語文書を通すと、機械翻訳っぽい・AIっぽい言い回しを検出して自然な文章に直すスキル。",
+      "url": "",
+      "thumb": "thumbs/app-121.jpg",
+      "short": "natural-japanese",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 122,
+      "title": "秘書室（承認箱）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "35プロジェクト横断の「判断待ち」をプル型で1画面に集約する承認箱。Podcast検聴GO・BOT異常・返信待ちを承認タイムラインで見せる。",
+      "url": "",
+      "thumb": "thumbs/app-122.jpg",
+      "short": "秘書室",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 123,
+      "title": "補助金ハンター秘書",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "今応募できる補助金・助成金を公募DBから拾い上げ、選んだら申請書の下書きまで作る秘書スキル。",
+      "url": "",
+      "thumb": "thumbs/app-123.jpg",
+      "short": "補助金ハンター",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 124,
+      "title": "秋葉原ツアーしおり生成",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ゲストのフォーム回答と予約情報から、専用ツアー案と日英のしおりを一式作成するスキル。",
+      "url": "",
+      "thumb": "thumbs/app-124.jpg",
+      "short": "ツアーしおり生成",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 125,
+      "title": "せばすちゃんBOT",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "LINEで動くAI執事。アイデアを送ると提案から自動実装まで進み、稼働中プロジェクトへの修正依頼もLINEから自動判定して即着手する。",
+      "url": "",
+      "thumb": "thumbs/app-125.jpg",
+      "short": "せばすちゃん",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 126,
+      "title": "ポン出し編集",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "収録音声を放り込むだけでPodcastが完成する全自動編集。編集後はAIが波形と耳で自動検品する。",
+      "url": "",
+      "thumb": "thumbs/pon-dashi.jpg",
+      "short": "ポン出し編集",
+      "thumbs": {
+        "アプリ": "thumbs/pon-dashi.jpg"
+      }
+    },
+    {
+      "id": 127,
+      "title": "italki予約コンシェルジュ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "italkiに予約リクエストが入ると、Gmail検知→カレンダー空き判定→通知→板書自動作成までつなぐコンシェルジュ自動化。",
+      "url": "",
+      "thumb": "thumbs/app-127.jpg",
+      "short": "italkiコンシェルジュ",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 128,
+      "title": "予約かぶり番",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "GetYourGuideとViatorの予約メールを5分ごとに読んでカレンダーに入れ、他のツアーや遠征とぶつかる時だけ知らせる見張り役。",
+      "url": "",
+      "thumb": "thumbs/app-128.jpg",
+      "short": "予約かぶり番",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 129,
+      "title": "ツアーレビュー返信BOT",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "ゲストのツアーレビューを毎朝8:30に取得し、返信文案を自動生成してGoogleシートで管理するBOT。",
+      "url": "",
+      "thumb": "thumbs/app-129.jpg",
+      "short": "レビュー返信BOT",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 130,
+      "title": "みまもりダッシュボード",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "launchd常駐BOT約35本の無音死を毎日2回自動点検する番犬。異常はダッシュボードとMac通知で知らせる。",
+      "url": "",
+      "thumb": "thumbs/mimamori-dashboard.jpg",
+      "short": "みまもりDB",
+      "thumbs": {
+        "アプリ": "thumbs/mimamori-dashboard.jpg"
+      }
+    },
+    {
+      "id": 131,
+      "title": "Podcast全回文字起こしDB",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "7番組501エピソードの音声を全文字起こししてSQLite DBに蓄積。全文検索・RAG・記事化に使える基盤。",
+      "url": "",
+      "thumb": "thumbs/app-131.jpg",
+      "short": "文字起こしDB",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 132,
+      "title": "お便り番台",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "SpotifyのPodcastコメントを週1収集し、返信案→承認→自動返信まで回すBOT。未承認のものには絶対に返信しない。",
+      "url": "",
+      "thumb": "thumbs/app-132.jpg",
+      "short": "お便り番台",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 133,
+      "title": "シイレウォッチ",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "メルカリで条件に合う安い出品を検知し、URL付きでLINE通知＋相場推移も記録するフリマ監視BOT。購入は自分で判断する。",
+      "url": "",
+      "thumb": "thumbs/shiire-watch.jpg",
+      "short": "シイレウォッチ",
+      "thumbs": {
+        "アプリ": "thumbs/shiire-watch.jpg"
+      }
+    },
+    {
+      "id": 134,
+      "title": "Viator予約自動受理BOT",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "Viatorの予約リクエストメールから、カレンダー空き判定・仮押さえ・最終確認・受理や代替提案までつなぐBOT。",
+      "url": "",
+      "thumb": "thumbs/app-134.jpg",
+      "short": "Viator受理BOT",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 135,
+      "title": "判断待ちスマホ通知",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "Claudeの作業が判断・許可待ちで止まった瞬間、スマホにプッシュが飛び、アプリから返信するだけで作業が再開できる仕組み。",
+      "url": "",
+      "thumb": "thumbs/app-135.jpg",
+      "short": "判断待ち通知",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 136,
+      "title": "日報ラジオBOT",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "1日の出来事を、パーソナル・デイリー・ラジオの音声要約として自動生成するシステム。",
+      "url": "",
+      "thumb": "thumbs/app-136.jpg",
+      "short": "日報ラジオ",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 137,
+      "title": "かべうち（Echo Brainstorm）",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Claude"
+      ],
+      "desc": "Amazon EchoとClaude APIを繋いだ音声の聞き手。話しかけると質問で掘り下げてくれるブレスト相手。",
+      "url": "",
+      "thumb": "thumbs/app-137.jpg",
+      "short": "かべうち",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 138,
+      "title": "しまっちゃうよおじさん",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [],
+      "desc": "毎週日曜20時に全プロジェクトを裁定し「出す1本・しまっちゃう1本・断り下書き」をLINEで届けるBOT。",
+      "url": "",
+      "thumb": "thumbs/app-138.jpg",
+      "short": "しまっちゃうよおじさん",
+      "thumbs": {
+        "アプリ": ""
+      }
+    },
+    {
+      "id": 139,
+      "title": "切り抜き動画BOT",
+      "scope": [
+        "アプリ"
+      ],
+      "ai": [
+        "Gemini"
+      ],
+      "desc": "Podcast新着回の結論部分をGeminiが選び、40〜60秒の縦型切り抜き動画にしてX投稿まで自動化するBOT。",
+      "url": "",
+      "thumb": "thumbs/kirinuki-bot.jpg",
+      "short": "切り抜き動画BOT",
+      "thumbs": {
+        "アプリ": "thumbs/kirinuki-bot.jpg"
+      }
+    }
+  ]
 }
