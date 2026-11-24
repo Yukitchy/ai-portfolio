@@ -15,8 +15,8 @@ HEAD='''<!doctype html>
 <meta property="og:url" content="{base}{v}.html">
 <meta property="og:image" content="{base}og.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="icon" href="favicon-ai.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon-ai.png">
 <link rel="stylesheet" href="common.css">
 <style>{css}</style>
 </head>

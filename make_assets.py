@@ -18,7 +18,37 @@ def rounded(n,rr=R):
 def bleed(n):  # 角も地色で塗る（iOSが自前で角丸にするため）
     bg=Image.new("RGB",(s,s),vio);r=rounded(s,int(s*.2));bg.paste(r,(0,0),r);return bg.resize((n,n),Image.LANCZOS)
 os.makedirs("assets",exist_ok=True)
-rounded(256).save("assets/icon.png");rounded(64).save("favicon.png");bleed(180).save("assets/apple-touch-icon.png")
+rounded(256).save("assets/icon.png")
+# ファビコンは「Ai」だけを拡大して使う（2026-11-24 ユウキ指示：小サイズでは下の PORTFOLIO が掠れて読めないため）
+# sq 内の白字形を走査し、上の塊＝Ai の外接矩形を中心に正方形で切り出す（描き直しなし・切り出しと拡大だけ）
+_sp=sq.resize((200,200),Image.LANCZOS);_pp=_sp.load()
+def _ispurple(x,y):return _pp[x,y][0]<150 and _pp[x,y][2]>150
+_ext=[]  # 行ごとの紫の範囲（角丸の外側の白を字形と誤認しないため）
+for _y in range(200):
+    _pxs=[x for x in range(200) if _ispurple(x,_y)]
+    _ext.append((min(_pxs),max(_pxs)) if _pxs else (0,-1))
+def _iswhite(x,y):
+    _l,_r=_ext[y]
+    return _l<=x<=_r and _pp[x,y][0]>225 and _pp[x,y][1]>225 and _pp[x,y][2]>225
+_wrows=[y for y in range(200) if any(_iswhite(x,y) for x in range(200))]
+_clusters=[];_st=_pr=_wrows[0]
+for _v in _wrows[1:]:
+    if _v-_pr>2:_clusters.append((_st,_pr));_st=_v
+    _pr=_v
+_clusters.append((_st,_pr))
+_ay0,_ay1=_clusters[0]  # 最初の塊が Ai（下の塊が PORTFOLIO）
+_axl=[x for y in range(_ay0,_ay1+1) for x in range(200) if _iswhite(x,y)]
+_gx0,_gx1=min(_axl)/200*s,max(_axl)/200*s
+_gy0,_gy1=_ay0/200*s,_ay1/200*s
+_side=(_gx1-_gx0)*832/744  # 正本実測の比率：字形幅744に対し切り出し一辺832（余白最小）
+_bx0=int((_gx0+_gx1)/2-_side/2);_by0=int((_gy0+_gy1)/2-_side/2)
+aicrop=sq.crop((_bx0,_by0,_bx0+int(_side),_by0+int(_side)))
+def rounded_from(img,n):  # 角丸は正本アイコンの実測比率 19%
+    big=img.resize((n*4,n*4),Image.LANCZOS)
+    m=Image.new("L",big.size,0);ImageDraw.Draw(m).rounded_rectangle((0,0,n*4-1,n*4-1),int(n*4*.19),fill=255)
+    big=big.convert("RGBA");big.putalpha(m);return big.resize((n,n),Image.LANCZOS)
+rounded_from(aicrop,512).save("favicon-ai.png")
+aicrop.resize((180,180),Image.LANCZOS).save("assets/apple-touch-icon-ai.png")  # 角は iOS が丸めるので地のまま
 # og 1200x630：紫地＋確定アイコン（白縁なし）＋サイト名
 og=Image.new("RGB",(1200,630),vio);d=ImageDraw.Draw(og)
 ic=rounded(360);ic2=Image.new("RGBA",(372,372),(0,0,0,0))
